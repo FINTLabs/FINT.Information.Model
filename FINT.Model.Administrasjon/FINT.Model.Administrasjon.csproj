@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FINT.Model.Felles" Version="$(Version)" />
+    <ProjectReference Include="..\FINT.Model.Felles\FINT.Model.Felles.csproj" />
   </ItemGroup>
 
 </Project>

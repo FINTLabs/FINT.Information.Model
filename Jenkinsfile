@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       label 'docker'
-      image 'microsoft/dotnet'
+      image 'mcr.microsoft.com/dotnet/core/sdk:2.1'
     }
   }
   stages {
@@ -15,11 +15,9 @@ pipeline {
       }
       steps {
         sh 'git clean -fdx'
-        sh 'dotnet restore -s https://api.bintray.com/nuget/fint/nuget'
-        sh 'dotnet build -c Release'
-        sh 'dotnet pack -c Release'
-        archiveArtifacts '**/*.nupkg'
-        sh "dotnet nuget push FINT.Model.Felles/bin/Release/FINT.Model.Felles.*.nupkg -k ${BINTRAY} -s https://api.bintray.com/nuget/fint/nuget"
+        sh 'dotnet msbuild -t:restore,VSTest -p:Configuration=Debug FINT.Information.Model.sln'
+        sh 'dotnet msbuild -t:restore,build,pack -p:Configuration=Release FINT.Information.Model.sln'
+        sh "echo dotnet nuget push FINT.Model.*/bin/Release/FINT.Model.*.nupkg -k ${BINTRAY} -s https://api.bintray.com/nuget/fint/nuget"
       }
     }
   }

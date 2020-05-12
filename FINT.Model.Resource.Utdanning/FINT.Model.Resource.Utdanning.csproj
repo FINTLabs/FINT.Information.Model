@@ -7,8 +7,10 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="FINT.Model.Resource" Version="1.0.1" />
-    <PackageReference Include="FINT.Model.Resource.Felles" Version="$(Version)" />
-    <PackageReference Include="FINT.Model.Utdanning" Version="$(Version)" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FINT.Model.Resource.Felles\FINT.Model.Resource.Felles.csproj" />
+    <ProjectReference Include="..\FINT.Model.Utdanning\FINT.Model.Utdanning.csproj" />
   </ItemGroup>
 </Project>
