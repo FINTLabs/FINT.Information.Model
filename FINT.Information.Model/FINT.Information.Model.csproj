@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FINT.Model.Administrasjon\FINT.Model.Administrasjon.csproj" />
+    <ProjectReference Include="..\FINT.Model.Felles\FINT.Model.Felles.csproj" />
+    <ProjectReference Include="..\FINT.Model.Resource.Administrasjon.Tests\FINT.Model.Resource.Administrasjon.Tests.csproj" />
+    <ProjectReference Include="..\FINT.Model.Resource.Administrasjon\FINT.Model.Resource.Administrasjon.csproj" />
+    <ProjectReference Include="..\FINT.Model.Resource.Felles.Tests\FINT.Model.Resource.Felles.Tests.csproj" />
+    <ProjectReference Include="..\FINT.Model.Resource.Felles\FINT.Model.Resource.Felles.csproj" />
+    <ProjectReference Include="..\FINT.Model.Resource.Utdanning.Tests\FINT.Model.Resource.Utdanning.Tests.csproj" />
+    <ProjectReference Include="..\FINT.Model.Resource.Utdanning\FINT.Model.Resource.Utdanning.csproj" />
+    <ProjectReference Include="..\FINT.Model.Utdanning\FINT.Model.Utdanning.csproj" />
+  </ItemGroup>
+
+</Project>
