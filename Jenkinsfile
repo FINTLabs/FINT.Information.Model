@@ -10,6 +10,7 @@ pipeline {
       steps {
         sh 'git clean -fdx'
         sh 'dotnet msbuild -t:restore,build,VSTest -p:Configuration=Debug FINT.Information.Model.sln'
+        sh 'dotnet test'
       }
     }
     stage('Deploy') {
