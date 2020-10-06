@@ -4,7 +4,7 @@ using FINT.Model.Resource;
 
 namespace FINT.Model.Felles.Kompleksedatatyper
 {
-    public class AdresseResources : AbstractCollectionResources<AdresseResource>
+    public class MatrikkelnummerResources : AbstractCollectionResources<MatrikkelnummerResource>
     {
     }
 }

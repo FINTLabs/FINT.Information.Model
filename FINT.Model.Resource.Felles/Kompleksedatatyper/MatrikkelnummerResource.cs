@@ -5,16 +5,19 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
-using FINT.Model.Administrasjon.Kodeverk;
-
-namespace FINT.Model.Administrasjon.Kodeverk
+namespace FINT.Model.Felles.Kompleksedatatyper
 {
 
-    public class ObjektResource : Kontodimensjon 
+    public class MatrikkelnummerResource 
     {
 
     
-        public ObjektResource()
+        public string Bruksnummer { get; set; }
+        public string Festenummer { get; set; }
+        public string Gardsnummer { get; set; }
+        public string Seksjonsnummer { get; set; }
+        
+        public MatrikkelnummerResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -33,9 +36,9 @@ namespace FINT.Model.Administrasjon.Kodeverk
      
             
 
-        public void AddFullmakt(Link link)
+        public void AddKommunenummer(Link link)
         {
-            AddLink("fullmakt", link);
+            AddLink("kommunenummer", link);
         }
     }
 }

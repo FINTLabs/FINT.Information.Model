@@ -1,4 +1,4 @@
-// Built from tag v3.5.0
+// Built from tag v3.6.0-rc-1
 
 using System;
 using System.Collections.Generic;
@@ -22,6 +22,11 @@ namespace FINT.Model.Felles
         public Personnavn Navn { get; set; }
         
             
+
+        public void AddSamtykke(Link link)
+        {
+            AddLink("samtykke", link);
+        }
 
         public void AddStatsborgerskap(Link link)
         {

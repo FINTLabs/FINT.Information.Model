@@ -1,4 +1,4 @@
-// Built from tag v3.5.0
+// Built from tag v3.6.0-rc-1
 
 using System;
 using System.Collections.Generic;
@@ -36,6 +36,11 @@ namespace FINT.Model.Administrasjon.Organisasjon
         public void AddOverordnet(Link link)
         {
             AddLink("overordnet", link);
+        }
+
+        public void AddFakturautsteder(Link link)
+        {
+            AddLink("fakturautsteder", link);
         }
 
         public void AddUnderordnet(Link link)

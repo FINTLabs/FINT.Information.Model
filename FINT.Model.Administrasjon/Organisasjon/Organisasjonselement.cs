@@ -1,4 +1,4 @@
-// Built from tag v3.5.0
+// Built from tag v3.6.0-rc-1
 
 using System;
 using System.Collections.Generic;
@@ -16,6 +16,7 @@ namespace FINT.Model.Administrasjon.Organisasjon
 			ANSVAR,
 			LEDER,
 			OVERORDNET,
+			FAKTURAUTSTEDER,
 			UNDERORDNET,
 			SKOLE,
 			ARBEIDSFORHOLD
