@@ -1,4 +1,4 @@
-// Built from tag v3.5.0
+// Built from tag v3.6.0-rc-2
 
 using FINT.Model.Resource;
 

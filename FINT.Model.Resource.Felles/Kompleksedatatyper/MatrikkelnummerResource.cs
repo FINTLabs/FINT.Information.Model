@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
-using FINT.Model.Felles.Kompleksedatatyper;
-
-namespace FINT.Model.Utdanning.Timeplan
+namespace FINT.Model.Felles.Kompleksedatatyper
 {
 
-    public class RomResource 
+    public class MatrikkelnummerResource 
     {
 
     
-        public string Navn { get; set; }
-        public Identifikator SystemId { get; set; }
+        public string Bruksnummer { get; set; }
+        public string Festenummer { get; set; }
+        public string Gardsnummer { get; set; }
+        public string Seksjonsnummer { get; set; }
         
-        public RomResource()
+        public MatrikkelnummerResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -34,9 +34,9 @@ namespace FINT.Model.Utdanning.Timeplan
      
             
 
-        public void AddTime(Link link)
+        public void AddKommunenummer(Link link)
         {
-            AddLink("time", link);
+            AddLink("kommunenummer", link);
         }
     }
 }
