@@ -1,5 +1,3 @@
-// Built from tag v3.5.0
-
 using System;
 using System.Collections.Generic;
 
@@ -12,6 +10,7 @@ namespace FINT.Model.Utdanning.Elev
 	public class Skoleressurs {
 		public enum Relasjonsnavn
         {
+			PERSON,
 			PERSONALRESSURS,
 			UNDERVISNINGSFORHOLD,
 			SKOLE
