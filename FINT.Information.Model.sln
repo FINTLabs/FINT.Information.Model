@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINT.Model.Arkiv", "FINT.Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINT.Model.Resource.Arkiv", "FINT.Model.Resource.Arkiv\FINT.Model.Resource.Arkiv.csproj", "{F94F6E6F-8D5E-45B2-B90F-802C2C9B8698}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINT.Model.Okonomi", "FINT.Model.Okonomi\FINT.Model.Okonomi.csproj", "{4C383E04-E67E-4588-AD4C-DD49A2F0D134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINT.Model.Resource.Okonomi", "FINT.Model.Resource.Okonomi\FINT.Model.Resource.Okonomi.csproj", "{A144A6A7-2C30-4172-AA1A-0D9D7629C990}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{F94F6E6F-8D5E-45B2-B90F-802C2C9B8698}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F94F6E6F-8D5E-45B2-B90F-802C2C9B8698}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F94F6E6F-8D5E-45B2-B90F-802C2C9B8698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C383E04-E67E-4588-AD4C-DD49A2F0D134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C383E04-E67E-4588-AD4C-DD49A2F0D134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C383E04-E67E-4588-AD4C-DD49A2F0D134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C383E04-E67E-4588-AD4C-DD49A2F0D134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A144A6A7-2C30-4172-AA1A-0D9D7629C990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A144A6A7-2C30-4172-AA1A-0D9D7629C990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A144A6A7-2C30-4172-AA1A-0D9D7629C990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A144A6A7-2C30-4172-AA1A-0D9D7629C990}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
