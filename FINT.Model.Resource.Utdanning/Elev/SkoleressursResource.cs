@@ -1,5 +1,3 @@
-// Built from tag v3.5.0
-
 using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
@@ -35,6 +33,11 @@ namespace FINT.Model.Utdanning.Elev
         }
      
             
+
+        public void AddPerson(Link link)
+        {
+            AddLink("person", link);
+        }
 
         public void AddPersonalressurs(Link link)
         {
