@@ -1,5 +1,3 @@
-// Built from tag v3.5.0
-
 using System;
 using System.Collections.Generic;
 
@@ -27,6 +25,7 @@ namespace FINT.Model.Administrasjon.Personal
 		public Periode Ansettelsesperiode { get; set; }
 		public DateTime? Ansiennitet { get; set; }
 		public Identifikator Brukernavn { get; set; }
+		public string Jobbtittel { get; set; }
 		public Kontaktinformasjon Kontaktinformasjon { get; set; }
 		public Identifikator SystemId { get; set; }
 		
