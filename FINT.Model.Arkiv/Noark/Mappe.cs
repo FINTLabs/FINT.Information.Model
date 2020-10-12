@@ -9,6 +9,13 @@ using FINT.Model.Felles.Kompleksedatatyper;
 namespace FINT.Model.Arkiv.Noark
 {
 	public abstract class Mappe {
+		public enum Relasjonsnavn
+        {
+			ARKIVDEL,
+			AVSLUTTETAV,
+			OPPRETTETAV
+        }
+        
 	
 		public DateTime? AvsluttetDato { get; set; }
 		public string Beskrivelse { get; set; }

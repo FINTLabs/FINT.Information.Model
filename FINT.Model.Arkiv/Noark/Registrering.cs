@@ -8,6 +8,15 @@ using FINT.Model.Arkiv.Noark;
 namespace FINT.Model.Arkiv.Noark
 {
 	public abstract class Registrering {
+		public enum Relasjonsnavn
+        {
+			ADMINISTRATIVENHET,
+			ARKIVDEL,
+			SAKSBEHANDLER,
+			ARKIVERTAV,
+			OPPRETTETAV
+        }
+        
 	
 		public DateTime? ArkivertDato { get; set; }
 		public string Beskrivelse { get; set; }

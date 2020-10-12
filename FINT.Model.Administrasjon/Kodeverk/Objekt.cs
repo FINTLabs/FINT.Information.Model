@@ -8,11 +8,6 @@ using FINT.Model.Administrasjon.Kodeverk;
 namespace FINT.Model.Administrasjon.Kodeverk
 {
 	public class Objekt : Kontodimensjon {
-		public enum Relasjonsnavn
-        {
-			FULLMAKT
-        }
-        
 	
 	}
 }

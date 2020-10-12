@@ -32,5 +32,11 @@ namespace FINT.Model.Utdanning.Basisklasser
             Links[key].Add(link);
         }
      
+            
+
+        public void AddMedlemskap(Link link)
+        {
+            AddLink("medlemskap", link);
+        }
     }
 }

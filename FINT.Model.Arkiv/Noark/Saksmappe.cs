@@ -8,6 +8,14 @@ using FINT.Model.Arkiv.Noark;
 namespace FINT.Model.Arkiv.Noark
 {
 	public abstract class Saksmappe : Mappe {
+		public enum Relasjonsnavn
+        {
+			SAKSSTATUS,
+			JOURNALENHET,
+			ADMINISTRATIVENHET,
+			SAKSANSVARLIG
+        }
+        
 	
 		public List<Registrering> Arkivnotat { get; set; }
 		public List<Journalpost> Journalpost { get; set; }

@@ -45,5 +45,31 @@ namespace FINT.Model.Arkiv.Noark
             Links[key].Add(link);
         }
      
+            
+
+        public void AddAdministrativEnhet(Link link)
+        {
+            AddLink("administrativEnhet", link);
+        }
+
+        public void AddArkivdel(Link link)
+        {
+            AddLink("arkivdel", link);
+        }
+
+        public void AddSaksbehandler(Link link)
+        {
+            AddLink("saksbehandler", link);
+        }
+
+        public void AddArkivertAv(Link link)
+        {
+            AddLink("arkivertAv", link);
+        }
+
+        public void AddOpprettetAv(Link link)
+        {
+            AddLink("opprettetAv", link);
+        }
     }
 }

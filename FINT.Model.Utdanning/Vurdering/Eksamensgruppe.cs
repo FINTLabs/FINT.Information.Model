@@ -16,10 +16,7 @@ namespace FINT.Model.Utdanning.Vurdering
 			TERMIN,
 			SKOLEAR,
 			UNDERVISNINGSFORHOLD,
-			GRUPPEMEDLEMSKAP,
-			GREPREFERANSE,
-			VIGOREFERANSE,
-			MEDLEMSKAP
+			GRUPPEMEDLEMSKAP
         }
         
 	

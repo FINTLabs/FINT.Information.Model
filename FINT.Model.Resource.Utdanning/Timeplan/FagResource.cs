@@ -8,27 +8,10 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Timeplan
 {
 
-    public class FagResource : Gruppe 
+    public class FagResource : GruppeResource 
     {
 
     
-        public FagResource()
-        {
-            Links = new Dictionary<string, List<Link>>();
-        }
-
-        [JsonProperty(PropertyName = "_links")]
-        public Dictionary<string, List<Link>> Links { get; private set; }
-
-        protected void AddLink(string key, Link link)
-        {
-            if (!Links.ContainsKey(key))
-            {
-                Links.Add(key, new List<Link>());
-            }
-            Links[key].Add(link);
-        }
-     
             
 
         public void AddProgramomrade(Link link)
@@ -49,21 +32,6 @@ namespace FINT.Model.Utdanning.Timeplan
         public void AddEksamensgruppe(Link link)
         {
             AddLink("eksamensgruppe", link);
-        }
-
-        public void AddGrepreferanse(Link link)
-        {
-            AddLink("grepreferanse", link);
-        }
-
-        public void AddVigoreferanse(Link link)
-        {
-            AddLink("vigoreferanse", link);
-        }
-
-        public void AddMedlemskap(Link link)
-        {
-            AddLink("medlemskap", link);
         }
     }
 }

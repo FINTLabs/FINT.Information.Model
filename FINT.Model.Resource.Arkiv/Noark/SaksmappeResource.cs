@@ -12,12 +12,33 @@ namespace FINT.Model.Arkiv.Noark
     {
 
     
-        public List<Registrering> Arkivnotat { get; set; }
+        public List<RegistreringResource> Arkivnotat { get; set; }
         public List<JournalpostResource> Journalpost { get; set; }
         public string Saksaar { get; set; }
         public DateTime? Saksdato { get; set; }
         public string Sakssekvensnummer { get; set; }
         public DateTime? UtlaantDato { get; set; }
         
+            
+
+        public void AddSaksstatus(Link link)
+        {
+            AddLink("saksstatus", link);
+        }
+
+        public void AddJournalenhet(Link link)
+        {
+            AddLink("journalenhet", link);
+        }
+
+        public void AddAdministrativEnhet(Link link)
+        {
+            AddLink("administrativEnhet", link);
+        }
+
+        public void AddSaksansvarlig(Link link)
+        {
+            AddLink("saksansvarlig", link);
+        }
     }
 }

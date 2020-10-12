@@ -17,8 +17,7 @@ namespace FINT.Model.Utdanning.Elev
 			EKSAMENSGRUPPE,
 			TIME,
 			SKOLE,
-			SKOLERESSURS,
-			MEDLEMSKAP
+			SKOLERESSURS
         }
         
 	

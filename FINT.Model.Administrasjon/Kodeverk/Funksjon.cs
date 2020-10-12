@@ -11,8 +11,7 @@ namespace FINT.Model.Administrasjon.Kodeverk
 		public enum Relasjonsnavn
         {
 			OVERORDNET,
-			UNDERORDNET,
-			FULLMAKT
+			UNDERORDNET
         }
         
 	
