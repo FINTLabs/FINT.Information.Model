@@ -29,5 +29,11 @@ namespace FINT.Model.Administrasjon.Kodeverk
             Links[key].Add(link);
         }
      
+            
+
+        public void AddFullmakt(Link link)
+        {
+            AddLink("fullmakt", link);
+        }
     }
 }

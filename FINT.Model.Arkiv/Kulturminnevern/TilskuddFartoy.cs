@@ -9,17 +9,6 @@ using FINT.Model.Arkiv.Noark;
 namespace FINT.Model.Arkiv.Kulturminnevern
 {
 	public class TilskuddFartoy : Saksmappe {
-		public enum Relasjonsnavn
-        {
-			SAKSSTATUS,
-			JOURNALENHET,
-			ADMINISTRATIVENHET,
-			SAKSANSVARLIG,
-			ARKIVDEL,
-			AVSLUTTETAV,
-			OPPRETTETAV
-        }
-        
 	
 		public string FartoyNavn { get; set; }
 		public string Kallesignal { get; set; }

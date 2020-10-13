@@ -11,10 +11,7 @@ namespace FINT.Model.Administrasjon.Personal
 		public enum Relasjonsnavn
         {
 			LONNSART,
-			ARBEIDSFORHOLD,
-			ANVISER,
-			KONTERER,
-			ATTESTANT
+			ARBEIDSFORHOLD
         }
         
 	

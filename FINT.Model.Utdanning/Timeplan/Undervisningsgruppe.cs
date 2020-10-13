@@ -17,10 +17,7 @@ namespace FINT.Model.Utdanning.Timeplan
 			SKOLEAR,
 			UNDERVISNINGSFORHOLD,
 			TIME,
-			GRUPPEMEDLEMSKAP,
-			GREPREFERANSE,
-			VIGOREFERANSE,
-			MEDLEMSKAP
+			GRUPPEMEDLEMSKAP
         }
         
 	

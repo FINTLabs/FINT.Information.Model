@@ -9,6 +9,13 @@ using FINT.Model.Administrasjon.Kompleksedatatyper;
 namespace FINT.Model.Administrasjon.Personal
 {
 	public abstract class Lonn {
+		public enum Relasjonsnavn
+        {
+			ANVISER,
+			KONTERER,
+			ATTESTANT
+        }
+        
 	
 		public DateTime? Anvist { get; set; }
 		public DateTime? Attestert { get; set; }

@@ -13,10 +13,7 @@ namespace FINT.Model.Utdanning.Timeplan
 			PROGRAMOMRADE,
 			SKOLE,
 			UNDERVISNINGSGRUPPE,
-			EKSAMENSGRUPPE,
-			GREPREFERANSE,
-			VIGOREFERANSE,
-			MEDLEMSKAP
+			EKSAMENSGRUPPE
         }
         
 	

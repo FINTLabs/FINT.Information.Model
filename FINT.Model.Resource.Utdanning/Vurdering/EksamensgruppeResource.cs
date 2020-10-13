@@ -8,27 +8,10 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Vurdering
 {
 
-    public class EksamensgruppeResource : Gruppe 
+    public class EksamensgruppeResource : GruppeResource 
     {
 
     
-        public EksamensgruppeResource()
-        {
-            Links = new Dictionary<string, List<Link>>();
-        }
-
-        [JsonProperty(PropertyName = "_links")]
-        public Dictionary<string, List<Link>> Links { get; private set; }
-
-        protected void AddLink(string key, Link link)
-        {
-            if (!Links.ContainsKey(key))
-            {
-                Links.Add(key, new List<Link>());
-            }
-            Links[key].Add(link);
-        }
-     
             
 
         public void AddElevforhold(Link link)
@@ -64,21 +47,6 @@ namespace FINT.Model.Utdanning.Vurdering
         public void AddGruppemedlemskap(Link link)
         {
             AddLink("gruppemedlemskap", link);
-        }
-
-        public void AddGrepreferanse(Link link)
-        {
-            AddLink("grepreferanse", link);
-        }
-
-        public void AddVigoreferanse(Link link)
-        {
-            AddLink("vigoreferanse", link);
-        }
-
-        public void AddMedlemskap(Link link)
-        {
-            AddLink("medlemskap", link);
         }
     }
 }

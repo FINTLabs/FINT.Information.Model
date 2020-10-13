@@ -9,17 +9,6 @@ using FINT.Model.Arkiv.Noark;
 namespace FINT.Model.Arkiv.Kulturminnevern
 {
 	public class TilskuddFredaBygningPrivatEie : Saksmappe {
-		public enum Relasjonsnavn
-        {
-			SAKSSTATUS,
-			JOURNALENHET,
-			ADMINISTRATIVENHET,
-			SAKSANSVARLIG,
-			ARKIVDEL,
-			AVSLUTTETAV,
-			OPPRETTETAV
-        }
-        
 	
 		public string Bygningsnavn { get; set; }
 		public string KulturminneId { get; set; }

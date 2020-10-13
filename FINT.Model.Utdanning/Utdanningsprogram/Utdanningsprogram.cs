@@ -11,10 +11,7 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
 		public enum Relasjonsnavn
         {
 			SKOLE,
-			PROGRAMOMRADE,
-			GREPREFERANSE,
-			VIGOREFERANSE,
-			MEDLEMSKAP
+			PROGRAMOMRADE
         }
         
 	

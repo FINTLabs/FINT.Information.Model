@@ -12,8 +12,7 @@ namespace FINT.Model.Administrasjon.Kodeverk
         {
 			OVERORDNET,
 			UNDERORDNET,
-			ORGANISASJONSELEMENT,
-			FULLMAKT
+			ORGANISASJONSELEMENT
         }
         
 	

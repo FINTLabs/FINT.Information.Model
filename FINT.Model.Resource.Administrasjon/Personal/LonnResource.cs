@@ -40,5 +40,21 @@ namespace FINT.Model.Administrasjon.Personal
             Links[key].Add(link);
         }
      
+            
+
+        public void AddAnviser(Link link)
+        {
+            AddLink("anviser", link);
+        }
+
+        public void AddKonterer(Link link)
+        {
+            AddLink("konterer", link);
+        }
+
+        public void AddAttestant(Link link)
+        {
+            AddLink("attestant", link);
+        }
     }
 }

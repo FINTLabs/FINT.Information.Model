@@ -34,5 +34,21 @@ namespace FINT.Model.Utdanning.Basisklasser
             Links[key].Add(link);
         }
      
+            
+
+        public void AddGrepreferanse(Link link)
+        {
+            AddLink("grepreferanse", link);
+        }
+
+        public void AddVigoreferanse(Link link)
+        {
+            AddLink("vigoreferanse", link);
+        }
+
+        public void AddMedlemskap(Link link)
+        {
+            AddLink("medlemskap", link);
+        }
     }
 }

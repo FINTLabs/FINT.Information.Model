@@ -14,10 +14,7 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
 			UTDANNINGSPROGRAM,
 			FAG,
 			TRINN,
-			GRUPPEMEDLEMSKAP,
-			GREPREFERANSE,
-			VIGOREFERANSE,
-			MEDLEMSKAP
+			GRUPPEMEDLEMSKAP
         }
         
 	
