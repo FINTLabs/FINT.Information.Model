@@ -15,7 +15,7 @@ namespace FINT.Model.Arkiv.Noark
     
         public DateTime? AvsluttetDato { get; set; }
         public string Beskrivelse { get; set; }
-        public KlasseResource Klasse { get; set; }
+        public List<KlasseResource> Klasse { get; set; }
         public Identifikator MappeId { get; set; }
         public List<MerknadResource> Merknad { get; set; }
         public List<string> Noekkelord { get; set; }
