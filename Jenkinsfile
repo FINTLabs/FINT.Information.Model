@@ -27,7 +27,7 @@ pipeline {
           sh "echo Version is ${VERSION}"
           sh 'git clean -fdx'
           sh "dotnet msbuild -t:restore,build,pack -p:Configuration=Release -p:Version=${VERSION} FINT.Information.Model.sln"
-          sh "dotnet nuget push FINT.Model.*/bin/Release/FINT.Model.*.nupkg -k ${BINTRAY} -s https://api.bintray.com/nuget/fint/nuget"
+          sh "ls -1 FINT.Model.*/bin/Release/FINT.Model.*.nupkg | xargs -n 1 dotnet nuget push -k ${BINTRAY} -s https://api.bintray.com/nuget/fint/nuget"
       }
     }
   }
