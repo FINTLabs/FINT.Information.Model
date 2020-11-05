@@ -1,5 +1,5 @@
 # FINT C# Model
 
-Version 3.6.10
+Version 3.7.0-drosje-2
 
-Generated Mon Oct 19 09:54:33 UTC 2020
+Generated Thu Nov 5 12:07:05 UTC 2020
