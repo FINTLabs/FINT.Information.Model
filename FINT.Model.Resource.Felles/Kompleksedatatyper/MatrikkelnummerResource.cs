@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
+using FINT.Model.Felles.Kompleksedatatyper;
+
 namespace FINT.Model.Felles.Kompleksedatatyper
 {
 
@@ -10,6 +12,7 @@ namespace FINT.Model.Felles.Kompleksedatatyper
     {
 
     
+        public AdresseResource Adresse { get; set; }
         public string Bruksnummer { get; set; }
         public string Festenummer { get; set; }
         public string Gardsnummer { get; set; }
