@@ -14,10 +14,13 @@ namespace FINT.Model.Administrasjon.Personal
 			FRAVARSTYPE,
 			ARBEIDSFORHOLD,
 			FORTSETTELSE,
+			GODKJENNER,
 			FORTSETTER
         }
         
 	
+		public DateTime? Godkjent { get; set; }
+		public Identifikator KildesystemId { get; set; }
 		public Periode Periode { get; set; }
 		public long Prosent { get; set; }
 		public Identifikator SystemId { get; set; }

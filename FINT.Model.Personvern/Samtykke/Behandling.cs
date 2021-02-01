@@ -12,6 +12,7 @@ namespace FINT.Model.Personvern.Samtykke
         {
 			BEHANDLINGSGRUNNLAG,
 			PERSONOPPLYSNING,
+			SAMTYKKE,
 			TJENESTE
         }
         
