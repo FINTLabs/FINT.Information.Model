@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 
 
+using FINT.Model.Felles.Kompleksedatatyper;
+
 namespace FINT.Model.Felles.Kompleksedatatyper
 {
 	public class Matrikkelnummer {
@@ -12,6 +14,7 @@ namespace FINT.Model.Felles.Kompleksedatatyper
         }
         
 	
+		public Adresse Adresse { get; set; }
 		public string Bruksnummer { get; set; }
 		public string Festenummer { get; set; }
 		public string Gardsnummer { get; set; }

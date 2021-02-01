@@ -45,6 +45,11 @@ namespace FINT.Model.Personvern.Samtykke
             AddLink("personopplysning", link);
         }
 
+        public void AddSamtykke(Link link)
+        {
+            AddLink("samtykke", link);
+        }
+
         public void AddTjeneste(Link link)
         {
             AddLink("tjeneste", link);

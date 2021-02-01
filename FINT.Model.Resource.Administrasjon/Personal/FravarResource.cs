@@ -12,6 +12,8 @@ namespace FINT.Model.Administrasjon.Personal
     {
 
     
+        public DateTime? Godkjent { get; set; }
+        public Identifikator KildesystemId { get; set; }
         public Periode Periode { get; set; }
         public long Prosent { get; set; }
         public Identifikator SystemId { get; set; }
@@ -53,6 +55,11 @@ namespace FINT.Model.Administrasjon.Personal
         public void AddFortsettelse(Link link)
         {
             AddLink("fortsettelse", link);
+        }
+
+        public void AddGodkjenner(Link link)
+        {
+            AddLink("godkjenner", link);
         }
 
         public void AddFortsetter(Link link)
