@@ -36,6 +36,11 @@ namespace FINT.Model.Arkiv.Noark
      
             
 
+        public void AddFormat(Link link)
+        {
+            AddLink("format", link);
+        }
+
         public void AddVariantFormat(Link link)
         {
             AddLink("variantFormat", link);
