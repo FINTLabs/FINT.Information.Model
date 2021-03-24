@@ -11,9 +11,21 @@ namespace FINT.Model.Administrasjon.Fullmakt
 		public enum Relasjonsnavn
         {
 			MYNDIGHET,
+			RAMME,
+			FUNKSJON,
+			OBJEKT,
+			ORGANISASJONSELEMENT,
+			ART,
+			ANLEGG,
+			DIVERSE,
+			AKTIVITET,
+			ANSVAR,
 			STEDFORTREDER,
+			KONTRAKT,
 			FULLMEKTIG,
-			ROLLE
+			PROSJEKT,
+			ROLLE,
+			LOPENUMMER
         }
         
 	

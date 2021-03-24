@@ -10,10 +10,18 @@ namespace FINT.Model.Administrasjon.Personal
 	public class Arbeidsforhold {
 		public enum Relasjonsnavn
         {
+			AKTIVITET,
+			ANLEGG,
 			ANSVAR,
 			ARBEIDSFORHOLDSTYPE,
 			ART,
+			DIVERSE,
 			FUNKSJON,
+			KONTRAKT,
+			LOPENUMMER,
+			OBJEKT,
+			PROSJEKT,
+			RAMME,
 			STILLINGSKODE,
 			TIMERPERUKE,
 			ARBEIDSSTED,
