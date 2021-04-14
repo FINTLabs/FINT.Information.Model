@@ -47,19 +47,14 @@ namespace FINT.Model.Arkiv.Noark
      
             
 
-        public void AddAdministrativEnhet(Link link)
+        public void AddSaksbehandler(Link link)
         {
-            AddLink("administrativEnhet", link);
+            AddLink("saksbehandler", link);
         }
 
         public void AddArkivdel(Link link)
         {
             AddLink("arkivdel", link);
-        }
-
-        public void AddSaksbehandler(Link link)
-        {
-            AddLink("saksbehandler", link);
         }
 
         public void AddArkivertAv(Link link)
@@ -70,6 +65,11 @@ namespace FINT.Model.Arkiv.Noark
         public void AddOpprettetAv(Link link)
         {
             AddLink("opprettetAv", link);
+        }
+
+        public void AddAdministrativEnhet(Link link)
+        {
+            AddLink("administrativEnhet", link);
         }
     }
 }

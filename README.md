@@ -1,5 +1,5 @@
 # FINT C# Model
 
-Version 3.8.0
+Version 3.8.10-rc-1
 
-Generated Wed Mar 24 13:27:00 UTC 2021
+Generated Wed Apr 14 12:42:15 UTC 2021

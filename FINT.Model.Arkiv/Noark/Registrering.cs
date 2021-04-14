@@ -10,11 +10,11 @@ namespace FINT.Model.Arkiv.Noark
 	public abstract class Registrering {
 		public enum Relasjonsnavn
         {
-			ADMINISTRATIVENHET,
-			ARKIVDEL,
 			SAKSBEHANDLER,
+			ARKIVDEL,
 			ARKIVERTAV,
-			OPPRETTETAV
+			OPPRETTETAV,
+			ADMINISTRATIVENHET
         }
         
 	
