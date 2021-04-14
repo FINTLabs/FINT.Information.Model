@@ -10,8 +10,8 @@ namespace FINT.Model.Arkiv.Noark
 	public class Arkivressurs {
 		public enum Relasjonsnavn
         {
-			PERSONALRESSURS,
 			AUTORISASJON,
+			PERSONALRESSURS,
 			TILGANG
         }
         

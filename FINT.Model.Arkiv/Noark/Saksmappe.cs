@@ -12,8 +12,8 @@ namespace FINT.Model.Arkiv.Noark
         {
 			SAKSSTATUS,
 			JOURNALENHET,
-			ADMINISTRATIVENHET,
-			SAKSANSVARLIG
+			SAKSANSVARLIG,
+			ADMINISTRATIVENHET
         }
         
 	
