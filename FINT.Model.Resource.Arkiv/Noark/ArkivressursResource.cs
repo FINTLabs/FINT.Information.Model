@@ -34,14 +34,14 @@ namespace FINT.Model.Arkiv.Noark
      
             
 
-        public void AddPersonalressurs(Link link)
-        {
-            AddLink("personalressurs", link);
-        }
-
         public void AddAutorisasjon(Link link)
         {
             AddLink("autorisasjon", link);
+        }
+
+        public void AddPersonalressurs(Link link)
+        {
+            AddLink("personalressurs", link);
         }
 
         public void AddTilgang(Link link)
