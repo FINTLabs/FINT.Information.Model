@@ -351,3 +351,7 @@ MigrationBackup/
 
 # Visual Studio Code
 .vscode/
+
+# JetBrains Rider
+.idea/
+*.sln.iml

@@ -4,8 +4,10 @@
     <TargetFramework>netstandard1.4</TargetFramework>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <Version>3.5.0</Version>
-    <Authors>FINT</Authors>
+    <Authors>FINTLabs</Authors>
+    <Company>Vigo IKS</Company>
     <PackageTags>fint</PackageTags>
+    <PackageId>FINT.Model.Administrasjon</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
