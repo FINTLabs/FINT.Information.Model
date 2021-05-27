@@ -3,19 +3,16 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
-using FINT.Model.Felles.Kompleksedatatyper;
+using FINT.Model.Utdanning.Basisklasser;
 
-namespace FINT.Model.Arkiv.Noark
+namespace FINT.Model.Utdanning.Elev
 {
 
-    public class ArkivressursResource 
+    public class PersongruppemedlemskapResource : Gruppemedlemskap 
     {
 
     
-        public Identifikator KildesystemId { get; set; }
-        public Identifikator SystemId { get; set; }
-        
-        public ArkivressursResource()
+        public PersongruppemedlemskapResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -34,19 +31,14 @@ namespace FINT.Model.Arkiv.Noark
      
             
 
-        public void AddPersonalressurs(Link link)
+        public void AddElevforhold(Link link)
         {
-            AddLink("personalressurs", link);
+            AddLink("elevforhold", link);
         }
 
-        public void AddAutorisasjon(Link link)
+        public void AddPersongruppe(Link link)
         {
-            AddLink("autorisasjon", link);
-        }
-
-        public void AddTilgang(Link link)
-        {
-            AddLink("tilgang", link);
+            AddLink("persongruppe", link);
         }
     }
 }

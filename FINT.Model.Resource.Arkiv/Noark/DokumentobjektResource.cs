@@ -46,14 +46,14 @@ namespace FINT.Model.Arkiv.Noark
             AddLink("variantFormat", link);
         }
 
-        public void AddReferanseDokumentfil(Link link)
-        {
-            AddLink("referanseDokumentfil", link);
-        }
-
         public void AddOpprettetAv(Link link)
         {
             AddLink("opprettetAv", link);
+        }
+
+        public void AddReferanseDokumentfil(Link link)
+        {
+            AddLink("referanseDokumentfil", link);
         }
     }
 }

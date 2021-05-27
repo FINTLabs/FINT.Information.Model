@@ -10,8 +10,8 @@ namespace FINT.Model.Arkiv.Noark
         {
 			FILFORMAT,
 			VARIANTFORMAT,
-			REFERANSEDOKUMENTFIL,
-			OPPRETTETAV
+			OPPRETTETAV,
+			REFERANSEDOKUMENTFIL
         }
         
 	
