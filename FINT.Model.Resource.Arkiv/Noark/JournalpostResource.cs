@@ -13,6 +13,7 @@ namespace FINT.Model.Arkiv.Noark
 
     
         public long? AntallVedlegg { get; set; }
+        public Avskrivning Avskrivning { get; set; }
         public DateTime? DokumentetsDato { get; set; }
         public DateTime? ForfallsDato { get; set; }
         public string JournalAr { get; set; }

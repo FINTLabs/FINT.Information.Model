@@ -31,14 +31,14 @@ namespace FINT.Model.Arkiv.Noark
             AddLink("journalenhet", link);
         }
 
-        public void AddSaksansvarlig(Link link)
-        {
-            AddLink("saksansvarlig", link);
-        }
-
         public void AddAdministrativEnhet(Link link)
         {
             AddLink("administrativEnhet", link);
+        }
+
+        public void AddSaksansvarlig(Link link)
+        {
+            AddLink("saksansvarlig", link);
         }
     }
 }

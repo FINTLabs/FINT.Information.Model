@@ -39,11 +39,6 @@ namespace FINT.Model.Arkiv.Noark
             AddLink("rolle", link);
         }
 
-        public void AddArkivressurs(Link link)
-        {
-            AddLink("arkivressurs", link);
-        }
-
         public void AddAdministrativEnhet(Link link)
         {
             AddLink("administrativEnhet", link);
@@ -52,6 +47,11 @@ namespace FINT.Model.Arkiv.Noark
         public void AddArkivdel(Link link)
         {
             AddLink("arkivdel", link);
+        }
+
+        public void AddArkivressurs(Link link)
+        {
+            AddLink("arkivressurs", link);
         }
     }
 }
