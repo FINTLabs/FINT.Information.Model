@@ -12,6 +12,8 @@ namespace FINT.Model.Utdanning.Vurdering
     {
 
     
+        public DateTime? Eksamensdato { get; set; }
+        
             
 
         public void AddElevforhold(Link link)

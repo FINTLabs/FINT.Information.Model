@@ -58,6 +58,11 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("kontaktlarergruppe", link);
         }
 
+        public void AddPersongruppemedlemskap(Link link)
+        {
+            AddLink("persongruppemedlemskap", link);
+        }
+
         public void AddEksamensgruppemedlemskap(Link link)
         {
             AddLink("eksamensgruppemedlemskap", link);
