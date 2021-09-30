@@ -5,22 +5,18 @@ using FINT.Model.Resource;
 
 using FINT.Model.Felles.Kompleksedatatyper;
 
-namespace FINT.Model.Utdanning.Elev
+namespace FINT.Model.Utdanning.Vurdering
 {
 
-    public class ElevResource 
+    public class AnmerkningerResource 
     {
 
     
-        public Identifikator Brukernavn { get; set; }
-        public Identifikator Elevnummer { get; set; }
-        public Identifikator Feidenavn { get; set; }
-        public bool? Gjest { get; set; }
-        public AdresseResource Hybeladresse { get; set; }
-        public Kontaktinformasjon Kontaktinformasjon { get; set; }
+        public int Atferd { get; set; }
+        public int Orden { get; set; }
         public Identifikator SystemId { get; set; }
         
-        public ElevResource()
+        public AnmerkningerResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -39,14 +35,9 @@ namespace FINT.Model.Utdanning.Elev
      
             
 
-        public void AddPerson(Link link)
+        public void AddSkolear(Link link)
         {
-            AddLink("person", link);
-        }
-
-        public void AddElevforhold(Link link)
-        {
-            AddLink("elevforhold", link);
+            AddLink("skolear", link);
         }
     }
 }
