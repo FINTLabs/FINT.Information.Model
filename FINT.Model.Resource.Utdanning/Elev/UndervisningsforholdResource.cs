@@ -12,6 +12,8 @@ namespace FINT.Model.Utdanning.Elev
     {
 
     
+        public bool? Hovedskole { get; set; }
+        
             
 
         public void AddArbeidsforhold(Link link)

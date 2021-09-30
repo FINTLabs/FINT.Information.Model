@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
+using FINT.Model.Utdanning.Vurdering;
 using FINT.Model.Felles.Kompleksedatatyper;
 
 namespace FINT.Model.Utdanning.Vurdering
 {
 
-    public class FravarResource 
+    public class FravarsoversiktResource 
     {
 
     
-        public bool Dokumentert { get; set; }
-        public bool ForesPaVitnemal { get; set; }
-        public Periode GjelderPeriode { get; set; }
-        public string Kommentar { get; set; }
+        public Fravarsprosent Halvar { get; set; }
+        public Fravarsprosent Skolear { get; set; }
         public Identifikator SystemId { get; set; }
         
-        public FravarResource()
+        public FravarsoversiktResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -42,24 +41,9 @@ namespace FINT.Model.Utdanning.Vurdering
             AddLink("elevforhold", link);
         }
 
-        public void AddRegistrertav(Link link)
+        public void AddFag(Link link)
         {
-            AddLink("registrertav", link);
-        }
-
-        public void AddUndervisningsgruppe(Link link)
-        {
-            AddLink("undervisningsgruppe", link);
-        }
-
-        public void AddEksamensgruppe(Link link)
-        {
-            AddLink("eksamensgruppe", link);
-        }
-
-        public void AddFravarstype(Link link)
-        {
-            AddLink("fravarstype", link);
+            AddLink("fag", link);
         }
     }
 }

@@ -8,17 +8,15 @@ using FINT.Model.Felles.Kompleksedatatyper;
 namespace FINT.Model.Utdanning.Vurdering
 {
 
-    public class FravarResource 
+    public abstract class FagvurderingResource 
     {
 
     
-        public bool Dokumentert { get; set; }
-        public bool ForesPaVitnemal { get; set; }
-        public Periode GjelderPeriode { get; set; }
         public string Kommentar { get; set; }
         public Identifikator SystemId { get; set; }
+        public DateTime Vurderingsdato { get; set; }
         
-        public FravarResource()
+        protected FagvurderingResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -37,14 +35,9 @@ namespace FINT.Model.Utdanning.Vurdering
      
             
 
-        public void AddElevforhold(Link link)
+        public void AddFag(Link link)
         {
-            AddLink("elevforhold", link);
-        }
-
-        public void AddRegistrertav(Link link)
-        {
-            AddLink("registrertav", link);
+            AddLink("fag", link);
         }
 
         public void AddUndervisningsgruppe(Link link)
@@ -52,14 +45,14 @@ namespace FINT.Model.Utdanning.Vurdering
             AddLink("undervisningsgruppe", link);
         }
 
-        public void AddEksamensgruppe(Link link)
+        public void AddSkolear(Link link)
         {
-            AddLink("eksamensgruppe", link);
+            AddLink("skolear", link);
         }
 
-        public void AddFravarstype(Link link)
+        public void AddKarakter(Link link)
         {
-            AddLink("fravarstype", link);
+            AddLink("karakter", link);
         }
     }
 }

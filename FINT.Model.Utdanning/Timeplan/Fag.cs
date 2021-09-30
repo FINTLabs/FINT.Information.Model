@@ -11,6 +11,7 @@ namespace FINT.Model.Utdanning.Timeplan
 		public enum Relasjonsnavn
         {
 			PROGRAMOMRADE,
+			TILRETTELEGGING,
 			SKOLE,
 			UNDERVISNINGSGRUPPE,
 			EKSAMENSGRUPPE

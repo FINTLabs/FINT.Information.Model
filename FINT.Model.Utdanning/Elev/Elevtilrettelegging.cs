@@ -5,21 +5,17 @@ using System.Collections.Generic;
 
 using FINT.Model.Felles.Kompleksedatatyper;
 
-namespace FINT.Model.Utdanning.Vurdering
+namespace FINT.Model.Utdanning.Elev
 {
-	public class Vurdering {
+	public class Elevtilrettelegging {
 		public enum Relasjonsnavn
         {
-			ELEVFORHOLD,
+			ELEV,
 			FAG,
-			UNDERVISNINGSGRUPPE,
-			EKSAMENSGRUPPE,
-			KARAKTER
+			TILRETTELEGGING
         }
         
 	
-		public bool Endelig { get; set; }
-		public string Kommentar { get; set; }
 		public Identifikator SystemId { get; set; }
 		
 	}

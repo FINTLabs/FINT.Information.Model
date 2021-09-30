@@ -21,5 +21,7 @@ namespace FINT.Model.Utdanning.Elev
         }
         
 	
+		public bool? Hovedskole { get; set; }
+		
 	}
 }
