@@ -12,6 +12,7 @@ namespace FINT.Model.Felles
 		public enum Relasjonsnavn
         {
 			STATSBORGERSKAP,
+			KOMMUNE,
 			KJONN,
 			FORELDREANSVAR,
 			MALFORM,

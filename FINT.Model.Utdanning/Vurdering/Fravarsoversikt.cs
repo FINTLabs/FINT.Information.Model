@@ -3,25 +3,21 @@ using System.Collections.Generic;
 
 
 
+using FINT.Model.Utdanning.Vurdering;
 using FINT.Model.Felles.Kompleksedatatyper;
 
 namespace FINT.Model.Utdanning.Vurdering
 {
-	public class Fravar {
+	public class Fravarsoversikt {
 		public enum Relasjonsnavn
         {
 			ELEVFORHOLD,
-			REGISTRERTAV,
-			UNDERVISNINGSGRUPPE,
-			EKSAMENSGRUPPE,
-			FRAVARSTYPE
+			FAG
         }
         
 	
-		public bool Dokumentert { get; set; }
-		public bool ForesPaVitnemal { get; set; }
-		public Periode GjelderPeriode { get; set; }
-		public string Kommentar { get; set; }
+		public Fravarsprosent Halvar { get; set; }
+		public Fravarsprosent Skolear { get; set; }
 		public Identifikator SystemId { get; set; }
 		
 	}

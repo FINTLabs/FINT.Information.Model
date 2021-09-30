@@ -26,6 +26,11 @@ namespace FINT.Model.Felles
             AddLink("statsborgerskap", link);
         }
 
+        public void AddKommune(Link link)
+        {
+            AddLink("kommune", link);
+        }
+
         public void AddKjonn(Link link)
         {
             AddLink("kjonn", link);

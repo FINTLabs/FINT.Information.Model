@@ -18,6 +18,8 @@ namespace FINT.Model.Utdanning.Elev
 		public Identifikator Brukernavn { get; set; }
 		public Identifikator Elevnummer { get; set; }
 		public Identifikator Feidenavn { get; set; }
+		public bool? Gjest { get; set; }
+		public Adresse Hybeladresse { get; set; }
 		public Kontaktinformasjon Kontaktinformasjon { get; set; }
 		public Identifikator SystemId { get; set; }
 		
