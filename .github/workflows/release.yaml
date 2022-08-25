@@ -1,0 +1,25 @@
+name: Publish new release
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v3
+
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: '2.1.x'
+
+      - name: .NET build
+        run: |
+          echo Version is ${{github.event.release.tag_name}}
+          dotnet msbuild -t:restore,build,pack -p:Configuration=Release -p:Version=${{github.event.release.tag_name}} FINT.Information.Model.sln
+      
+      - name: Publish releases to Nuget
+        run: |
+          ls -1 FINT.Model.*/bin/Release/FINT.Model.*.nupkg | xargs -n 1 echo "Release: "
