@@ -13,13 +13,16 @@ jobs:
       - name: Setup .NET Core SDK
         uses: actions/setup-dotnet@v2
         with:
-          dotnet-version: '2.1.x'
+          dotnet-version: '3.1.x'
 
       - name: .NET build
         run: |
-          echo Version is ${{github.event.release.tag_name}}
-          dotnet msbuild -t:restore,build,pack -p:Configuration=Release -p:Version=${{github.event.release.tag_name}} FINT.Information.Model.sln
-      
+          echo Version is ${VERSION:1}
+          dotnet msbuild -t:restore,build,pack -p:Configuration=Release -p:Version=${VERSION:1} FINT.Information.Model.sln
+        env: 
+          VERSION: ${{github.event.release.tag_name}}
+
       - name: Publish releases to Nuget
         run: |
-          ls -1 FINT.Model.*/bin/Release/FINT.Model.*.nupkg | xargs -n 1 echo "Release: "
+          ls -1 FINT.Model.*/bin/Release/FINT.Model.*.nupkg | xargs -n 1 echo Package:
+#         ls -1 FINT.Model.*/bin/Release/FINT.Model.*.nupkg | xargs -n 1 dotnet nuget push -k ${{secrets.NUGET_KEY}} -s https://api.nuget.org/v3/index.json
