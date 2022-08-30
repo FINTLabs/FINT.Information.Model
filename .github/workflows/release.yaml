@@ -1,4 +1,4 @@
-name: Publish new release
+name: Publish new release to NuGet
 on:
   release:
     types: [published]
@@ -23,7 +23,6 @@ jobs:
         env: 
           TAG_NAME: ${{github.event.release.tag_name}}
 
-      - name: Publish releases to Nuget
+      - name: Publish new release to NuGet
         run: |
-          ls -1 FINT.Model.*/bin/Release/FINT.Model.*.nupkg | xargs -n 1 echo Package:
-#         ls -1 FINT.Model.*/bin/Release/FINT.Model.*.nupkg | xargs -n 1 dotnet nuget push -k ${{secrets.NUGET_KEY}} -s https://api.nuget.org/v3/index.json
+          ls -1 FINT.Model.*/bin/Release/FINT.Model.*.nupkg | xargs -n 1 dotnet nuget push -k ${{secrets.NUGET_KEY}} -s https://api.nuget.org/v3/index.json
