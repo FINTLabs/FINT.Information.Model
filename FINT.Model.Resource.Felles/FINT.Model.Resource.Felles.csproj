@@ -8,7 +8,7 @@
     <PackageId>FINT.Model.Resource.Felles</PackageId>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="FINT.Model.Resource" Version="1.0.1" />
+    <PackageReference Include="FINT.Model.Resource" Version="1.2.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FINT.Model.Felles\FINT.Model.Felles.csproj" />
