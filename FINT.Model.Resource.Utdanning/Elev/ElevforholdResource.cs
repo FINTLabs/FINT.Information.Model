@@ -18,6 +18,7 @@ namespace FINT.Model.Utdanning.Elev
         public DateTime? Avbruddsdato { get; set; }
         public Periode Gyldighetsperiode { get; set; }
         public bool? Hovedskole { get; set; }
+        public bool? TosprakligFagopplaring { get; set; }
         
             
 
@@ -49,6 +50,21 @@ namespace FINT.Model.Utdanning.Elev
         public void AddAvbruddsarsak(Link link)
         {
             AddLink("avbruddsarsak", link);
+        }
+
+        public void AddFravarsregistreringer(Link link)
+        {
+            AddLink("fravarsregistreringer", link);
+        }
+
+        public void AddFaggruppemedlemskap(Link link)
+        {
+            AddLink("faggruppemedlemskap", link);
+        }
+
+        public void AddSkolear(Link link)
+        {
+            AddLink("skolear", link);
         }
 
         public void AddBasisgruppe(Link link)

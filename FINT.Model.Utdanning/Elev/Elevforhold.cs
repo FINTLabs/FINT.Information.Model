@@ -18,6 +18,9 @@ namespace FINT.Model.Utdanning.Elev
 			KROPPSOVING,
 			SKOLE,
 			AVBRUDDSARSAK,
+			FRAVARSREGISTRERINGER,
+			FAGGRUPPEMEDLEMSKAP,
+			SKOLEAR,
 			BASISGRUPPE,
 			BASISGRUPPEMEDLEMSKAP,
 			UNDERVISNINGSGRUPPEMEDLEMSKAP,
@@ -46,6 +49,7 @@ namespace FINT.Model.Utdanning.Elev
 		public DateTime? Avbruddsdato { get; set; }
 		public Periode Gyldighetsperiode { get; set; }
 		public bool? Hovedskole { get; set; }
+		public bool? TosprakligFagopplaring { get; set; }
 		
 	}
 }

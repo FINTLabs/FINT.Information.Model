@@ -14,9 +14,11 @@ namespace FINT.Model.Utdanning.Vurdering
 			FAG,
 			SKOLE,
 			TERMIN,
+			EKSAMENSFORM,
 			SKOLEAR,
 			UNDERVISNINGSFORHOLD,
-			GRUPPEMEDLEMSKAP
+			GRUPPEMEDLEMSKAP,
+			SENSOR
         }
         
 	

@@ -10,6 +10,7 @@ namespace FINT.Model.Arkiv.Noark
 	public abstract class Saksmappe : Mappe {
 		public enum Relasjonsnavn
         {
+			SAKSMAPPETYPE,
 			SAKSSTATUS,
 			JOURNALENHET,
 			ADMINISTRATIVENHET,

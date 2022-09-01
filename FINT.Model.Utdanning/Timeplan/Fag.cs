@@ -12,6 +12,7 @@ namespace FINT.Model.Utdanning.Timeplan
         {
 			PROGRAMOMRADE,
 			TILRETTELEGGING,
+			FAGGRUPPE,
 			SKOLE,
 			UNDERVISNINGSGRUPPE,
 			EKSAMENSGRUPPE

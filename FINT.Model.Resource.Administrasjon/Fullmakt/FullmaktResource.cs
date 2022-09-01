@@ -104,6 +104,11 @@ namespace FINT.Model.Administrasjon.Fullmakt
             AddLink("prosjekt", link);
         }
 
+        public void AddFormal(Link link)
+        {
+            AddLink("formal", link);
+        }
+
         public void AddRolle(Link link)
         {
             AddLink("rolle", link);

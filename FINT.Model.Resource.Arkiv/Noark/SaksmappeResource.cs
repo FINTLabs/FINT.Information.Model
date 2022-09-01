@@ -21,6 +21,11 @@ namespace FINT.Model.Arkiv.Noark
         
             
 
+        public void AddSaksmappetype(Link link)
+        {
+            AddLink("saksmappetype", link);
+        }
+
         public void AddSaksstatus(Link link)
         {
             AddLink("saksstatus", link);

@@ -16,6 +16,7 @@ namespace FINT.Model.Administrasjon.Personal
 			ARBEIDSFORHOLDSTYPE,
 			ART,
 			DIVERSE,
+			FORMAL,
 			FUNKSJON,
 			KONTRAKT,
 			LOPENUMMER,
