@@ -53,5 +53,10 @@ namespace FINT.Model.Utdanning.Elev
         {
             AddLink("skole", link);
         }
+
+        public void AddSensor(Link link)
+        {
+            AddLink("sensor", link);
+        }
     }
 }

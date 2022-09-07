@@ -24,6 +24,7 @@ namespace FINT.Model.Administrasjon.Fullmakt
 			KONTRAKT,
 			FULLMEKTIG,
 			PROSJEKT,
+			FORMAL,
 			ROLLE,
 			LOPENUMMER
         }

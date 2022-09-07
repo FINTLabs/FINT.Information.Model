@@ -11,7 +11,8 @@ namespace FINT.Model.Utdanning.Vurdering
 		public enum Relasjonsnavn
         {
 			ELEVFORHOLD,
-			EKSAMENSGRUPPE
+			EKSAMENSGRUPPE,
+			NUS
         }
         
 	

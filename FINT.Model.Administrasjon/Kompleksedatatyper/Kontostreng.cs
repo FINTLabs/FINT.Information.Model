@@ -13,6 +13,7 @@ namespace FINT.Model.Administrasjon.Kompleksedatatyper
 			ANSVAR,
 			ART,
 			DIVERSE,
+			FORMAL,
 			FUNKSJON,
 			KONTRAKT,
 			LOPENUMMER,

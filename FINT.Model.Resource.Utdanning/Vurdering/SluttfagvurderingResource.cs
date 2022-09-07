@@ -23,5 +23,10 @@ namespace FINT.Model.Utdanning.Vurdering
         {
             AddLink("eksamensgruppe", link);
         }
+
+        public void AddKarakterhistorie(Link link)
+        {
+            AddLink("karakterhistorie", link);
+        }
     }
 }

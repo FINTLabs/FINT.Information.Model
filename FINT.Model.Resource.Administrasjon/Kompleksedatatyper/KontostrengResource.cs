@@ -54,6 +54,11 @@ namespace FINT.Model.Administrasjon.Kompleksedatatyper
             AddLink("diverse", link);
         }
 
+        public void AddFormal(Link link)
+        {
+            AddLink("formal", link);
+        }
+
         public void AddFunksjon(Link link)
         {
             AddLink("funksjon", link);
