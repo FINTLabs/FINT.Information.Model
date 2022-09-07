@@ -36,6 +36,11 @@ namespace FINT.Model.Utdanning.Vurdering
             AddLink("termin", link);
         }
 
+        public void AddEksamensform(Link link)
+        {
+            AddLink("eksamensform", link);
+        }
+
         public void AddSkolear(Link link)
         {
             AddLink("skolear", link);
@@ -49,6 +54,11 @@ namespace FINT.Model.Utdanning.Vurdering
         public void AddGruppemedlemskap(Link link)
         {
             AddLink("gruppemedlemskap", link);
+        }
+
+        public void AddSensor(Link link)
+        {
+            AddLink("sensor", link);
         }
     }
 }

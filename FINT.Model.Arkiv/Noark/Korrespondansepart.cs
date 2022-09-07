@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 
 using FINT.Model.Felles.Kompleksedatatyper;
+using FINT.Model.Arkiv.Noark;
 
 namespace FINT.Model.Arkiv.Noark
 {
@@ -20,6 +21,7 @@ namespace FINT.Model.Arkiv.Noark
 		public string Kontaktperson { get; set; }
 		public string KorrespondansepartNavn { get; set; }
 		public string Organisasjonsnummer { get; set; }
+		public Skjerming Skjerming { get; set; }
 		
 	}
 }

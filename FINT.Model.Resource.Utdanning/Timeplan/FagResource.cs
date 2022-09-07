@@ -24,6 +24,11 @@ namespace FINT.Model.Utdanning.Timeplan
             AddLink("tilrettelegging", link);
         }
 
+        public void AddFaggruppe(Link link)
+        {
+            AddLink("faggruppe", link);
+        }
+
         public void AddSkole(Link link)
         {
             AddLink("skole", link);

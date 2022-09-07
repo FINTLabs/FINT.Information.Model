@@ -72,6 +72,11 @@ namespace FINT.Model.Administrasjon.Personal
             AddLink("diverse", link);
         }
 
+        public void AddFormal(Link link)
+        {
+            AddLink("formal", link);
+        }
+
         public void AddFunksjon(Link link)
         {
             AddLink("funksjon", link);

@@ -40,5 +40,10 @@ namespace FINT.Model.Utdanning.Vurdering
         {
             AddLink("eksamensgruppe", link);
         }
+
+        public void AddNus(Link link)
+        {
+            AddLink("nus", link);
+        }
     }
 }

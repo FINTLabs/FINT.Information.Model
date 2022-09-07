@@ -13,7 +13,8 @@ namespace FINT.Model.Utdanning.Elev
 			PERSON,
 			PERSONALRESSURS,
 			UNDERVISNINGSFORHOLD,
-			SKOLE
+			SKOLE,
+			SENSOR
         }
         
 	
