@@ -11,6 +11,7 @@ namespace FINT.Model.Utdanning.Vurdering
 		public enum Relasjonsnavn
         {
 			REGISTRERTAV,
+			FAGGRUPPE,
 			UNDERVISNINGSGRUPPE,
 			FRAVARSTYPE
         }

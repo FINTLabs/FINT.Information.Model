@@ -40,6 +40,11 @@ namespace FINT.Model.Utdanning.Vurdering
             AddLink("registrertAv", link);
         }
 
+        public void AddFaggruppe(Link link)
+        {
+            AddLink("faggruppe", link);
+        }
+
         public void AddUndervisningsgruppe(Link link)
         {
             AddLink("undervisningsgruppe", link);
