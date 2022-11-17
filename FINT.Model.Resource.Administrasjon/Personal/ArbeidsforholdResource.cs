@@ -117,6 +117,11 @@ namespace FINT.Model.Administrasjon.Personal
             AddLink("timerPerUke", link);
         }
 
+        public void AddArbeidslokasjon(Link link)
+        {
+            AddLink("arbeidslokasjon", link);
+        }
+
         public void AddArbeidssted(Link link)
         {
             AddLink("arbeidssted", link);

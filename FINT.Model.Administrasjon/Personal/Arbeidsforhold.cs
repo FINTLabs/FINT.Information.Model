@@ -25,6 +25,7 @@ namespace FINT.Model.Administrasjon.Personal
 			RAMME,
 			STILLINGSKODE,
 			TIMERPERUKE,
+			ARBEIDSLOKASJON,
 			ARBEIDSSTED,
 			PERSONALLEDER,
 			FASTLONN,

@@ -16,6 +16,7 @@ namespace FINT.Model.Arkiv.Kulturminnevern
         public string KulturminneId { get; set; }
         public MatrikkelnummerResource Matrikkelnummer { get; set; }
         public Identifikator Soknadsnummer { get; set; }
+        public string Tiltak { get; set; }
         
     }
 }
