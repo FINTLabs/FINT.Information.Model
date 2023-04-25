@@ -15,5 +15,11 @@ namespace FINT.Model.Felles
     
         public Identifikator VirksomhetsId { get; set; }
         
+            
+
+        public void AddLarling(Link link)
+        {
+            AddLink("larling", link);
+        }
     }
 }

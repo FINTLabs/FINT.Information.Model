@@ -4,18 +4,20 @@ using System.Collections.Generic;
 
 
 using FINT.Model.Felles.Kompleksedatatyper;
-using FINT.Model.Felles.Basisklasser;
 
-namespace FINT.Model.Felles
+namespace FINT.Model.Utdanning.OT
 {
-	public class Virksomhet : Enhet {
+	public class OTUngdom {
 		public enum Relasjonsnavn
         {
-			LARLING
+			PERSON,
+			STATUS,
+			PROGRAMOMRADEMEDLEMSKAP,
+			ENHET
         }
         
 	
-		public Identifikator VirksomhetsId { get; set; }
+		public Identifikator SystemId { get; set; }
 		
 	}
 }
