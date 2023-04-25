@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
-using FINT.Model.Utdanning.Basisklasser;
+using FINT.Model.Felles.Kompleksedatatyper;
 
-namespace FINT.Model.Utdanning.Utdanningsprogram
+namespace FINT.Model.Utdanning.OT
 {
 
-    public class ProgramomrademedlemskapResource : Gruppemedlemskap 
+    public class OTUngdomResource 
     {
 
     
-        public ProgramomrademedlemskapResource()
+        public Identifikator SystemId { get; set; }
+        
+        public OTUngdomResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -31,24 +33,24 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
      
             
 
-        public void AddElevforhold(Link link)
+        public void AddPerson(Link link)
         {
-            AddLink("elevforhold", link);
+            AddLink("person", link);
         }
 
-        public void AddProgramomrade(Link link)
+        public void AddStatus(Link link)
         {
-            AddLink("programomrade", link);
+            AddLink("status", link);
         }
 
-        public void AddLarling(Link link)
+        public void AddProgramomrademedlemskap(Link link)
         {
-            AddLink("larling", link);
+            AddLink("programomrademedlemskap", link);
         }
 
-        public void AddOtungdom(Link link)
+        public void AddEnhet(Link link)
         {
-            AddLink("otungdom", link);
+            AddLink("enhet", link);
         }
     }
 }
