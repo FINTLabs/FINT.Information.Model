@@ -66,9 +66,19 @@ namespace FINT.Model.Felles
             AddLink("foreldre", link);
         }
 
+        public void AddLarling(Link link)
+        {
+            AddLink("larling", link);
+        }
+
         public void AddElev(Link link)
         {
             AddLink("elev", link);
+        }
+
+        public void AddOtungdom(Link link)
+        {
+            AddLink("otungdom", link);
         }
     }
 }
