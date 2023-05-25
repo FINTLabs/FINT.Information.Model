@@ -12,8 +12,8 @@ namespace FINT.Model.Utdanning.OT
         {
 			PERSON,
 			STATUS,
-			PROGRAMOMRADEMEDLEMSKAP,
-			ENHET
+			ENHET,
+			PROGRAMOMRADE
         }
         
 	
