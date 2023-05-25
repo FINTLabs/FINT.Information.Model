@@ -45,9 +45,9 @@ namespace FINT.Model.Utdanning.Larling
             AddLink("bedrift", link);
         }
 
-        public void AddProgramomrademedlemskap(Link link)
+        public void AddProgramomrade(Link link)
         {
-            AddLink("programomrademedlemskap", link);
+            AddLink("programomrade", link);
         }
     }
 }

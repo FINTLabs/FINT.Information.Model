@@ -12,7 +12,7 @@ namespace FINT.Model.Utdanning.Larling
         {
 			PERSON,
 			BEDRIFT,
-			PROGRAMOMRADEMEDLEMSKAP
+			PROGRAMOMRADE
         }
         
 	

@@ -40,15 +40,5 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
         {
             AddLink("programomrade", link);
         }
-
-        public void AddLarling(Link link)
-        {
-            AddLink("larling", link);
-        }
-
-        public void AddOtungdom(Link link)
-        {
-            AddLink("otungdom", link);
-        }
     }
 }
