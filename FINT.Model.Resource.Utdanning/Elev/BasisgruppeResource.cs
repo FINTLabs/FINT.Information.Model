@@ -14,14 +14,14 @@ namespace FINT.Model.Utdanning.Elev
     
             
 
-        public void AddSkolear(Link link)
-        {
-            AddLink("skolear", link);
-        }
-
         public void AddElevforhold(Link link)
         {
             AddLink("elevforhold", link);
+        }
+
+        public void AddSkolear(Link link)
+        {
+            AddLink("skolear", link);
         }
 
         public void AddTermin(Link link)
@@ -39,11 +39,6 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("skole", link);
         }
 
-        public void AddUndervisningsforhold(Link link)
-        {
-            AddLink("undervisningsforhold", link);
-        }
-
         public void AddGruppemedlemskap(Link link)
         {
             AddLink("gruppemedlemskap", link);
@@ -52,6 +47,11 @@ namespace FINT.Model.Utdanning.Elev
         public void AddKontaktlarergruppe(Link link)
         {
             AddLink("kontaktlarergruppe", link);
+        }
+
+        public void AddUndervisningsforhold(Link link)
+        {
+            AddLink("undervisningsforhold", link);
         }
     }
 }

@@ -22,11 +22,6 @@ namespace FINT.Model.Utdanning.Elev
         
             
 
-        public void AddElev(Link link)
-        {
-            AddLink("elev", link);
-        }
-
         public void AddSidemal(Link link)
         {
             AddLink("sidemal", link);
@@ -57,6 +52,11 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("fravarsregistreringer", link);
         }
 
+        public void AddElev(Link link)
+        {
+            AddLink("elev", link);
+        }
+
         public void AddFaggruppemedlemskap(Link link)
         {
             AddLink("faggruppemedlemskap", link);
@@ -67,9 +67,19 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("skolear", link);
         }
 
-        public void AddBasisgruppe(Link link)
+        public void AddTilrettelegging(Link link)
         {
-            AddLink("basisgruppe", link);
+            AddLink("tilrettelegging", link);
+        }
+
+        public void AddPersongruppemedlemskap(Link link)
+        {
+            AddLink("persongruppemedlemskap", link);
+        }
+
+        public void AddKontaktlarergruppemedlemskap(Link link)
+        {
+            AddLink("kontaktlarergruppemedlemskap", link);
         }
 
         public void AddBasisgruppemedlemskap(Link link)
@@ -80,6 +90,11 @@ namespace FINT.Model.Utdanning.Elev
         public void AddUndervisningsgruppemedlemskap(Link link)
         {
             AddLink("undervisningsgruppemedlemskap", link);
+        }
+
+        public void AddBasisgruppe(Link link)
+        {
+            AddLink("basisgruppe", link);
         }
 
         public void AddVurdering(Link link)
@@ -112,29 +127,14 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("sluttfagvurdering", link);
         }
 
-        public void AddPersongruppemedlemskap(Link link)
-        {
-            AddLink("persongruppemedlemskap", link);
-        }
-
         public void AddEksamensgruppemedlemskap(Link link)
         {
             AddLink("eksamensgruppemedlemskap", link);
         }
 
-        public void AddKontaktlarergruppemedlemskap(Link link)
-        {
-            AddLink("kontaktlarergruppemedlemskap", link);
-        }
-
         public void AddElevfravar(Link link)
         {
             AddLink("elevfravar", link);
-        }
-
-        public void AddTilrettelegging(Link link)
-        {
-            AddLink("tilrettelegging", link);
         }
 
         public void AddHalvarsordensvurdering(Link link)

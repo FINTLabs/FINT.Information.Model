@@ -33,11 +33,6 @@ namespace FINT.Model.Utdanning.Elev
      
             
 
-        public void AddElev(Link link)
-        {
-            AddLink("elev", link);
-        }
-
         public void AddFag(Link link)
         {
             AddLink("fag", link);
@@ -46,6 +41,11 @@ namespace FINT.Model.Utdanning.Elev
         public void AddTilrettelegging(Link link)
         {
             AddLink("tilrettelegging", link);
+        }
+
+        public void AddElev(Link link)
+        {
+            AddLink("elev", link);
         }
     }
 }

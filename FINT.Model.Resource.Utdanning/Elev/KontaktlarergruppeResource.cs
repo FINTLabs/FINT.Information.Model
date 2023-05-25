@@ -14,11 +14,6 @@ namespace FINT.Model.Utdanning.Elev
     
             
 
-        public void AddBasisgruppe(Link link)
-        {
-            AddLink("basisgruppe", link);
-        }
-
         public void AddElevforhold(Link link)
         {
             AddLink("elevforhold", link);
@@ -39,14 +34,19 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("skolear", link);
         }
 
-        public void AddUndervisningsforhold(Link link)
+        public void AddBasisgruppe(Link link)
         {
-            AddLink("undervisningsforhold", link);
+            AddLink("basisgruppe", link);
         }
 
         public void AddGruppemedlemskap(Link link)
         {
             AddLink("gruppemedlemskap", link);
+        }
+
+        public void AddUndervisningsforhold(Link link)
+        {
+            AddLink("undervisningsforhold", link);
         }
     }
 }

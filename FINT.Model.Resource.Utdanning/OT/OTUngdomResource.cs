@@ -43,9 +43,9 @@ namespace FINT.Model.Utdanning.OT
             AddLink("status", link);
         }
 
-        public void AddProgramomrademedlemskap(Link link)
+        public void AddProgramomrade(Link link)
         {
-            AddLink("programomrademedlemskap", link);
+            AddLink("programomrade", link);
         }
 
         public void AddEnhet(Link link)

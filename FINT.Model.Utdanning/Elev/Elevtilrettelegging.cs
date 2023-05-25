@@ -10,9 +10,9 @@ namespace FINT.Model.Utdanning.Elev
 	public class Elevtilrettelegging {
 		public enum Relasjonsnavn
         {
-			ELEV,
 			FAG,
-			TILRETTELEGGING
+			TILRETTELEGGING,
+			ELEV
         }
         
 	

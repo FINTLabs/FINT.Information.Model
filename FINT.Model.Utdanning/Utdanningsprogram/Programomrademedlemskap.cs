@@ -11,9 +11,7 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
 		public enum Relasjonsnavn
         {
 			ELEVFORHOLD,
-			PROGRAMOMRADE,
-			LARLING,
-			OTUNGDOM
+			PROGRAMOMRADE
         }
         
 	

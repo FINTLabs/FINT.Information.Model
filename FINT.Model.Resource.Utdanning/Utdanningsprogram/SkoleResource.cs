@@ -41,9 +41,9 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
             AddLink("vigoreferanse", link);
         }
 
-        public void AddBasisgruppe(Link link)
+        public void AddSkoleressurs(Link link)
         {
-            AddLink("basisgruppe", link);
+            AddLink("skoleressurs", link);
         }
 
         public void AddElevforhold(Link link)
@@ -56,9 +56,9 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
             AddLink("kontaktlarergruppe", link);
         }
 
-        public void AddSkoleressurs(Link link)
+        public void AddBasisgruppe(Link link)
         {
-            AddLink("skoleressurs", link);
+            AddLink("basisgruppe", link);
         }
 
         public void AddUndervisningsforhold(Link link)

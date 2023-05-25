@@ -10,10 +10,10 @@ namespace FINT.Model.Utdanning.Elev
 	public class Persongruppe : Gruppe {
 		public enum Relasjonsnavn
         {
-			ELEV,
 			PERSONGRUPPEMEDLEMSKAP,
 			TERMIN,
 			UNDERVISNINGSFORHOLD,
+			ELEV,
 			SKOLE,
 			SKOLERESSURS,
 			SKOLEAR

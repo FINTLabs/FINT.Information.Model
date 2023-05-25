@@ -21,14 +21,14 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("arbeidsforhold", link);
         }
 
-        public void AddBasisgruppe(Link link)
-        {
-            AddLink("basisgruppe", link);
-        }
-
         public void AddKontaktlarergruppe(Link link)
         {
             AddLink("kontaktlarergruppe", link);
+        }
+
+        public void AddBasisgruppe(Link link)
+        {
+            AddLink("basisgruppe", link);
         }
 
         public void AddUndervisningsgruppe(Link link)

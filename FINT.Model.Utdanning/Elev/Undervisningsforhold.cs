@@ -11,8 +11,8 @@ namespace FINT.Model.Utdanning.Elev
 		public enum Relasjonsnavn
         {
 			ARBEIDSFORHOLD,
-			BASISGRUPPE,
 			KONTAKTLARERGRUPPE,
+			BASISGRUPPE,
 			UNDERVISNINGSGRUPPE,
 			EKSAMENSGRUPPE,
 			TIME,

@@ -10,14 +10,14 @@ namespace FINT.Model.Utdanning.Elev
 	public class Basisgruppe : Gruppe {
 		public enum Relasjonsnavn
         {
-			SKOLEAR,
 			ELEVFORHOLD,
+			SKOLEAR,
 			TERMIN,
 			TRINN,
 			SKOLE,
-			UNDERVISNINGSFORHOLD,
 			GRUPPEMEDLEMSKAP,
-			KONTAKTLARERGRUPPE
+			KONTAKTLARERGRUPPE,
+			UNDERVISNINGSFORHOLD
         }
         
 	
