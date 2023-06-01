@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINT.Information.Model", "FINT.Information.Model\FINT.Information.Model.csproj", "{48FA4019-162F-438A-8096-28CE51406148}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FINT.Model.Felles", "FINT.Model.Felles\FINT.Model.Felles.csproj", "{D2A18A21-1079-4BE8-B018-7B1E0CEF1977}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FINT.Model.Resource.Felles", "FINT.Model.Resource.Felles\FINT.Model.Resource.Felles.csproj", "{67682DF2-108F-472D-85DF-C2AEA4D661C6}"
@@ -23,17 +21,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FINT.Model.Resource.Utdanni
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FINT.Model.Resource.Utdanning.Tests", "FINT.Model.Resource.Utdanning.Tests\FINT.Model.Resource.Utdanning.Tests.csproj", "{97FFA3F2-5195-40AA-8862-38F70D0DF012}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINT.Model.Arkiv", "FINT.Model.Arkiv\FINT.Model.Arkiv.csproj", "{50EECBE6-A2F9-480E-B7E6-2FB5D7F2315C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FINT.Model.Arkiv", "FINT.Model.Arkiv\FINT.Model.Arkiv.csproj", "{50EECBE6-A2F9-480E-B7E6-2FB5D7F2315C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINT.Model.Resource.Arkiv", "FINT.Model.Resource.Arkiv\FINT.Model.Resource.Arkiv.csproj", "{F94F6E6F-8D5E-45B2-B90F-802C2C9B8698}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FINT.Model.Resource.Arkiv", "FINT.Model.Resource.Arkiv\FINT.Model.Resource.Arkiv.csproj", "{F94F6E6F-8D5E-45B2-B90F-802C2C9B8698}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINT.Model.Okonomi", "FINT.Model.Okonomi\FINT.Model.Okonomi.csproj", "{4C383E04-E67E-4588-AD4C-DD49A2F0D134}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FINT.Model.Okonomi", "FINT.Model.Okonomi\FINT.Model.Okonomi.csproj", "{4C383E04-E67E-4588-AD4C-DD49A2F0D134}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINT.Model.Resource.Okonomi", "FINT.Model.Resource.Okonomi\FINT.Model.Resource.Okonomi.csproj", "{A144A6A7-2C30-4172-AA1A-0D9D7629C990}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FINT.Model.Resource.Okonomi", "FINT.Model.Resource.Okonomi\FINT.Model.Resource.Okonomi.csproj", "{A144A6A7-2C30-4172-AA1A-0D9D7629C990}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINT.Model.Personvern", "FINT.Model.Personvern\FINT.Model.Personvern.csproj", "{598FAD37-021D-4095-9FD2-E19598F35520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FINT.Model.Personvern", "FINT.Model.Personvern\FINT.Model.Personvern.csproj", "{598FAD37-021D-4095-9FD2-E19598F35520}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FINT.Model.Resource.Personvern", "FINT.Model.Resource.Personvern\FINT.Model.Resource.Personvern.csproj", "{BD486550-239A-466A-BFFF-29F0FE30BA6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FINT.Model.Resource.Personvern", "FINT.Model.Resource.Personvern\FINT.Model.Resource.Personvern.csproj", "{BD486550-239A-466A-BFFF-29F0FE30BA6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{48FA4019-162F-438A-8096-28CE51406148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48FA4019-162F-438A-8096-28CE51406148}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48FA4019-162F-438A-8096-28CE51406148}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48FA4019-162F-438A-8096-28CE51406148}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D2A18A21-1079-4BE8-B018-7B1E0CEF1977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D2A18A21-1079-4BE8-B018-7B1E0CEF1977}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2A18A21-1079-4BE8-B018-7B1E0CEF1977}.Release|Any CPU.ActiveCfg = Release|Any CPU
