@@ -9,7 +9,7 @@ using FINT.Model.Felles.Basisklasser;
 namespace FINT.Model.Administrasjon.Organisasjon
 {
 	public class Arbeidslokasjon : Enhet {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			ARBEIDSFORHOLD
         }

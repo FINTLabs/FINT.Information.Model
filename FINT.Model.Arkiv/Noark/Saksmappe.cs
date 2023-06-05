@@ -8,7 +8,7 @@ using FINT.Model.Arkiv.Noark;
 namespace FINT.Model.Arkiv.Noark
 {
 	public abstract class Saksmappe : Mappe {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			SAKSMAPPETYPE,
 			SAKSSTATUS,

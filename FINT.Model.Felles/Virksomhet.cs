@@ -9,7 +9,7 @@ using FINT.Model.Felles.Basisklasser;
 namespace FINT.Model.Felles
 {
 	public class Virksomhet : Enhet {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			LARLING
         }

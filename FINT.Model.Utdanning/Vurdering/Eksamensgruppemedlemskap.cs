@@ -8,7 +8,7 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Vurdering
 {
 	public class Eksamensgruppemedlemskap : Gruppemedlemskap {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			ELEVFORHOLD,
 			EKSAMENSGRUPPE,

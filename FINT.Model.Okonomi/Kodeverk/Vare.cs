@@ -9,7 +9,7 @@ using FINT.Model.Felles.Basisklasser;
 namespace FINT.Model.Okonomi.Kodeverk
 {
 	public class Vare : Begrep {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			FAKTURAUTSTEDER,
 			MERVERDIAVGIFT

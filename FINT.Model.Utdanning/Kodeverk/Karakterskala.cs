@@ -8,7 +8,7 @@ using FINT.Model.Felles.Basisklasser;
 namespace FINT.Model.Utdanning.Kodeverk
 {
 	public class Karakterskala : Begrep {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			VIGOREFERANSE,
 			VERDI

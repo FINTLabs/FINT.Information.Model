@@ -10,7 +10,7 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Elev
 {
 	public class Elevforhold : Utdanningsforhold {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			ELEV,
 			SIDEMAL,

@@ -8,7 +8,7 @@ using FINT.Model.Felles.Basisklasser;
 namespace FINT.Model.Administrasjon.Kodeverk
 {
 	public abstract class Kontodimensjon : Begrep {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			FULLMAKT
         }

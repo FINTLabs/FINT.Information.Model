@@ -8,7 +8,7 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Elev
 {
 	public class Basisgruppe : Gruppe {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			SKOLEAR,
 			ELEVFORHOLD,

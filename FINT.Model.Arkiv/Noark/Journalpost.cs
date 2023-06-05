@@ -8,7 +8,7 @@ using FINT.Model.Arkiv.Noark;
 namespace FINT.Model.Arkiv.Noark
 {
 	public class Journalpost : Registrering {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			JOURNALPOSTTYPE,
 			JOURNALSTATUS,

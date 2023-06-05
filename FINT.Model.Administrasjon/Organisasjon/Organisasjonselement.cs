@@ -9,7 +9,7 @@ using FINT.Model.Felles.Basisklasser;
 namespace FINT.Model.Administrasjon.Organisasjon
 {
 	public class Organisasjonselement : Enhet {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			ANSVAR,
 			LEDER,

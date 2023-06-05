@@ -8,7 +8,7 @@ using FINT.Model.Felles.Basisklasser;
 namespace FINT.Model.Felles.Kodeverk
 {
 	public class Kommune : Begrep {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			FYLKE
         }

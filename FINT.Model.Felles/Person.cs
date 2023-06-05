@@ -9,7 +9,7 @@ using FINT.Model.Felles.Basisklasser;
 namespace FINT.Model.Felles
 {
 	public class Person : Aktor {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			STATSBORGERSKAP,
 			KOMMUNE,

@@ -9,7 +9,7 @@ using FINT.Model.Felles.Basisklasser;
 namespace FINT.Model.Utdanning.Utdanningsprogram
 {
 	public class Skole : Enhet {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			ORGANISASJON,
 			FAG,
