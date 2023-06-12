@@ -8,7 +8,7 @@ using FINT.Model.Utdanning.Vurdering;
 namespace FINT.Model.Utdanning.Vurdering
 {
 	public class Halvarsfagvurdering : Fagvurdering {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			ELEVFORHOLD
         }

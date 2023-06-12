@@ -8,7 +8,7 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Elev
 {
 	public class Undervisningsforhold : Utdanningsforhold {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			ARBEIDSFORHOLD,
 			BASISGRUPPE,
