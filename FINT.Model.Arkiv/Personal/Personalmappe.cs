@@ -9,7 +9,7 @@ using FINT.Model.Arkiv.Noark;
 namespace FINT.Model.Arkiv.Personal
 {
 	public class Personalmappe : Saksmappe {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			PERSON,
 			LEDER,

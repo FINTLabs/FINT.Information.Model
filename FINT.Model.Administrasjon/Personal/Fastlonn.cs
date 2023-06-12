@@ -8,7 +8,7 @@ using FINT.Model.Administrasjon.Personal;
 namespace FINT.Model.Administrasjon.Personal
 {
 	public class Fastlonn : Lonn {
-		public enum Relasjonsnavn
+		public new enum Relasjonsnavn
         {
 			LONNSART,
 			ARBEIDSFORHOLD
