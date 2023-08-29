@@ -12,5 +12,11 @@ namespace FINT.Model.Administrasjon.Kodeverk
     {
 
     
+            
+
+        public void AddProsjektart(Link link)
+        {
+            AddLink("prosjektart", link);
+        }
     }
 }

@@ -7,10 +7,12 @@ using FINT.Model.Felles.Basisklasser;
 
 namespace FINT.Model.Utdanning.Kodeverk
 {
-	public class OTStatus : Begrep {
+	public class OtEnhet : Begrep {
+		public enum Relasjonsnavn
+        {
+			KOMMUNE
+        }
+        
 	
-		public string Beskrivelse { get; set; }
-		public string Type { get; set; }
-		
 	}
 }
