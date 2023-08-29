@@ -19,6 +19,7 @@ namespace FINT.Model.Personvern.Samtykke
 	
 		public bool Aktiv { get; set; }
 		public string Formal { get; set; }
+		public DateTime? Slettet { get; set; }
 		public Identifikator SystemId { get; set; }
 		
 	}

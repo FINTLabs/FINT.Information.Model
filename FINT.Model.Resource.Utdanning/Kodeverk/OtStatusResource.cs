@@ -8,11 +8,14 @@ using FINT.Model.Felles.Basisklasser;
 namespace FINT.Model.Utdanning.Kodeverk
 {
 
-    public class OTEnhetResource : Begrep 
+    public class OtStatusResource : Begrep 
     {
 
     
-        public OTEnhetResource()
+        public string Beskrivelse { get; set; }
+        public string Type { get; set; }
+        
+        public OtStatusResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -29,11 +32,5 @@ namespace FINT.Model.Utdanning.Kodeverk
             Links[key].Add(link);
         }
      
-            
-
-        public void AddKommune(Link link)
-        {
-            AddLink("kommune", link);
-        }
     }
 }
