@@ -19,6 +19,7 @@ namespace FINT.Model.Administrasjon.Kompleksedatatyper
 			LOPENUMMER,
 			OBJEKT,
 			PROSJEKT,
+			PROSJEKTART,
 			RAMME
         }
         

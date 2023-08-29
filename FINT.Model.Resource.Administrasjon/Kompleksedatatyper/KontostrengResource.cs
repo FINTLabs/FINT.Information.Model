@@ -84,6 +84,11 @@ namespace FINT.Model.Administrasjon.Kompleksedatatyper
             AddLink("prosjekt", link);
         }
 
+        public void AddProsjektart(Link link)
+        {
+            AddLink("prosjektart", link);
+        }
+
         public void AddRamme(Link link)
         {
             AddLink("ramme", link);

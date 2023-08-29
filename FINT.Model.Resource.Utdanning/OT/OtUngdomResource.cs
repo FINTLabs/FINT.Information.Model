@@ -8,13 +8,13 @@ using FINT.Model.Felles.Kompleksedatatyper;
 namespace FINT.Model.Utdanning.OT
 {
 
-    public class OTUngdomResource 
+    public class OtUngdomResource 
     {
 
     
         public Identifikator SystemId { get; set; }
         
-        public OTUngdomResource()
+        public OtUngdomResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }

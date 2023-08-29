@@ -7,7 +7,7 @@ using FINT.Model.Felles.Kompleksedatatyper;
 
 namespace FINT.Model.Utdanning.OT
 {
-	public class OTUngdom {
+	public class OtUngdom {
 		public enum Relasjonsnavn
         {
 			PERSON,

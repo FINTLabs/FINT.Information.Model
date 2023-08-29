@@ -15,6 +15,7 @@ namespace FINT.Model.Personvern.Samtykke
         
 	
 		public string Navn { get; set; }
+		public DateTime? Slettet { get; set; }
 		public Identifikator SystemId { get; set; }
 		
 	}
