@@ -21,6 +21,11 @@ namespace FINT.Model.Utdanning.Vurdering
             AddLink("elevforhold", link);
         }
 
+        public void AddEksamensdato(Link link)
+        {
+            AddLink("eksamensdato", link);
+        }
+
         public void AddFag(Link link)
         {
             AddLink("fag", link);

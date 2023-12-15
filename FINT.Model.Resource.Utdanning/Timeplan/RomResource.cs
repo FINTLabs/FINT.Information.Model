@@ -38,5 +38,10 @@ namespace FINT.Model.Utdanning.Timeplan
         {
             AddLink("time", link);
         }
+
+        public void AddEksamen(Link link)
+        {
+            AddLink("eksamen", link);
+        }
     }
 }

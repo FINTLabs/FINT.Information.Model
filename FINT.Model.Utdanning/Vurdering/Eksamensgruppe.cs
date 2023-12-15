@@ -11,6 +11,7 @@ namespace FINT.Model.Utdanning.Vurdering
 		public new enum Relasjonsnavn
         {
 			ELEVFORHOLD,
+			EKSAMENSDATO,
 			FAG,
 			SKOLE,
 			TERMIN,
