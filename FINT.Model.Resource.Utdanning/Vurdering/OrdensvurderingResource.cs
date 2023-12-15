@@ -40,14 +40,14 @@ namespace FINT.Model.Utdanning.Vurdering
             AddLink("atferd", link);
         }
 
-        public void AddOrden(Link link)
-        {
-            AddLink("orden", link);
-        }
-
         public void AddSkolear(Link link)
         {
             AddLink("skolear", link);
+        }
+
+        public void AddOrden(Link link)
+        {
+            AddLink("orden", link);
         }
     }
 }

@@ -10,6 +10,8 @@ namespace FINT.Model.Utdanning.Timeplan
 	public class Faggruppemedlemskap : Gruppemedlemskap {
 		public enum Relasjonsnavn
         {
+			FAGMERKNAD,
+			FAGSTATUS,
 			ELEVFORHOLD,
 			FAGGRUPPE
         }

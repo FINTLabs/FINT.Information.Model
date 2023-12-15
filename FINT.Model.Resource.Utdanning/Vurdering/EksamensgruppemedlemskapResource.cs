@@ -12,6 +12,9 @@ namespace FINT.Model.Utdanning.Vurdering
     {
 
     
+        public bool? Delegert { get; set; }
+        public string Kandidatnummer { get; set; }
+        
         public EksamensgruppemedlemskapResource()
         {
             Links = new Dictionary<string, List<Link>>();
@@ -31,9 +34,24 @@ namespace FINT.Model.Utdanning.Vurdering
      
             
 
+        public void AddDelegertTil(Link link)
+        {
+            AddLink("delegertTil", link);
+        }
+
         public void AddElevforhold(Link link)
         {
             AddLink("elevforhold", link);
+        }
+
+        public void AddForetrukketSkole(Link link)
+        {
+            AddLink("foretrukketSkole", link);
+        }
+
+        public void AddForetrukketSensor(Link link)
+        {
+            AddLink("foretrukketSensor", link);
         }
 
         public void AddEksamensgruppe(Link link)

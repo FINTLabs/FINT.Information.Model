@@ -5,9 +5,6 @@ namespace FINT.Model.Personvern.Samtykke
 	public enum SamtykkeActions
     {
 	
-	GET_BEHANDLING,
-	GET_ALL_BEHANDLING,
-	UPDATE_BEHANDLING,
 	GET_SAMTYKKE,
 	GET_ALL_SAMTYKKE,
 	UPDATE_SAMTYKKE,

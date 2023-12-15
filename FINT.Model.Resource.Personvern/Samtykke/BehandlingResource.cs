@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
-using FINT.Model.Felles.Kompleksedatatyper;
-
 namespace FINT.Model.Personvern.Samtykke
 {
 
@@ -15,7 +13,7 @@ namespace FINT.Model.Personvern.Samtykke
         public bool Aktiv { get; set; }
         public string Formal { get; set; }
         public DateTime? Slettet { get; set; }
-        public Identifikator SystemId { get; set; }
+        public  SystemId { get; set; }
         
         public BehandlingResource()
         {

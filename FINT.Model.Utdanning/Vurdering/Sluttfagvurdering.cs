@@ -11,8 +11,8 @@ namespace FINT.Model.Utdanning.Vurdering
 		public new enum Relasjonsnavn
         {
 			ELEVFORHOLD,
-			EKSAMENSGRUPPE,
-			KARAKTERHISTORIE
+			KARAKTERHISTORIE,
+			EKSAMENSGRUPPE
         }
         
 	
