@@ -19,14 +19,14 @@ namespace FINT.Model.Utdanning.Vurdering
             AddLink("elevforhold", link);
         }
 
-        public void AddEksamensgruppe(Link link)
-        {
-            AddLink("eksamensgruppe", link);
-        }
-
         public void AddKarakterhistorie(Link link)
         {
             AddLink("karakterhistorie", link);
+        }
+
+        public void AddEksamensgruppe(Link link)
+        {
+            AddLink("eksamensgruppe", link);
         }
     }
 }

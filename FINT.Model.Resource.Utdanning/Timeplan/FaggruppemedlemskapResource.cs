@@ -31,6 +31,16 @@ namespace FINT.Model.Utdanning.Timeplan
      
             
 
+        public void AddFagmerknad(Link link)
+        {
+            AddLink("fagmerknad", link);
+        }
+
+        public void AddFagstatus(Link link)
+        {
+            AddLink("fagstatus", link);
+        }
+
         public void AddElevforhold(Link link)
         {
             AddLink("elevforhold", link);

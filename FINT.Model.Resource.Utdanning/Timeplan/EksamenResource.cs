@@ -5,18 +5,19 @@ using FINT.Model.Resource;
 
 using FINT.Model.Felles.Kompleksedatatyper;
 
-namespace FINT.Model.Utdanning.Vurdering
+namespace FINT.Model.Utdanning.Timeplan
 {
 
-    public class VurderingResource 
+    public class EksamenResource 
     {
 
     
-        public bool Endelig { get; set; }
-        public string Kommentar { get; set; }
+        public string Beskrivelse { get; set; }
+        public string Navn { get; set; }
         public Identifikator SystemId { get; set; }
+        public Periode Tidsrom { get; set; }
         
-        public VurderingResource()
+        public EksamenResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -35,24 +36,9 @@ namespace FINT.Model.Utdanning.Vurdering
      
             
 
-        public void AddElevforhold(Link link)
+        public void AddRom(Link link)
         {
-            AddLink("elevforhold", link);
-        }
-
-        public void AddFag(Link link)
-        {
-            AddLink("fag", link);
-        }
-
-        public void AddUndervisningsgruppe(Link link)
-        {
-            AddLink("undervisningsgruppe", link);
-        }
-
-        public void AddKarakter(Link link)
-        {
-            AddLink("karakter", link);
+            AddLink("rom", link);
         }
 
         public void AddEksamensgruppe(Link link)

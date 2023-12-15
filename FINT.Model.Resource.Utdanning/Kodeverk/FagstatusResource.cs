@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
-using FINT.Model.Felles.Kompleksedatatyper;
+using FINT.Model.Felles.Basisklasser;
 
-namespace FINT.Model.Utdanning.Vurdering
+namespace FINT.Model.Utdanning.Kodeverk
 {
 
-    public class ElevfravarResource 
+    public class FagstatusResource : Begrep 
     {
 
     
-        public Identifikator SystemId { get; set; }
-        
-        public ElevfravarResource()
+        public FagstatusResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -31,16 +29,5 @@ namespace FINT.Model.Utdanning.Vurdering
             Links[key].Add(link);
         }
      
-            
-
-        public void AddFravarsregistrering(Link link)
-        {
-            AddLink("fravarsregistrering", link);
-        }
-
-        public void AddElevforhold(Link link)
-        {
-            AddLink("elevforhold", link);
-        }
     }
 }

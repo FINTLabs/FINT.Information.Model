@@ -13,8 +13,8 @@ namespace FINT.Model.Utdanning.Vurdering
 			ELEVFORHOLD,
 			FAG,
 			UNDERVISNINGSGRUPPE,
-			EKSAMENSGRUPPE,
-			KARAKTER
+			KARAKTER,
+			EKSAMENSGRUPPE
         }
         
 	
