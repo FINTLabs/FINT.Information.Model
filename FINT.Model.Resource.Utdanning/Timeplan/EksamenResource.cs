@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
-using FINT.Model.Utdanning.Basisklasser;
+using FINT.Model.Felles.Kompleksedatatyper;
 
 namespace FINT.Model.Utdanning.Timeplan
 {
 
-    public class FaggruppemedlemskapResource : Gruppemedlemskap 
+    public class EksamenResource 
     {
 
     
-        public FaggruppemedlemskapResource()
+        public string Beskrivelse { get; set; }
+        public string Navn { get; set; }
+        public Identifikator SystemId { get; set; }
+        public Periode Tidsrom { get; set; }
+        
+        public EksamenResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -31,24 +36,14 @@ namespace FINT.Model.Utdanning.Timeplan
      
             
 
-        public void AddFagmerknad(Link link)
+        public void AddRom(Link link)
         {
-            AddLink("fagmerknad", link);
+            AddLink("rom", link);
         }
 
-        public void AddFagstatus(Link link)
+        public void AddEksamensgruppe(Link link)
         {
-            AddLink("fagstatus", link);
-        }
-
-        public void AddElevforhold(Link link)
-        {
-            AddLink("elevforhold", link);
-        }
-
-        public void AddFaggruppe(Link link)
-        {
-            AddLink("faggruppe", link);
+            AddLink("eksamensgruppe", link);
         }
     }
 }

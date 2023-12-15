@@ -11,6 +11,8 @@ namespace FINT.Model.Utdanning.Timeplan
 		public new enum Relasjonsnavn
         {
 			FAG,
+			SKOLE,
+			SKOLEAR,
 			FAGGRUPPEMEDLEMSKAP
         }
         
