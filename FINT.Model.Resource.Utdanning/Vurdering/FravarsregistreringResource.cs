@@ -15,6 +15,7 @@ namespace FINT.Model.Utdanning.Vurdering
         public bool ForesPaVitnemal { get; set; }
         public string Kommentar { get; set; }
         public Periode Periode { get; set; }
+        public Identifikator SystemId { get; set; }
         
         public FravarsregistreringResource()
         {
@@ -53,6 +54,11 @@ namespace FINT.Model.Utdanning.Vurdering
         public void AddFravarstype(Link link)
         {
             AddLink("fravarstype", link);
+        }
+
+        public void AddElevfravar(Link link)
+        {
+            AddLink("elevfravar", link);
         }
     }
 }
