@@ -13,13 +13,15 @@ namespace FINT.Model.Utdanning.Vurdering
 			REGISTRERTAV,
 			FAGGRUPPE,
 			UNDERVISNINGSGRUPPE,
-			FRAVARSTYPE
+			FRAVARSTYPE,
+			ELEVFRAVAR
         }
         
 	
 		public bool ForesPaVitnemal { get; set; }
 		public string Kommentar { get; set; }
 		public Periode Periode { get; set; }
+		public Identifikator SystemId { get; set; }
 		
 	}
 }
