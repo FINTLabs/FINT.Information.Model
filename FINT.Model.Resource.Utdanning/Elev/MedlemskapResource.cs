@@ -33,6 +33,11 @@ namespace FINT.Model.Utdanning.Elev
      
             
 
+        public void AddGruppe(Link link)
+        {
+            AddLink("gruppe", link);
+        }
+
         public void AddMedlem(Link link)
         {
             AddLink("medlem", link);
@@ -41,11 +46,6 @@ namespace FINT.Model.Utdanning.Elev
         public void AddFortlopendeVurdering(Link link)
         {
             AddLink("fortlopendeVurdering", link);
-        }
-
-        public void AddGruppe(Link link)
-        {
-            AddLink("gruppe", link);
         }
 
         public void AddEndeligVurdering(Link link)
