@@ -10,11 +10,11 @@ namespace FINT.Model.Utdanning.Elev
 	public class Medlemskap {
 		public enum Relasjonsnavn
         {
-			MEDLEM,
-			FORTLOPENDEVURDERING,
 			GRUPPE,
+			FORTLOPENDEVURDERING,
 			ENDELIGVURDERING,
-			FRAVAR
+			FRAVAR,
+			MEDLEM
         }
         
 	
