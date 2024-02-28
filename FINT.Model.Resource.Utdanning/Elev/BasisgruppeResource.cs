@@ -44,6 +44,11 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("undervisningsforhold", link);
         }
 
+        public void AddMedlemskap(Link link)
+        {
+            AddLink("medlemskap", link);
+        }
+
         public void AddGruppemedlemskap(Link link)
         {
             AddLink("gruppemedlemskap", link);

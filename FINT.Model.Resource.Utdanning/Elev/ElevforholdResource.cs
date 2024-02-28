@@ -10,7 +10,7 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Elev
 {
 
-    public class ElevforholdResource : UtdanningsforholdResource 
+    public class ElevforholdResource : Utdanningsforhold 
     {
 
     
@@ -20,6 +20,23 @@ namespace FINT.Model.Utdanning.Elev
         public bool? Hovedskole { get; set; }
         public bool? TosprakligFagopplaring { get; set; }
         
+        public ElevforholdResource()
+        {
+            Links = new Dictionary<string, List<Link>>();
+        }
+
+        [JsonProperty(PropertyName = "_links")]
+        public Dictionary<string, List<Link>> Links { get; private set; }
+
+        protected void AddLink(string key, Link link)
+        {
+            if (!Links.ContainsKey(key))
+            {
+                Links.Add(key, new List<Link>());
+            }
+            Links[key].Add(link);
+        }
+     
             
 
         public void AddElev(Link link)

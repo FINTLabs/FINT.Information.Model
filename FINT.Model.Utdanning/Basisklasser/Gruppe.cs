@@ -11,8 +11,7 @@ namespace FINT.Model.Utdanning.Basisklasser
 		public enum Relasjonsnavn
         {
 			GREPREFERANSE,
-			VIGOREFERANSE,
-			MEDLEMSKAP
+			VIGOREFERANSE
         }
         
 	

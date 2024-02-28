@@ -16,6 +16,7 @@ namespace FINT.Model.Utdanning.Elev
 			TRINN,
 			SKOLE,
 			UNDERVISNINGSFORHOLD,
+			MEDLEMSKAP,
 			GRUPPEMEDLEMSKAP,
 			KONTAKTLARERGRUPPE
         }

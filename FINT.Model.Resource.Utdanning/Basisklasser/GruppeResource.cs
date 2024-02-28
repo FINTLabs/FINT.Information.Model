@@ -45,10 +45,5 @@ namespace FINT.Model.Utdanning.Basisklasser
         {
             AddLink("vigoreferanse", link);
         }
-
-        public void AddMedlemskap(Link link)
-        {
-            AddLink("medlemskap", link);
-        }
     }
 }
