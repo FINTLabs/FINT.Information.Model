@@ -7,18 +7,18 @@ using FINT.Model.Felles.Kompleksedatatyper;
 
 namespace FINT.Model.Utdanning.Larling
 {
-	public class Larling {
+	public class AvlagtProve {
 		public enum Relasjonsnavn
         {
-			PERSON,
-			BEDRIFT,
-			PROGRAMOMRADE,
-			AVLAGTPROVE
+			PROVESTATUS,
+			LARLING,
+			FULLFORTKODE,
+			BREVTYPE,
+			BEVISTYPE
         }
         
 	
-		public string Kontraktstype { get; set; }
-		public Periode Laretid { get; set; }
+		public DateTime? Provedato { get; set; }
 		public Identifikator SystemId { get; set; }
 		
 	}

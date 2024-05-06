@@ -147,6 +147,11 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("programomrade", link);
         }
 
+        public void AddVurdering(Link link)
+        {
+            AddLink("vurdering", link);
+        }
+
         public void AddFravar(Link link)
         {
             AddLink("fravar", link);

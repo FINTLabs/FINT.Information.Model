@@ -49,5 +49,10 @@ namespace FINT.Model.Utdanning.Larling
         {
             AddLink("programomrade", link);
         }
+
+        public void AddAvlagtprove(Link link)
+        {
+            AddLink("avlagtprove", link);
+        }
     }
 }

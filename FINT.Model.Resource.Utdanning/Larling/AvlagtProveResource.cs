@@ -5,16 +5,17 @@ using FINT.Model.Resource;
 
 using FINT.Model.Felles.Kompleksedatatyper;
 
-namespace FINT.Model.Utdanning.Elev
+namespace FINT.Model.Utdanning.Larling
 {
 
-    public class ElevtilretteleggingResource 
+    public class AvlagtProveResource 
     {
 
     
+        public DateTime? Provedato { get; set; }
         public Identifikator SystemId { get; set; }
         
-        public ElevtilretteleggingResource()
+        public AvlagtProveResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -33,24 +34,29 @@ namespace FINT.Model.Utdanning.Elev
      
             
 
-        public void AddElev(Link link)
+        public void AddProvestatus(Link link)
         {
-            AddLink("elev", link);
+            AddLink("provestatus", link);
         }
 
-        public void AddFag(Link link)
+        public void AddLarling(Link link)
         {
-            AddLink("fag", link);
+            AddLink("larling", link);
         }
 
-        public void AddTilrettelegging(Link link)
+        public void AddFullfortkode(Link link)
         {
-            AddLink("tilrettelegging", link);
+            AddLink("fullfortkode", link);
         }
 
-        public void AddEksamensform(Link link)
+        public void AddBrevtype(Link link)
         {
-            AddLink("eksamensform", link);
+            AddLink("brevtype", link);
+        }
+
+        public void AddBevistype(Link link)
+        {
+            AddLink("bevistype", link);
         }
     }
 }
