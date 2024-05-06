@@ -13,6 +13,7 @@ namespace FINT.Model.Utdanning.Timeplan
 			FAGMERKNAD,
 			FAGSTATUS,
 			ELEVFORHOLD,
+			VARSEL,
 			FAGGRUPPE
         }
         

@@ -10,7 +10,8 @@ namespace FINT.Model.Utdanning.Vurdering
 	public class Halvarsfagvurdering : Fagvurdering {
 		public new enum Relasjonsnavn
         {
-			ELEVFORHOLD
+			ELEVFORHOLD,
+			VURDERING
         }
         
 	
