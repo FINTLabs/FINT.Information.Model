@@ -59,6 +59,11 @@ namespace FINT.Model.Utdanning.Vurdering
             AddLink("nus", link);
         }
 
+        public void AddBetalingsstatus(Link link)
+        {
+            AddLink("betalingsstatus", link);
+        }
+
         public void AddForetrukketSensor(Link link)
         {
             AddLink("foretrukketSensor", link);

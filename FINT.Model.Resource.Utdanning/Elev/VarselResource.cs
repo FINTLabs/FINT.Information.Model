@@ -8,13 +8,16 @@ using FINT.Model.Felles.Kompleksedatatyper;
 namespace FINT.Model.Utdanning.Elev
 {
 
-    public class ElevtilretteleggingResource 
+    public class VarselResource 
     {
 
     
+        public long Fravarsprosent { get; set; }
+        public DateTime Sendt { get; set; }
         public Identifikator SystemId { get; set; }
+        public string Tekst { get; set; }
         
-        public ElevtilretteleggingResource()
+        public VarselResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -33,24 +36,24 @@ namespace FINT.Model.Utdanning.Elev
      
             
 
-        public void AddElev(Link link)
+        public void AddUtsteder(Link link)
         {
-            AddLink("elev", link);
+            AddLink("utsteder", link);
         }
 
-        public void AddFag(Link link)
+        public void AddKarakteransvarlig(Link link)
         {
-            AddLink("fag", link);
+            AddLink("karakteransvarlig", link);
         }
 
-        public void AddTilrettelegging(Link link)
+        public void AddType(Link link)
         {
-            AddLink("tilrettelegging", link);
+            AddLink("type", link);
         }
 
-        public void AddEksamensform(Link link)
+        public void AddFaggruppemedlemskap(Link link)
         {
-            AddLink("eksamensform", link);
+            AddLink("faggruppemedlemskap", link);
         }
     }
 }

@@ -12,7 +12,8 @@ namespace FINT.Model.Utdanning.Vurdering
         {
 			ELEVFORHOLD,
 			EKSAMENSGRUPPE,
-			KARAKTERHISTORIE
+			KARAKTERHISTORIE,
+			VURDERING
         }
         
 	

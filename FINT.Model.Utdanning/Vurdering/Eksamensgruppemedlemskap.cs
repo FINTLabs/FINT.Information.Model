@@ -15,6 +15,7 @@ namespace FINT.Model.Utdanning.Vurdering
 			FORETRUKKETSKOLE,
 			EKSAMENSGRUPPE,
 			NUS,
+			BETALINGSSTATUS,
 			FORETRUKKETSENSOR
         }
         
