@@ -11,7 +11,7 @@ namespace FINT.Model.Utdanning.Vurdering
 		public new enum Relasjonsnavn
         {
 			ELEVFORHOLD,
-			VURDERING
+			ELEVVURDERING
         }
         
 	
