@@ -19,9 +19,9 @@ namespace FINT.Model.Utdanning.Vurdering
             AddLink("elevforhold", link);
         }
 
-        public void AddVurdering(Link link)
+        public void AddElevvurdering(Link link)
         {
-            AddLink("vurdering", link);
+            AddLink("elevvurdering", link);
         }
     }
 }
