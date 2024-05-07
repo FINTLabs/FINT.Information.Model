@@ -29,9 +29,9 @@ namespace FINT.Model.Utdanning.Vurdering
             AddLink("karakterhistorie", link);
         }
 
-        public void AddVurdering(Link link)
+        public void AddElevvurdering(Link link)
         {
-            AddLink("vurdering", link);
+            AddLink("elevvurdering", link);
         }
     }
 }

@@ -13,7 +13,7 @@ namespace FINT.Model.Utdanning.Vurdering
 			ELEVFORHOLD,
 			EKSAMENSGRUPPE,
 			KARAKTERHISTORIE,
-			VURDERING
+			ELEVVURDERING
         }
         
 	
