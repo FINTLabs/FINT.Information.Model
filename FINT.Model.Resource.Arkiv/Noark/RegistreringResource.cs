@@ -47,6 +47,11 @@ namespace FINT.Model.Arkiv.Noark
      
             
 
+        public void AddTilgangsgruppe(Link link)
+        {
+            AddLink("tilgangsgruppe", link);
+        }
+
         public void AddAdministrativEnhet(Link link)
         {
             AddLink("administrativEnhet", link);

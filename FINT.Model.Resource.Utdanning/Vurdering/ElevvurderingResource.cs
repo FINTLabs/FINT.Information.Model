@@ -72,5 +72,10 @@ namespace FINT.Model.Utdanning.Vurdering
         {
             AddLink("sluttordensvurdering", link);
         }
+
+        public void AddEksamensvurdering(Link link)
+        {
+            AddLink("eksamensvurdering", link);
+        }
     }
 }

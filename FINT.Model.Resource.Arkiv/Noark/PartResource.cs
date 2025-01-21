@@ -13,8 +13,10 @@ namespace FINT.Model.Arkiv.Noark
 
     
         public AdresseResource Adresse { get; set; }
+        public string Fodselsnummer { get; set; }
         public Kontaktinformasjon Kontaktinformasjon { get; set; }
         public string Kontaktperson { get; set; }
+        public string Organisasjonsnummer { get; set; }
         public string PartNavn { get; set; }
         
         public PartResource()
