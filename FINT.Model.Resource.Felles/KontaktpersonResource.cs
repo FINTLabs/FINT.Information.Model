@@ -12,7 +12,7 @@ namespace FINT.Model.Felles
     {
 
     
-        public bool Foreldreansvar { get; set; }
+        public bool? Foreldreansvar { get; set; }
         public Kontaktinformasjon Kontaktinformasjon { get; set; }
         public Personnavn Navn { get; set; }
         public Identifikator SystemId { get; set; }

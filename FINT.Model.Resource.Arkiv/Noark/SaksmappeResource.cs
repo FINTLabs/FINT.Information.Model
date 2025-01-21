@@ -31,6 +31,11 @@ namespace FINT.Model.Arkiv.Noark
             AddLink("saksstatus", link);
         }
 
+        public void AddTilgangsgruppe(Link link)
+        {
+            AddLink("tilgangsgruppe", link);
+        }
+
         public void AddJournalenhet(Link link)
         {
             AddLink("journalenhet", link);
