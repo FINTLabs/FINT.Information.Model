@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using FINT.Model.Resource;
 
 using FINT.Model.Arkiv.Noark;
+using FINT.Model.Utdanning.Elev;
 
 namespace FINT.Model.Arkiv.Noark
 {

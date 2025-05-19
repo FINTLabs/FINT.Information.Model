@@ -41,14 +41,14 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
             AddLink("vigoreferanse", link);
         }
 
-        public void AddBasisgruppe(Link link)
-        {
-            AddLink("basisgruppe", link);
-        }
-
         public void AddElevforhold(Link link)
         {
             AddLink("elevforhold", link);
+        }
+
+        public void AddKlasse(Link link)
+        {
+            AddLink("klasse", link);
         }
 
         public void AddKontaktlarergruppe(Link link)

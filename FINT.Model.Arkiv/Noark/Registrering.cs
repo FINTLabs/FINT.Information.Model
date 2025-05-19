@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 
 using FINT.Model.Arkiv.Noark;
+using FINT.Model.Utdanning.Elev;
 
 namespace FINT.Model.Arkiv.Noark
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
-using FINT.Model.Arkiv.Noark;
+using FINT.Model.Utdanning.Elev;
 using FINT.Model.Felles.Kompleksedatatyper;
 
 namespace FINT.Model.Arkiv.Noark
