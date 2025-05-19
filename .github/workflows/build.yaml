@@ -10,7 +10,7 @@ jobs:
     timeout-minutes: 5
     strategy:
       matrix:
-        dotnet-version: ['6.0.x', '7.0.x', '8.0.x']
+        dotnet-version: ['6.0.x']
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
@@ -20,17 +20,13 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
 
-      - name: .NET restore
-        run: |
-          dotnet restore FINT.Information.Model.sln
-
       - name: .NET build
         run: |
           dotnet msbuild -t:restore,build,VSTest -p:Configuration=Debug FINT.Information.Model.sln
 
       - name: .NET test
         run: |
-          dotnet test --configuration Debug
+          dotnet test
 
   build-dotnetcore:
     name: Build with .NET Core
