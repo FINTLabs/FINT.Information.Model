@@ -4,16 +4,24 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-dotnet:
+    name: Build with .NET
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ['6.0.x', '7.0.x', '8.0.x']
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
 
-      - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v3
+      - name: Setup .NET SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: ${{ matrix.dotnet-version }}
+
+      - name: .NET restore
+        run: |
+          dotnet restore FINT.Information.Model.sln
 
       - name: .NET build
         run: |
@@ -21,4 +29,31 @@ jobs:
 
       - name: .NET test
         run: |
-          dotnet test
+          dotnet test --no-build --configuration Debug
+
+  build-dotnetcore:
+    name: Build with .NET Core
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ['2.1.x', '2.2.x', '3.1.x']
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v3
+
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+
+      - name: .NET Core restore
+        run: |
+          dotnet restore FINT.Information.Model.sln
+
+      - name: .NET Core build
+        run: |
+          dotnet build --no-restore --configuration Debug FINT.Information.Model.sln
+
+      - name: .NET Core test
+        run: |
+          dotnet test --no-build --configuration Debug
