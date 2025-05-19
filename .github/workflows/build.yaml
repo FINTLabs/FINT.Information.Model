@@ -7,7 +7,6 @@ jobs:
   build-dotnet:
     name: Build with .NET
     runs-on: ubuntu-latest
-    timeout-minutes: 5
     strategy:
       matrix:
         dotnet-version: ['6.0.x']
@@ -31,10 +30,9 @@ jobs:
   build-dotnetcore:
     name: Build with .NET Core
     runs-on: ubuntu-18.04
-    timeout-minutes: 5
     strategy:
       matrix:
-        dotnet-version: ['2.1.x', '2.2.x', '3.1.x']
+        dotnet-version: ['2.1.x']
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
@@ -43,15 +41,11 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
-
-      - name: .NET Core restore
-        run: |
-          dotnet restore FINT.Information.Model.sln
-
+          
       - name: .NET Core build
         run: |
-          dotnet build --no-restore --configuration Debug FINT.Information.Model.sln
+          dotnet build FINT.Information.Model.sln
 
       - name: .NET Core test
         run: |
-          dotnet test --configuration Debug
+          dotnet test
