@@ -10,7 +10,6 @@ namespace FINT.Model.Utdanning.Vurdering
 	public class Sluttfagvurdering : Fagvurdering {
 		public new enum Relasjonsnavn
         {
-			ELEVFORHOLD,
 			EKSAMENSGRUPPE,
 			KARAKTERHISTORIE,
 			ELEVVURDERING
