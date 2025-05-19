@@ -36,48 +36,48 @@ namespace FINT.Model.Resource.Utdanning.Tests
             Assert.True(elev.Links.ContainsKey("elevforhold"));
         }
 
-        [Fact(DisplayName = "Read Basisgruppe from basisgruppe.json")]
-        public void Read_Basisgruppe_from_basisgruppe_json()
+        [Fact(DisplayName = "Read Klasse from klasse.json")]
+        public void Read_Klasse_from_klasse_json()
         {
-            var basisgruppe =
-                JsonConvert.DeserializeObject<Basisgruppe>(File.ReadAllText(@"./TestData/basisgruppe.json"));
+            var klasse =
+                JsonConvert.DeserializeObject<Klasse>(File.ReadAllText(@"./TestData/klasse.json"));
 
-            Assert.NotNull(basisgruppe);
-            Assert.Equal("ABC123", basisgruppe.Navn);
+            Assert.NotNull(klasse);
+            Assert.Equal("ABC123", klasse.Navn);
         }
 
-        [Fact(DisplayName = "Read Basisgruppe from basisgrupperesource.json")]
-        public void Read_Basisgruppe_from_basisgrupperesource_json()
+        [Fact(DisplayName = "Read Klasse from klasseresource.json")]
+        public void Read_Klasse_from_klasseresource_json()
         {
-            var basisgruppe =
-                JsonConvert.DeserializeObject<Basisgruppe>(File.ReadAllText(@"./TestData/basisgrupperesource.json"));
+            var klasse =
+                JsonConvert.DeserializeObject<Klasse>(File.ReadAllText(@"./TestData/klasseresource.json"));
 
-            Assert.NotNull(basisgruppe);
-            Assert.Equal("ABC123", basisgruppe.Navn);
+            Assert.NotNull(klasse);
+            Assert.Equal("ABC123", klasse.Navn);
         }
 
-        [Fact(DisplayName = "Read BasisgruppeResource from basisgruppe.json")]
-        public void Read_BasisgruppeResource_from_basisgruppe_json()
+        [Fact(DisplayName = "Read KlasseResource from klasse.json")]
+        public void Read_KlasseResource_from_klasse_json()
         {
-            var basisgruppe =
-                JsonConvert.DeserializeObject<BasisgruppeResource>(File.ReadAllText(@"./TestData/basisgruppe.json"));
+            var klasse =
+                JsonConvert.DeserializeObject<KlasseResource>(File.ReadAllText(@"./TestData/klasse.json"));
 
-            Assert.NotNull(basisgruppe);
-            Assert.Equal("ABC123", basisgruppe.Navn);
-            Assert.NotNull(basisgruppe.Links);
-            Assert.Empty(basisgruppe.Links);
+            Assert.NotNull(klasse);
+            Assert.Equal("ABC123", klasse.Navn);
+            Assert.NotNull(klasse.Links);
+            Assert.Empty(klasse.Links);
         }
 
-        [Fact(DisplayName = "Read BasisgruppeResource from basisgrupperesource.json")]
-        public void Read_BasisgruppeResource_from_basisgrupperesource_json()
+        [Fact(DisplayName = "Read KlasseResource from klasseresource.json")]
+        public void Read_KlasseResource_from_klasseresource_json()
         {
-            var basisgruppe =
-                JsonConvert.DeserializeObject<BasisgruppeResource>(File.ReadAllText(@"./TestData/basisgrupperesource.json"));
+            var klasse =
+                JsonConvert.DeserializeObject<KlasseResource>(File.ReadAllText(@"./TestData/klasseresource.json"));
 
-            Assert.NotNull(basisgruppe);
-            Assert.Equal("ABC123", basisgruppe.Navn);
-            Assert.NotNull(basisgruppe.Links);
-            Assert.True(basisgruppe.Links.ContainsKey("medlemskap"));
+            Assert.NotNull(klasse);
+            Assert.Equal("ABC123", klasse.Navn);
+            Assert.NotNull(klasse.Links);
+            Assert.True(klasse.Links.ContainsKey("medlemskap"));
         }
 
     }

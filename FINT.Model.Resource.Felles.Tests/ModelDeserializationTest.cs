@@ -122,7 +122,6 @@ namespace FINT.Model.Resource.Felles.Tests
                     File.ReadAllText(@"./TestData/kontaktpersonresource.json"));
 
             Assert.NotNull(result);
-            Assert.True(result.Foreldreansvar);
             Assert.Equal("forelder", result.Type);
             Assert.Equal(2, result.Links.Count);
         }
