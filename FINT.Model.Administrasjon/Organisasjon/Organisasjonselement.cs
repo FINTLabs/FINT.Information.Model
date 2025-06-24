@@ -12,6 +12,7 @@ namespace FINT.Model.Administrasjon.Organisasjon
 		public enum Relasjonsnavn
         {
 			ANSVAR,
+			ORGANISASJONSTYPE,
 			LEDER,
 			OVERORDNET,
 			UNDERORDNET,
