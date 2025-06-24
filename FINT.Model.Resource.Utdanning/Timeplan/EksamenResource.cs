@@ -14,6 +14,7 @@ namespace FINT.Model.Utdanning.Timeplan
     
         public string Beskrivelse { get; set; }
         public string Navn { get; set; }
+        public DateTime? Oppmotetidspunkt { get; set; }
         public Identifikator SystemId { get; set; }
         public Periode Tidsrom { get; set; }
         
