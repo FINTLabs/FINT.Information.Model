@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
-using FINT.Model.Administrasjon.Kodeverk;
+using FINT.Model.Utdanning.Basisklasser;
 
-namespace FINT.Model.Administrasjon.Kodeverk
+namespace FINT.Model.Utdanning.Elev
 {
 
-    public class FormalResource : Kontodimensjon 
+    public class KlassemedlemskapResource : Gruppemedlemskap 
     {
 
     
-        public FormalResource()
+        public KlassemedlemskapResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -29,5 +29,16 @@ namespace FINT.Model.Administrasjon.Kodeverk
             Links[key].Add(link);
         }
      
+            
+
+        public void AddElevforhold(Link link)
+        {
+            AddLink("elevforhold", link);
+        }
+
+        public void AddKlasse(Link link)
+        {
+            AddLink("klasse", link);
+        }
     }
 }
