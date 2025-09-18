@@ -8,10 +8,11 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Utdanningsprogram
 {
 	public class Programomrade : Gruppe {
-		public new enum Relasjonsnavn
+		public enum Relasjonsnavn
         {
-			ELEVFORHOLD,
+			GREPREFERANSE,
 			UTDANNINGSPROGRAM,
+			VIGOREFERANSE,
 			FAG,
 			TRINN,
 			GRUPPEMEDLEMSKAP

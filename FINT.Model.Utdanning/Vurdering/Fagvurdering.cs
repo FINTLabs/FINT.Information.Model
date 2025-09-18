@@ -11,7 +11,6 @@ namespace FINT.Model.Utdanning.Vurdering
 		public enum Relasjonsnavn
         {
 			FAG,
-			UNDERVISNINGSGRUPPE,
 			SKOLEAR,
 			KARAKTER
         }

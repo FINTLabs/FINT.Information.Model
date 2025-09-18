@@ -29,29 +29,9 @@ namespace FINT.Model.Administrasjon.Kompleksedatatyper
      
             
 
-        public void AddAktivitet(Link link)
+        public void AddProsjektart(Link link)
         {
-            AddLink("aktivitet", link);
-        }
-
-        public void AddAnlegg(Link link)
-        {
-            AddLink("anlegg", link);
-        }
-
-        public void AddAnsvar(Link link)
-        {
-            AddLink("ansvar", link);
-        }
-
-        public void AddArt(Link link)
-        {
-            AddLink("art", link);
-        }
-
-        public void AddDiverse(Link link)
-        {
-            AddLink("diverse", link);
+            AddLink("prosjektart", link);
         }
 
         public void AddFormal(Link link)
@@ -59,19 +39,9 @@ namespace FINT.Model.Administrasjon.Kompleksedatatyper
             AddLink("formal", link);
         }
 
-        public void AddFunksjon(Link link)
+        public void AddRamme(Link link)
         {
-            AddLink("funksjon", link);
-        }
-
-        public void AddKontrakt(Link link)
-        {
-            AddLink("kontrakt", link);
-        }
-
-        public void AddLopenummer(Link link)
-        {
-            AddLink("lopenummer", link);
+            AddLink("ramme", link);
         }
 
         public void AddObjekt(Link link)
@@ -79,19 +49,49 @@ namespace FINT.Model.Administrasjon.Kompleksedatatyper
             AddLink("objekt", link);
         }
 
+        public void AddLopenummer(Link link)
+        {
+            AddLink("lopenummer", link);
+        }
+
+        public void AddKontrakt(Link link)
+        {
+            AddLink("kontrakt", link);
+        }
+
+        public void AddDiverse(Link link)
+        {
+            AddLink("diverse", link);
+        }
+
+        public void AddAnlegg(Link link)
+        {
+            AddLink("anlegg", link);
+        }
+
+        public void AddAktivitet(Link link)
+        {
+            AddLink("aktivitet", link);
+        }
+
         public void AddProsjekt(Link link)
         {
             AddLink("prosjekt", link);
         }
 
-        public void AddProsjektart(Link link)
+        public void AddFunksjon(Link link)
         {
-            AddLink("prosjektart", link);
+            AddLink("funksjon", link);
         }
 
-        public void AddRamme(Link link)
+        public void AddArt(Link link)
         {
-            AddLink("ramme", link);
+            AddLink("art", link);
+        }
+
+        public void AddAnsvar(Link link)
+        {
+            AddLink("ansvar", link);
         }
     }
 }

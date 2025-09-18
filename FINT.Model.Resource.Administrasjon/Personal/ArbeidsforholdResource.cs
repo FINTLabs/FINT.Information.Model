@@ -42,64 +42,9 @@ namespace FINT.Model.Administrasjon.Personal
      
             
 
-        public void AddAktivitet(Link link)
-        {
-            AddLink("aktivitet", link);
-        }
-
-        public void AddAnlegg(Link link)
-        {
-            AddLink("anlegg", link);
-        }
-
-        public void AddAnsvar(Link link)
-        {
-            AddLink("ansvar", link);
-        }
-
-        public void AddArbeidsforholdstype(Link link)
-        {
-            AddLink("arbeidsforholdstype", link);
-        }
-
-        public void AddArt(Link link)
-        {
-            AddLink("art", link);
-        }
-
-        public void AddDiverse(Link link)
-        {
-            AddLink("diverse", link);
-        }
-
         public void AddFormal(Link link)
         {
             AddLink("formal", link);
-        }
-
-        public void AddFunksjon(Link link)
-        {
-            AddLink("funksjon", link);
-        }
-
-        public void AddKontrakt(Link link)
-        {
-            AddLink("kontrakt", link);
-        }
-
-        public void AddLopenummer(Link link)
-        {
-            AddLink("lopenummer", link);
-        }
-
-        public void AddObjekt(Link link)
-        {
-            AddLink("objekt", link);
-        }
-
-        public void AddProsjekt(Link link)
-        {
-            AddLink("prosjekt", link);
         }
 
         public void AddRamme(Link link)
@@ -107,14 +52,69 @@ namespace FINT.Model.Administrasjon.Personal
             AddLink("ramme", link);
         }
 
-        public void AddStillingskode(Link link)
+        public void AddObjekt(Link link)
         {
-            AddLink("stillingskode", link);
+            AddLink("objekt", link);
+        }
+
+        public void AddLopenummer(Link link)
+        {
+            AddLink("lopenummer", link);
+        }
+
+        public void AddKontrakt(Link link)
+        {
+            AddLink("kontrakt", link);
+        }
+
+        public void AddDiverse(Link link)
+        {
+            AddLink("diverse", link);
+        }
+
+        public void AddAnlegg(Link link)
+        {
+            AddLink("anlegg", link);
+        }
+
+        public void AddAktivitet(Link link)
+        {
+            AddLink("aktivitet", link);
         }
 
         public void AddTimerPerUke(Link link)
         {
             AddLink("timerPerUke", link);
+        }
+
+        public void AddStillingskode(Link link)
+        {
+            AddLink("stillingskode", link);
+        }
+
+        public void AddProsjekt(Link link)
+        {
+            AddLink("prosjekt", link);
+        }
+
+        public void AddFunksjon(Link link)
+        {
+            AddLink("funksjon", link);
+        }
+
+        public void AddArt(Link link)
+        {
+            AddLink("art", link);
+        }
+
+        public void AddArbeidsforholdstype(Link link)
+        {
+            AddLink("arbeidsforholdstype", link);
+        }
+
+        public void AddAnsvar(Link link)
+        {
+            AddLink("ansvar", link);
         }
 
         public void AddArbeidslokasjon(Link link)
@@ -145,11 +145,6 @@ namespace FINT.Model.Administrasjon.Personal
         public void AddFravar(Link link)
         {
             AddLink("fravar", link);
-        }
-
-        public void AddLonn(Link link)
-        {
-            AddLink("lonn", link);
         }
 
         public void AddVariabellonn(Link link)

@@ -12,7 +12,6 @@ namespace FINT.Model.Felles
     {
 
     
-        public bool? Foreldreansvar { get; set; }
         public Kontaktinformasjon Kontaktinformasjon { get; set; }
         public Personnavn Navn { get; set; }
         public Identifikator SystemId { get; set; }
@@ -40,11 +39,6 @@ namespace FINT.Model.Felles
         public void AddKontaktperson(Link link)
         {
             AddLink("kontaktperson", link);
-        }
-
-        public void AddPerson(Link link)
-        {
-            AddLink("person", link);
         }
     }
 }
