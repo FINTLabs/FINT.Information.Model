@@ -45,11 +45,6 @@ namespace FINT.Model.Arkiv.Noark
      
             
 
-        public void AddArkivdel(Link link)
-        {
-            AddLink("arkivdel", link);
-        }
-
         public void AddAvsluttetAv(Link link)
         {
             AddLink("avsluttetAv", link);

@@ -10,8 +10,8 @@ namespace FINT.Model.Administrasjon.Personal
 	public class Fravar {
 		public enum Relasjonsnavn
         {
-			FRAVARSGRUNN,
 			FRAVARSTYPE,
+			FRAVARSGRUNN,
 			ARBEIDSFORHOLD,
 			FORTSETTELSE,
 			GODKJENNER,

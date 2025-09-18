@@ -21,6 +21,11 @@ namespace FINT.Model.Administrasjon.Organisasjon
         
             
 
+        public void AddOrganisasjonstype(Link link)
+        {
+            AddLink("organisasjonstype", link);
+        }
+
         public void AddAnsvar(Link link)
         {
             AddLink("ansvar", link);
