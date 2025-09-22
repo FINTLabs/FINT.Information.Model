@@ -12,7 +12,6 @@ namespace FINT.Model.Arkiv.Noark
     {
 
     
-        public List<RegistreringResource> Arkivnotat { get; set; }
         public List<JournalpostResource> Journalpost { get; set; }
         public string Saksaar { get; set; }
         public DateTime? Saksdato { get; set; }
