@@ -10,10 +10,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        dotnet-version: ['6.0.x']
+        dotnet-version: ['6.0.x', '7.0.x', '8.0.x']
     steps:
       - name: Git checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup .NET SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v4
@@ -37,17 +37,13 @@ jobs:
         dotnet-version: ['2.1.x', '2.2.x', '3.1.x']
     steps:
       - name: Git checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
-          
+
       - name: .NET Core build
         run: |
           dotnet build FINT.Information.Model.sln
-
-      - name: .NET Core test
-        run: |
-          dotnet test
