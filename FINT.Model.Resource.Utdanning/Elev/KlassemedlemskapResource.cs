@@ -8,11 +8,11 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Elev
 {
 
-    public class BasisgruppemedlemskapResource : Gruppemedlemskap 
+    public class KlassemedlemskapResource : Gruppemedlemskap 
     {
 
     
-        public BasisgruppemedlemskapResource()
+        public KlassemedlemskapResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -31,14 +31,14 @@ namespace FINT.Model.Utdanning.Elev
      
             
 
-        public void AddBasisgruppe(Link link)
-        {
-            AddLink("basisgruppe", link);
-        }
-
         public void AddElevforhold(Link link)
         {
             AddLink("elevforhold", link);
+        }
+
+        public void AddKlasse(Link link)
+        {
+            AddLink("klasse", link);
         }
     }
 }
