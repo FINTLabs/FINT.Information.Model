@@ -3,8 +3,6 @@ using System.Collections.Generic;
 
 
 
-using FINT.Model.Felles.Kompleksedatatyper;
-
 namespace FINT.Model.Felles.Kompleksedatatyper
 {
 	public class Identifikator {

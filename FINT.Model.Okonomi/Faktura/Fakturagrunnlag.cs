@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 
 
-using FINT.Model.Okonomi.Faktura;
 using FINT.Model.Felles.Kompleksedatatyper;
 
 namespace FINT.Model.Okonomi.Faktura

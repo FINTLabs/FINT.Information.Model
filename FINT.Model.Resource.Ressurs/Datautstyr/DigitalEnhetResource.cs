@@ -63,11 +63,6 @@ namespace FINT.Model.Ressurs.Datautstyr
             AddLink("status", link);
         }
 
-        public void AddProdusent(Link link)
-        {
-            AddLink("produsent", link);
-        }
-
         public void AddEnhetstype(Link link)
         {
             AddLink("enhetstype", link);
@@ -76,6 +71,11 @@ namespace FINT.Model.Ressurs.Datautstyr
         public void AddPlattform(Link link)
         {
             AddLink("plattform", link);
+        }
+
+        public void AddProdusent(Link link)
+        {
+            AddLink("produsent", link);
         }
 
         public void AddEnhetsgruppemedlemskap(Link link)

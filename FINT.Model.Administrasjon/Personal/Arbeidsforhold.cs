@@ -31,7 +31,6 @@ namespace FINT.Model.Administrasjon.Personal
 			FASTLONN,
 			FASTTILLEGG,
 			FRAVAR,
-			LONN,
 			VARIABELLONN,
 			PERSONALRESSURS,
 			UNDERVISNINGSFORHOLD
