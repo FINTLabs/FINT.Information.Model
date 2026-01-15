@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 
 
-using FINT.Model.Utdanning.Vurdering;
 using FINT.Model.Felles.Kompleksedatatyper;
 
 namespace FINT.Model.Utdanning.Vurdering
