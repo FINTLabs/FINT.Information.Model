@@ -8,30 +8,13 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Vurdering
 {
 
-    public class EksamensgruppemedlemskapResource : Gruppemedlemskap 
+    public class EksamensgruppemedlemskapResource : GruppemedlemskapResource 
     {
 
     
         public bool? Delegert { get; set; }
         public string Kandidatnummer { get; set; }
         
-        public EksamensgruppemedlemskapResource()
-        {
-            Links = new Dictionary<string, List<Link>>();
-        }
-
-        [JsonProperty(PropertyName = "_links")]
-        public Dictionary<string, List<Link>> Links { get; private set; }
-
-        protected void AddLink(string key, Link link)
-        {
-            if (!Links.ContainsKey(key))
-            {
-                Links.Add(key, new List<Link>());
-            }
-            Links[key].Add(link);
-        }
-     
             
 
         public void AddDelegertTil(Link link)

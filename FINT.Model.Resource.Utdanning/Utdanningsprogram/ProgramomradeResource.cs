@@ -14,14 +14,19 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
     
             
 
-        public void AddElevforhold(Link link)
+        public void AddGrepreferanse(Link link)
         {
-            AddLink("elevforhold", link);
+            AddLink("grepreferanse", link);
         }
 
         public void AddUtdanningsprogram(Link link)
         {
             AddLink("utdanningsprogram", link);
+        }
+
+        public void AddVigoreferanse(Link link)
+        {
+            AddLink("vigoreferanse", link);
         }
 
         public void AddFag(Link link)

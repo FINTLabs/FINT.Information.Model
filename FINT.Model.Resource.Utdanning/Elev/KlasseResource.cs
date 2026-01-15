@@ -8,7 +8,7 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Elev
 {
 
-    public class BasisgruppeResource : GruppeResource 
+    public class KlasseResource : GruppeResource 
     {
 
     
@@ -17,11 +17,6 @@ namespace FINT.Model.Utdanning.Elev
         public void AddSkolear(Link link)
         {
             AddLink("skolear", link);
-        }
-
-        public void AddElevforhold(Link link)
-        {
-            AddLink("elevforhold", link);
         }
 
         public void AddTermin(Link link)
@@ -44,9 +39,9 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("undervisningsforhold", link);
         }
 
-        public void AddGruppemedlemskap(Link link)
+        public void AddKlassemedlemskap(Link link)
         {
-            AddLink("gruppemedlemskap", link);
+            AddLink("klassemedlemskap", link);
         }
 
         public void AddKontaktlarergruppe(Link link)

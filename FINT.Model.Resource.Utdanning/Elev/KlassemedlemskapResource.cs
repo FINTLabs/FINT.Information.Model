@@ -5,10 +5,10 @@ using FINT.Model.Resource;
 
 using FINT.Model.Utdanning.Basisklasser;
 
-namespace FINT.Model.Utdanning.Utdanningsprogram
+namespace FINT.Model.Utdanning.Elev
 {
 
-    public class ProgramomrademedlemskapResource : GruppemedlemskapResource 
+    public class KlassemedlemskapResource : GruppemedlemskapResource 
     {
 
     
@@ -19,9 +19,9 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
             AddLink("elevforhold", link);
         }
 
-        public void AddProgramomrade(Link link)
+        public void AddKlasse(Link link)
         {
-            AddLink("programomrade", link);
+            AddLink("klasse", link);
         }
     }
 }

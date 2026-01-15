@@ -14,9 +14,19 @@ namespace FINT.Model.Utdanning.Timeplan
     
             
 
+        public void AddGrepreferanse(Link link)
+        {
+            AddLink("grepreferanse", link);
+        }
+
         public void AddProgramomrade(Link link)
         {
             AddLink("programomrade", link);
+        }
+
+        public void AddVigoreferanse(Link link)
+        {
+            AddLink("vigoreferanse", link);
         }
 
         public void AddTilrettelegging(Link link)

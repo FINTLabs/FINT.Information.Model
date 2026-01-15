@@ -8,26 +8,9 @@ using FINT.Model.Felles.Basisklasser;
 namespace FINT.Model.Utdanning.Kodeverk
 {
 
-    public class FagstatusResource : Begrep 
+    public class FagstatusResource : BegrepResource 
     {
 
     
-        public FagstatusResource()
-        {
-            Links = new Dictionary<string, List<Link>>();
-        }
-
-        [JsonProperty(PropertyName = "_links")]
-        public Dictionary<string, List<Link>> Links { get; private set; }
-
-        protected void AddLink(string key, Link link)
-        {
-            if (!Links.ContainsKey(key))
-            {
-                Links.Add(key, new List<Link>());
-            }
-            Links[key].Add(link);
-        }
-     
     }
 }

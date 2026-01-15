@@ -19,6 +19,16 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
             AddLink("skole", link);
         }
 
+        public void AddGrepreferanse(Link link)
+        {
+            AddLink("grepreferanse", link);
+        }
+
+        public void AddVigoreferanse(Link link)
+        {
+            AddLink("vigoreferanse", link);
+        }
+
         public void AddProgramomrade(Link link)
         {
             AddLink("programomrade", link);

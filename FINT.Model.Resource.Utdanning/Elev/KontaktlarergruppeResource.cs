@@ -14,14 +14,9 @@ namespace FINT.Model.Utdanning.Elev
     
             
 
-        public void AddBasisgruppe(Link link)
+        public void AddKlasse(Link link)
         {
-            AddLink("basisgruppe", link);
-        }
-
-        public void AddElevforhold(Link link)
-        {
-            AddLink("elevforhold", link);
+            AddLink("klasse", link);
         }
 
         public void AddTermin(Link link)
