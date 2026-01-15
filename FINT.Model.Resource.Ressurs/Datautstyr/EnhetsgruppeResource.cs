@@ -39,14 +39,14 @@ namespace FINT.Model.Ressurs.Datautstyr
             AddLink("organisasjonsenhet", link);
         }
 
-        public void AddPlattform(Link link)
-        {
-            AddLink("plattform", link);
-        }
-
         public void AddEnhetstype(Link link)
         {
             AddLink("enhetstype", link);
+        }
+
+        public void AddPlattform(Link link)
+        {
+            AddLink("plattform", link);
         }
 
         public void AddEnhetsgruppemedlemskap(Link link)

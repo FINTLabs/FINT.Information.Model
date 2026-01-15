@@ -10,7 +10,6 @@ namespace FINT.Model.Administrasjon.Fullmakt
 	public class Fullmakt {
 		public enum Relasjonsnavn
         {
-			MYNDIGHET,
 			RAMME,
 			FUNKSJON,
 			OBJEKT,

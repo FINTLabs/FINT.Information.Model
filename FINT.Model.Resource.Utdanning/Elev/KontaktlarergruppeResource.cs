@@ -8,20 +8,32 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Elev
 {
 
-    public class KontaktlarergruppeResource : GruppeResource 
+    public class KontaktlarergruppeResource : Gruppe 
     {
 
     
-            
-
-        public void AddBasisgruppe(Link link)
+        public KontaktlarergruppeResource()
         {
-            AddLink("basisgruppe", link);
+            Links = new Dictionary<string, List<Link>>();
         }
 
-        public void AddElevforhold(Link link)
+        [JsonProperty(PropertyName = "_links")]
+        public Dictionary<string, List<Link>> Links { get; private set; }
+
+        protected void AddLink(string key, Link link)
         {
-            AddLink("elevforhold", link);
+            if (!Links.ContainsKey(key))
+            {
+                Links.Add(key, new List<Link>());
+            }
+            Links[key].Add(link);
+        }
+     
+            
+
+        public void AddKlasse(Link link)
+        {
+            AddLink("klasse", link);
         }
 
         public void AddTermin(Link link)
