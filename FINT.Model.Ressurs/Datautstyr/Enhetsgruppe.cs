@@ -11,8 +11,8 @@ namespace FINT.Model.Ressurs.Datautstyr
 		public enum Relasjonsnavn
         {
 			ORGANISASJONSENHET,
-			PLATTFORM,
 			ENHETSTYPE,
+			PLATTFORM,
 			ENHETSGRUPPEMEDLEMSKAP
         }
         
