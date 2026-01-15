@@ -8,9 +8,11 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Utdanningsprogram
 {
 	public class Utdanningsprogram : Gruppe {
-		public new enum Relasjonsnavn
+		public enum Relasjonsnavn
         {
 			SKOLE,
+			GREPREFERANSE,
+			VIGOREFERANSE,
 			PROGRAMOMRADE
         }
         
