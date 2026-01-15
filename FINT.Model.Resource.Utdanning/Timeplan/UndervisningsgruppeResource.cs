@@ -8,16 +8,28 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Timeplan
 {
 
-    public class UndervisningsgruppeResource : GruppeResource 
+    public class UndervisningsgruppeResource : Gruppe 
     {
 
     
-            
-
-        public void AddElevforhold(Link link)
+        public UndervisningsgruppeResource()
         {
-            AddLink("elevforhold", link);
+            Links = new Dictionary<string, List<Link>>();
         }
+
+        [JsonProperty(PropertyName = "_links")]
+        public Dictionary<string, List<Link>> Links { get; private set; }
+
+        protected void AddLink(string key, Link link)
+        {
+            if (!Links.ContainsKey(key))
+            {
+                Links.Add(key, new List<Link>());
+            }
+            Links[key].Add(link);
+        }
+     
+            
 
         public void AddFag(Link link)
         {

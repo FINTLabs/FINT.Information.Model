@@ -10,9 +10,7 @@ namespace FINT.Model.Arkiv.Noark
 	public class Arkivdel {
 		public enum Relasjonsnavn
         {
-			KLASSIFIKASJONSSYSTEM,
-			REGISTRERING,
-			MAPPE
+			KLASSIFIKASJONSSYSTEM
         }
         
 	

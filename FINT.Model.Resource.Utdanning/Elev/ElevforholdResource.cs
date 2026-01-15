@@ -10,7 +10,7 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Elev
 {
 
-    public class ElevforholdResource : UtdanningsforholdResource 
+    public class ElevforholdResource : Utdanningsforhold 
     {
 
     
@@ -20,6 +20,23 @@ namespace FINT.Model.Utdanning.Elev
         public bool? Hovedskole { get; set; }
         public bool? TosprakligFagopplaring { get; set; }
         
+        public ElevforholdResource()
+        {
+            Links = new Dictionary<string, List<Link>>();
+        }
+
+        [JsonProperty(PropertyName = "_links")]
+        public Dictionary<string, List<Link>> Links { get; private set; }
+
+        protected void AddLink(string key, Link link)
+        {
+            if (!Links.ContainsKey(key))
+            {
+                Links.Add(key, new List<Link>());
+            }
+            Links[key].Add(link);
+        }
+     
             
 
         public void AddElev(Link link)
@@ -27,19 +44,9 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("elev", link);
         }
 
-        public void AddSidemal(Link link)
-        {
-            AddLink("sidemal", link);
-        }
-
         public void AddKategori(Link link)
         {
             AddLink("kategori", link);
-        }
-
-        public void AddKroppsoving(Link link)
-        {
-            AddLink("kroppsoving", link);
         }
 
         public void AddSkole(Link link)
@@ -67,49 +74,9 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("skolear", link);
         }
 
-        public void AddBasisgruppe(Link link)
-        {
-            AddLink("basisgruppe", link);
-        }
-
-        public void AddBasisgruppemedlemskap(Link link)
-        {
-            AddLink("basisgruppemedlemskap", link);
-        }
-
         public void AddUndervisningsgruppemedlemskap(Link link)
         {
             AddLink("undervisningsgruppemedlemskap", link);
-        }
-
-        public void AddVurdering(Link link)
-        {
-            AddLink("vurdering", link);
-        }
-
-        public void AddSluttordensvurdering(Link link)
-        {
-            AddLink("sluttordensvurdering", link);
-        }
-
-        public void AddKontaktlarergruppe(Link link)
-        {
-            AddLink("kontaktlarergruppe", link);
-        }
-
-        public void AddUnderveisfagvurdering(Link link)
-        {
-            AddLink("underveisfagvurdering", link);
-        }
-
-        public void AddHalvarsfagvurdering(Link link)
-        {
-            AddLink("halvarsfagvurdering", link);
-        }
-
-        public void AddSluttfagvurdering(Link link)
-        {
-            AddLink("sluttfagvurdering", link);
         }
 
         public void AddPersongruppemedlemskap(Link link)
@@ -137,24 +104,9 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("tilrettelegging", link);
         }
 
-        public void AddHalvarsordensvurdering(Link link)
-        {
-            AddLink("halvarsordensvurdering", link);
-        }
-
-        public void AddProgramomrade(Link link)
-        {
-            AddLink("programomrade", link);
-        }
-
         public void AddElevvurdering(Link link)
         {
             AddLink("elevvurdering", link);
-        }
-
-        public void AddFravar(Link link)
-        {
-            AddLink("fravar", link);
         }
 
         public void AddProgramomrademedlemskap(Link link)
@@ -162,19 +114,9 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("programomrademedlemskap", link);
         }
 
-        public void AddUnderveisordensvurdering(Link link)
+        public void AddKlassemedlemskap(Link link)
         {
-            AddLink("underveisordensvurdering", link);
-        }
-
-        public void AddEksamensgruppe(Link link)
-        {
-            AddLink("eksamensgruppe", link);
-        }
-
-        public void AddUndervisningsgruppe(Link link)
-        {
-            AddLink("undervisningsgruppe", link);
+            AddLink("klassemedlemskap", link);
         }
     }
 }
