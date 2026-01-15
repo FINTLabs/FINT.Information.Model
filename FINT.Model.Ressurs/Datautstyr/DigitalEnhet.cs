@@ -15,9 +15,9 @@ namespace FINT.Model.Ressurs.Datautstyr
 			PERSONALRESSURS,
 			ELEV,
 			STATUS,
-			PRODUSENT,
 			ENHETSTYPE,
 			PLATTFORM,
+			PRODUSENT,
 			ENHETSGRUPPEMEDLEMSKAP
         }
         
