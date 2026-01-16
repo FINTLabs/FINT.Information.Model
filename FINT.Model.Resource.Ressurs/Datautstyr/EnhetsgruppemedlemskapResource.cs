@@ -5,16 +5,16 @@ using FINT.Model.Resource;
 
 using FINT.Model.Felles.Kompleksedatatyper;
 
-namespace FINT.Model.Utdanning.Elev
+namespace FINT.Model.Ressurs.Datautstyr
 {
 
-    public class MedlemskapResource 
+    public class EnhetsgruppemedlemskapResource 
     {
 
     
         public Identifikator SystemId { get; set; }
         
-        public MedlemskapResource()
+        public EnhetsgruppemedlemskapResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -33,29 +33,14 @@ namespace FINT.Model.Utdanning.Elev
      
             
 
-        public void AddMedlem(Link link)
+        public void AddDigitalEnhet(Link link)
         {
-            AddLink("medlem", link);
+            AddLink("digitalEnhet", link);
         }
 
-        public void AddFortlopendeVurdering(Link link)
+        public void AddEnhetsgruppe(Link link)
         {
-            AddLink("fortlopendeVurdering", link);
-        }
-
-        public void AddGruppe(Link link)
-        {
-            AddLink("gruppe", link);
-        }
-
-        public void AddEndeligVurdering(Link link)
-        {
-            AddLink("endeligVurdering", link);
-        }
-
-        public void AddFravar(Link link)
-        {
-            AddLink("fravar", link);
+            AddLink("enhetsgruppe", link);
         }
     }
 }

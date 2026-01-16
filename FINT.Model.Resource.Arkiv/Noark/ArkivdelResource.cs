@@ -38,15 +38,5 @@ namespace FINT.Model.Arkiv.Noark
         {
             AddLink("klassifikasjonssystem", link);
         }
-
-        public void AddRegistrering(Link link)
-        {
-            AddLink("registrering", link);
-        }
-
-        public void AddMappe(Link link)
-        {
-            AddLink("mappe", link);
-        }
     }
 }

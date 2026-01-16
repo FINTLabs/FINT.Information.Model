@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
-using FINT.Model.Utdanning.Basisklasser;
+using FINT.Model.Felles.Basisklasser;
 
-namespace FINT.Model.Utdanning.Elev
+namespace FINT.Model.Ressurs.Kodeverk
 {
 
-    public class BasisgruppemedlemskapResource : Gruppemedlemskap 
+    public class ProdusentResource : Begrep 
     {
 
     
-        public BasisgruppemedlemskapResource()
+        public ProdusentResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -29,16 +29,5 @@ namespace FINT.Model.Utdanning.Elev
             Links[key].Add(link);
         }
      
-            
-
-        public void AddBasisgruppe(Link link)
-        {
-            AddLink("basisgruppe", link);
-        }
-
-        public void AddElevforhold(Link link)
-        {
-            AddLink("elevforhold", link);
-        }
     }
 }
