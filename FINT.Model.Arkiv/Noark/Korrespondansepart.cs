@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 
 using FINT.Model.Felles.Kompleksedatatyper;
-using FINT.Model.Arkiv.Noark;
 
 namespace FINT.Model.Arkiv.Noark
 {
