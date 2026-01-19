@@ -5,19 +5,19 @@ using System.Collections.Generic;
 
 using FINT.Model.Felles.Kompleksedatatyper;
 
-namespace FINT.Model.Utdanning.Elev
+namespace FINT.Model.Ressurs.Datautstyr
 {
-	public class Medlemskap {
+	public class Enhetsgruppe {
 		public enum Relasjonsnavn
         {
-			MEDLEM,
-			FORTLOPENDEVURDERING,
-			GRUPPE,
-			ENDELIGVURDERING,
-			FRAVAR
+			ORGANISASJONSENHET,
+			ENHETSTYPE,
+			PLATTFORM,
+			ENHETSGRUPPEMEDLEMSKAP
         }
         
 	
+		public string Navn { get; set; }
 		public Identifikator SystemId { get; set; }
 		
 	}

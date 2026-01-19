@@ -5,18 +5,17 @@ using FINT.Model.Resource;
 
 using FINT.Model.Felles.Kompleksedatatyper;
 
-namespace FINT.Model.Utdanning.Vurdering
+namespace FINT.Model.Ressurs.Datautstyr
 {
 
-    public class VurderingResource 
+    public class EnhetsgruppeResource 
     {
 
     
-        public bool Endelig { get; set; }
-        public string Kommentar { get; set; }
+        public string Navn { get; set; }
         public Identifikator SystemId { get; set; }
         
-        public VurderingResource()
+        public EnhetsgruppeResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -35,29 +34,24 @@ namespace FINT.Model.Utdanning.Vurdering
      
             
 
-        public void AddElevforhold(Link link)
+        public void AddOrganisasjonsenhet(Link link)
         {
-            AddLink("elevforhold", link);
+            AddLink("organisasjonsenhet", link);
         }
 
-        public void AddFag(Link link)
+        public void AddEnhetstype(Link link)
         {
-            AddLink("fag", link);
+            AddLink("enhetstype", link);
         }
 
-        public void AddUndervisningsgruppe(Link link)
+        public void AddPlattform(Link link)
         {
-            AddLink("undervisningsgruppe", link);
+            AddLink("plattform", link);
         }
 
-        public void AddEksamensgruppe(Link link)
+        public void AddEnhetsgruppemedlemskap(Link link)
         {
-            AddLink("eksamensgruppe", link);
-        }
-
-        public void AddKarakter(Link link)
-        {
-            AddLink("karakter", link);
+            AddLink("enhetsgruppemedlemskap", link);
         }
     }
 }

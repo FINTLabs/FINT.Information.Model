@@ -4,7 +4,6 @@ using Newtonsoft.Json;
 using FINT.Model.Resource;
 
 using FINT.Model.Felles.Kompleksedatatyper;
-using FINT.Model.Felles.Basisklasser;
 
 namespace FINT.Model.Felles.Basisklasser
 {

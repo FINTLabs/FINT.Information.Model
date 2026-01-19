@@ -34,11 +34,6 @@ namespace FINT.Model.Administrasjon.Fullmakt
      
             
 
-        public void AddMyndighet(Link link)
-        {
-            AddLink("myndighet", link);
-        }
-
         public void AddRamme(Link link)
         {
             AddLink("ramme", link);
