@@ -7,11 +7,11 @@ using FINT.Model.Utdanning.Basisklasser;
 
 namespace FINT.Model.Utdanning.Elev
 {
-	public class Basisgruppemedlemskap : Gruppemedlemskap {
+	public class Klassemedlemskap : Gruppemedlemskap {
 		public enum Relasjonsnavn
         {
-			BASISGRUPPE,
-			ELEVFORHOLD
+			ELEVFORHOLD,
+			KLASSE
         }
         
 	

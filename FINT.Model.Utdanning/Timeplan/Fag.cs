@@ -8,9 +8,11 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Timeplan
 {
 	public class Fag : Gruppe {
-		public new enum Relasjonsnavn
+		public enum Relasjonsnavn
         {
+			GREPREFERANSE,
 			PROGRAMOMRADE,
+			VIGOREFERANSE,
 			TILRETTELEGGING,
 			FAGGRUPPE,
 			SKOLE,

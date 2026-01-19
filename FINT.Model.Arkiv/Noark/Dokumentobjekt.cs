@@ -16,7 +16,6 @@ namespace FINT.Model.Arkiv.Noark
         
 	
 		public string Filstorrelse { get; set; }
-		public string Format { get; set; }
 		public string FormatDetaljer { get; set; }
 		public string Sjekksum { get; set; }
 		public string SjekksumAlgoritme { get; set; }
