@@ -8,20 +8,32 @@ using FINT.Model.Utdanning.Basisklasser;
 namespace FINT.Model.Utdanning.Elev
 {
 
-    public class BasisgruppeResource : GruppeResource 
+    public class KlasseResource : Gruppe 
     {
 
     
+        public KlasseResource()
+        {
+            Links = new Dictionary<string, List<Link>>();
+        }
+
+        [JsonProperty(PropertyName = "_links")]
+        public Dictionary<string, List<Link>> Links { get; private set; }
+
+        protected void AddLink(string key, Link link)
+        {
+            if (!Links.ContainsKey(key))
+            {
+                Links.Add(key, new List<Link>());
+            }
+            Links[key].Add(link);
+        }
+     
             
 
         public void AddSkolear(Link link)
         {
             AddLink("skolear", link);
-        }
-
-        public void AddElevforhold(Link link)
-        {
-            AddLink("elevforhold", link);
         }
 
         public void AddTermin(Link link)
@@ -44,9 +56,9 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("undervisningsforhold", link);
         }
 
-        public void AddGruppemedlemskap(Link link)
+        public void AddKlassemedlemskap(Link link)
         {
-            AddLink("gruppemedlemskap", link);
+            AddLink("klassemedlemskap", link);
         }
 
         public void AddKontaktlarergruppe(Link link)
