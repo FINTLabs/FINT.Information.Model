@@ -4,12 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>FINT.Model.Felles</PackageId>
     <Authors>FINTLabs</Authors>
-    <Company>Vigo IKS</Company>
+    <Company>Novari IKS</Company>
     <Description>Fint Model Felles</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>FINT shared model</PackageReleaseNotes>
     <PackageTags>fint</PackageTags>
-    <Version>3.5.0</Version>
+    <Version>4.0.0</Version>
   </PropertyGroup>
 
 </Project>

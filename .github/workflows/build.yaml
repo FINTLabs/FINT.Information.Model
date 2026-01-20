@@ -7,18 +7,14 @@ jobs:
   build-dotnet:
     name: Build with .NET
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        dotnet-version: ['6.0', '7.0', '8.0']
     steps:
       - name: Git checkout
         uses: actions/checkout@v4
 
-      - name: Setup .NET SDK ${{ matrix.dotnet-version }}.x
+      - name: Setup .NET SDK 8.0.x
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}.x
+          dotnet-version: 8.0.x
 
       - name: .NET build
         run: |
@@ -26,24 +22,50 @@ jobs:
 
       - name: .NET test
         run: |
-          dotnet test --framework net${{ matrix.dotnet-version }}
+          dotnet test FINT.Information.Model.sln --framework net8.0 --no-build
 
-  build-dotnetcore:
-    name: Build with .NET Core
+  netcore31:
+    name: Test .NET Core 3.1 compatibility
     runs-on: windows-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        dotnet-version: ['2.1.x', '2.2.x', '3.1.x']
     steps:
       - name: Git checkout
         uses: actions/checkout@v4
 
-      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+      - name: Setup .NET SDK 8.0.x
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: 8.0.x
 
-      - name: .NET Core build
+      - name: Setup .NET Core SDK 3.1.x
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 3.1.x
+
+      - name: Pack NuGet packages
         run: |
-          dotnet build FINT.Information.Model.sln
+          dotnet pack FINT.Information.Model.sln -c Release -o ./artifacts
+
+      - name: Test package on .NET Core 3.1
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path smoke | Out-Null
+          Push-Location smoke
+          dotnet new console -f netcoreapp3.1
+          dotnet add package FINT.Model.Felles --source "$PWD\..\artifacts"
+          $lines = @(
+            "using System;",
+            "using System.Reflection;",
+            "",
+            "class Program",
+            "{",
+            "  static void Main()",
+            "  {",
+            "    var asm = Assembly.Load(\"FINT.Model.Felles\");",
+            "    Console.WriteLine(asm.FullName);",
+            "  }",
+            "}",
+            ""
+          )
+          $lines | Set-Content -Path .\Program.cs -Encoding UTF8
+          dotnet run
+          Pop-Location
