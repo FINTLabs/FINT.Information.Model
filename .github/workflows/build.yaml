@@ -53,18 +53,18 @@ jobs:
           dotnet new console -f netcoreapp3.1
           dotnet add package FINT.Model.Felles --source "$PWD\..\artifacts"
           $lines = @(
-            "using System;",
-            "using System.Reflection;",
-            "",
-            "class Program",
-            "{",
-            "  static void Main()",
-            "  {",
-            "    var asm = Assembly.Load(\"FINT.Model.Felles\");",
-            "    Console.WriteLine(asm.FullName);",
-            "  }",
-            "}",
-            ""
+            'using System;',
+            'using System.Reflection;',
+            '',
+            'class Program',
+            '{',
+            '  static void Main()',
+            '  {',
+            '    var asm = Assembly.Load("FINT.Model.Felles");',
+            '    Console.WriteLine(asm.FullName);',
+            '  }',
+            '}',
+            ''
           )
           $lines | Set-Content -Path .\Program.cs -Encoding UTF8
           dotnet run
