@@ -15,13 +15,12 @@ namespace FINT.Model.Ressurs.Datautstyr
 			PERSONALRESSURS,
 			ELEV,
 			STATUS,
-			PRODUSENT,
 			ENHETSTYPE,
 			PLATTFORM,
+			PRODUSENT,
 			ENHETSGRUPPEMEDLEMSKAP
         }
         
-	
 		public Identifikator DataobjektId { get; set; }
 		public bool? Flerbrukerenhet { get; set; }
 		public string Navn { get; set; }

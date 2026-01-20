@@ -4,21 +4,68 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-dotnet:
+    name: Build with .NET
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v3
+      - name: Setup .NET SDK 8.0.x
+        uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: 8.0.x
 
       - name: .NET build
         run: |
-          dotnet msbuild -t:restore,build,VSTest -p:Configuration=Debug FINT.Information.Model.sln
+          dotnet build FINT.Information.Model.sln
 
       - name: .NET test
         run: |
-          dotnet test
+          dotnet test FINT.Information.Model.sln --framework net8.0 --no-build
+
+  netcore31:
+    name: Test .NET Core 3.1 compatibility
+    runs-on: windows-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK 8.0.x
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Setup .NET Core SDK 3.1.x
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 3.1.x
+
+      - name: Pack NuGet packages
+        run: |
+          dotnet pack FINT.Information.Model.sln -c Release -o ./artifacts
+
+      - name: Test package on .NET Core 3.1
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path smoke | Out-Null
+          Push-Location smoke
+          dotnet new console -f netcoreapp3.1
+          dotnet add package FINT.Model.Felles --source "$PWD\..\artifacts"
+          $lines = @(
+            'using System;',
+            'using System.Reflection;',
+            '',
+            'class Program',
+            '{',
+            '  static void Main()',
+            '  {',
+            '    var asm = Assembly.Load("FINT.Model.Felles");',
+            '    Console.WriteLine(asm.FullName);',
+            '  }',
+            '}',
+            ''
+          )
+          $lines | Set-Content -Path .\Program.cs -Encoding UTF8
+          dotnet run
+          Pop-Location

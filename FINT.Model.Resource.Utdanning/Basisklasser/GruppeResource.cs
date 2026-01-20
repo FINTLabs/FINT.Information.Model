@@ -14,7 +14,6 @@ namespace FINT.Model.Utdanning.Basisklasser
     
         public string Beskrivelse { get; set; }
         public string Navn { get; set; }
-        public List<Periode> Periode { get; set; }
         public Identifikator SystemId { get; set; }
         
         protected GruppeResource()
@@ -34,21 +33,5 @@ namespace FINT.Model.Utdanning.Basisklasser
             Links[key].Add(link);
         }
      
-            
-
-        public void AddGrepreferanse(Link link)
-        {
-            AddLink("grepreferanse", link);
-        }
-
-        public void AddVigoreferanse(Link link)
-        {
-            AddLink("vigoreferanse", link);
-        }
-
-        public void AddMedlemskap(Link link)
-        {
-            AddLink("medlemskap", link);
-        }
     }
 }

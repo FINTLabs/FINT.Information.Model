@@ -147,11 +147,6 @@ namespace FINT.Model.Administrasjon.Personal
             AddLink("fravar", link);
         }
 
-        public void AddLonn(Link link)
-        {
-            AddLink("lonn", link);
-        }
-
         public void AddVariabellonn(Link link)
         {
             AddLink("variabellonn", link);
