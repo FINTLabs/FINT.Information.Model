@@ -10,8 +10,6 @@ namespace FINT.Model.Ressurs.Datautstyr
 
     public class EnhetsgruppeResource 
     {
-
-    
         public string Navn { get; set; }
         public Identifikator SystemId { get; set; }
         
@@ -32,8 +30,6 @@ namespace FINT.Model.Ressurs.Datautstyr
             Links[key].Add(link);
         }
      
-            
-
         public void AddOrganisasjonsenhet(Link link)
         {
             AddLink("organisasjonsenhet", link);

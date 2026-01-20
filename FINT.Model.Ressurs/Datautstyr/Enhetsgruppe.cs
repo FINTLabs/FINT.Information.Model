@@ -16,7 +16,6 @@ namespace FINT.Model.Ressurs.Datautstyr
 			ENHETSGRUPPEMEDLEMSKAP
         }
         
-	
 		public string Navn { get; set; }
 		public Identifikator SystemId { get; set; }
 		

@@ -21,7 +21,6 @@ namespace FINT.Model.Ressurs.Datautstyr
 			ENHETSGRUPPEMEDLEMSKAP
         }
         
-	
 		public Identifikator DataobjektId { get; set; }
 		public bool? Flerbrukerenhet { get; set; }
 		public string Navn { get; set; }
