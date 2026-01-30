@@ -43,21 +43,6 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("klasse", link);
         }
 
-        public void AddKontaktlarergruppe(Link link)
-        {
-            AddLink("kontaktlarergruppe", link);
-        }
-
-        public void AddUndervisningsgruppe(Link link)
-        {
-            AddLink("undervisningsgruppe", link);
-        }
-
-        public void AddEksamensgruppe(Link link)
-        {
-            AddLink("eksamensgruppe", link);
-        }
-
         public void AddTime(Link link)
         {
             AddLink("time", link);
@@ -68,9 +53,24 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("skole", link);
         }
 
+        public void AddKontaktlarergruppe(Link link)
+        {
+            AddLink("kontaktlarergruppe", link);
+        }
+
         public void AddSkoleressurs(Link link)
         {
             AddLink("skoleressurs", link);
+        }
+
+        public void AddUndervisningsgruppe(Link link)
+        {
+            AddLink("undervisningsgruppe", link);
+        }
+
+        public void AddEksamensgruppe(Link link)
+        {
+            AddLink("eksamensgruppe", link);
         }
     }
 }

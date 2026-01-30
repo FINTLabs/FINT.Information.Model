@@ -36,9 +36,9 @@ namespace FINT.Model.Utdanning.Timeplan
             AddLink("grepreferanse", link);
         }
 
-        public void AddProgramomrade(Link link)
+        public void AddSkole(Link link)
         {
-            AddLink("programomrade", link);
+            AddLink("skole", link);
         }
 
         public void AddVigoreferanse(Link link)
@@ -51,14 +51,14 @@ namespace FINT.Model.Utdanning.Timeplan
             AddLink("tilrettelegging", link);
         }
 
+        public void AddProgramomrade(Link link)
+        {
+            AddLink("programomrade", link);
+        }
+
         public void AddFaggruppe(Link link)
         {
             AddLink("faggruppe", link);
-        }
-
-        public void AddSkole(Link link)
-        {
-            AddLink("skole", link);
         }
 
         public void AddUndervisningsgruppe(Link link)
