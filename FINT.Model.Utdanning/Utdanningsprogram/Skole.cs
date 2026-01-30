@@ -12,7 +12,6 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
 		public enum Relasjonsnavn
         {
 			ORGANISASJON,
-			FAG,
 			SKOLEEIERTYPE,
 			VIGOREFERANSE,
 			ELEVFORHOLD,
@@ -20,6 +19,7 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
 			KONTAKTLARERGRUPPE,
 			SKOLERESSURS,
 			UNDERVISNINGSFORHOLD,
+			FAG,
 			FAGGRUPPE,
 			UNDERVISNINGSGRUPPE,
 			EKSAMENSGRUPPE,

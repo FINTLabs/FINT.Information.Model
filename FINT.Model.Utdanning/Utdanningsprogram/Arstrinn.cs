@@ -12,8 +12,8 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
         {
 			VIGOREFERANSE,
 			GREPREFERANSE,
-			PROGRAMOMRADE,
-			KLASSE
+			KLASSE,
+			PROGRAMOMRADE
         }
         
 	
