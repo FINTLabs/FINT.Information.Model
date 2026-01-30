@@ -31,6 +31,16 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
      
             
 
+        public void AddFag(Link link)
+        {
+            AddLink("fag", link);
+        }
+
+        public void AddTrinn(Link link)
+        {
+            AddLink("trinn", link);
+        }
+
         public void AddGrepreferanse(Link link)
         {
             AddLink("grepreferanse", link);
@@ -44,16 +54,6 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
         public void AddVigoreferanse(Link link)
         {
             AddLink("vigoreferanse", link);
-        }
-
-        public void AddFag(Link link)
-        {
-            AddLink("fag", link);
-        }
-
-        public void AddTrinn(Link link)
-        {
-            AddLink("trinn", link);
         }
 
         public void AddGruppemedlemskap(Link link)

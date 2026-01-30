@@ -41,14 +41,14 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
             AddLink("grepreferanse", link);
         }
 
-        public void AddProgramomrade(Link link)
-        {
-            AddLink("programomrade", link);
-        }
-
         public void AddKlasse(Link link)
         {
             AddLink("klasse", link);
+        }
+
+        public void AddProgramomrade(Link link)
+        {
+            AddLink("programomrade", link);
         }
     }
 }

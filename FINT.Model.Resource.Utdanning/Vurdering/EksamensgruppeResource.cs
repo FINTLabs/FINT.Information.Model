@@ -33,6 +33,11 @@ namespace FINT.Model.Utdanning.Vurdering
      
             
 
+        public void AddUndervisningsforhold(Link link)
+        {
+            AddLink("undervisningsforhold", link);
+        }
+
         public void AddEksamen(Link link)
         {
             AddLink("eksamen", link);
@@ -61,11 +66,6 @@ namespace FINT.Model.Utdanning.Vurdering
         public void AddSkolear(Link link)
         {
             AddLink("skolear", link);
-        }
-
-        public void AddUndervisningsforhold(Link link)
-        {
-            AddLink("undervisningsforhold", link);
         }
 
         public void AddGruppemedlemskap(Link link)

@@ -26,11 +26,6 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
             AddLink("organisasjon", link);
         }
 
-        public void AddFag(Link link)
-        {
-            AddLink("fag", link);
-        }
-
         public void AddSkoleeierType(Link link)
         {
             AddLink("skoleeierType", link);
@@ -64,6 +59,11 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
         public void AddUndervisningsforhold(Link link)
         {
             AddLink("undervisningsforhold", link);
+        }
+
+        public void AddFag(Link link)
+        {
+            AddLink("fag", link);
         }
 
         public void AddFaggruppe(Link link)
