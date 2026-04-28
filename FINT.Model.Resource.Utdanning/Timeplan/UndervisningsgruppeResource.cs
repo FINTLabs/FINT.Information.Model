@@ -31,6 +31,11 @@ namespace FINT.Model.Utdanning.Timeplan
      
             
 
+        public void AddUndervisningsforhold(Link link)
+        {
+            AddLink("undervisningsforhold", link);
+        }
+
         public void AddFag(Link link)
         {
             AddLink("fag", link);
@@ -49,11 +54,6 @@ namespace FINT.Model.Utdanning.Timeplan
         public void AddSkolear(Link link)
         {
             AddLink("skolear", link);
-        }
-
-        public void AddUndervisningsforhold(Link link)
-        {
-            AddLink("undervisningsforhold", link);
         }
 
         public void AddTime(Link link)
