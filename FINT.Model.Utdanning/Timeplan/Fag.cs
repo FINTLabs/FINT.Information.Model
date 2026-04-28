@@ -11,11 +11,11 @@ namespace FINT.Model.Utdanning.Timeplan
 		public enum Relasjonsnavn
         {
 			GREPREFERANSE,
-			PROGRAMOMRADE,
+			SKOLE,
 			VIGOREFERANSE,
 			TILRETTELEGGING,
+			PROGRAMOMRADE,
 			FAGGRUPPE,
-			SKOLE,
 			UNDERVISNINGSGRUPPE,
 			EKSAMENSGRUPPE
         }

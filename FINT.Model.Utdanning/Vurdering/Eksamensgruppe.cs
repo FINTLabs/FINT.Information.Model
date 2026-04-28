@@ -10,13 +10,13 @@ namespace FINT.Model.Utdanning.Vurdering
 	public class Eksamensgruppe : Gruppe {
 		public enum Relasjonsnavn
         {
+			UNDERVISNINGSFORHOLD,
 			EKSAMEN,
 			FAG,
 			SKOLE,
 			TERMIN,
 			EKSAMENSFORM,
 			SKOLEAR,
-			UNDERVISNINGSFORHOLD,
 			GRUPPEMEDLEMSKAP,
 			SENSOR
         }
