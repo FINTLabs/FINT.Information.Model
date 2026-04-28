@@ -13,8 +13,8 @@ namespace FINT.Model.Utdanning.Elev
 			SKOLEAR,
 			TERMIN,
 			TRINN,
-			SKOLE,
 			UNDERVISNINGSFORHOLD,
+			SKOLE,
 			KLASSEMEDLEMSKAP,
 			KONTAKTLARERGRUPPE
         }
