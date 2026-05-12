@@ -11,13 +11,13 @@ namespace FINT.Model.Utdanning.Elev
 		public enum Relasjonsnavn
         {
 			ARBEIDSFORHOLD,
-			KLASSE,
-			KONTAKTLARERGRUPPE,
-			UNDERVISNINGSGRUPPE,
-			EKSAMENSGRUPPE,
 			TIME,
 			SKOLE,
-			SKOLERESSURS
+			KLASSE,
+			KONTAKTLARERGRUPPE,
+			SKOLERESSURS,
+			UNDERVISNINGSGRUPPE,
+			EKSAMENSGRUPPE
         }
         
 	
