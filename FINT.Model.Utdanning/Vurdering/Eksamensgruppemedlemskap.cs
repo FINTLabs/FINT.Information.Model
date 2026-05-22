@@ -10,12 +10,12 @@ namespace FINT.Model.Utdanning.Vurdering
 	public class Eksamensgruppemedlemskap : Gruppemedlemskap {
 		public enum Relasjonsnavn
         {
-			DELEGERTTIL,
-			ELEVFORHOLD,
-			FORETRUKKETSKOLE,
 			EKSAMENSGRUPPE,
+			FORETRUKKETSKOLE,
+			ELEVFORHOLD,
 			NUS,
 			BETALINGSSTATUS,
+			DELEGERTTIL,
 			FORETRUKKETSENSOR
         }
         

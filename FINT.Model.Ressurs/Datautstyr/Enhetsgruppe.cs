@@ -10,9 +10,9 @@ namespace FINT.Model.Ressurs.Datautstyr
 	public class Enhetsgruppe {
 		public enum Relasjonsnavn
         {
-			ORGANISASJONSENHET,
 			ENHETSTYPE,
 			PLATTFORM,
+			ORGANISASJONSENHET,
 			ENHETSGRUPPEMEDLEMSKAP
         }
         

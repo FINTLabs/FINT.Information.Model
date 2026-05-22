@@ -29,44 +29,14 @@ namespace FINT.Model.Administrasjon.Kompleksedatatyper
      
             
 
-        public void AddAktivitet(Link link)
-        {
-            AddLink("aktivitet", link);
-        }
-
-        public void AddAnlegg(Link link)
-        {
-            AddLink("anlegg", link);
-        }
-
-        public void AddAnsvar(Link link)
-        {
-            AddLink("ansvar", link);
-        }
-
-        public void AddArt(Link link)
-        {
-            AddLink("art", link);
-        }
-
-        public void AddDiverse(Link link)
-        {
-            AddLink("diverse", link);
-        }
-
-        public void AddFormal(Link link)
-        {
-            AddLink("formal", link);
-        }
-
         public void AddFunksjon(Link link)
         {
             AddLink("funksjon", link);
         }
 
-        public void AddKontrakt(Link link)
+        public void AddRamme(Link link)
         {
-            AddLink("kontrakt", link);
+            AddLink("ramme", link);
         }
 
         public void AddLopenummer(Link link)
@@ -74,9 +44,9 @@ namespace FINT.Model.Administrasjon.Kompleksedatatyper
             AddLink("lopenummer", link);
         }
 
-        public void AddObjekt(Link link)
+        public void AddKontrakt(Link link)
         {
-            AddLink("objekt", link);
+            AddLink("kontrakt", link);
         }
 
         public void AddProsjekt(Link link)
@@ -84,14 +54,44 @@ namespace FINT.Model.Administrasjon.Kompleksedatatyper
             AddLink("prosjekt", link);
         }
 
+        public void AddDiverse(Link link)
+        {
+            AddLink("diverse", link);
+        }
+
+        public void AddAnlegg(Link link)
+        {
+            AddLink("anlegg", link);
+        }
+
+        public void AddArt(Link link)
+        {
+            AddLink("art", link);
+        }
+
         public void AddProsjektart(Link link)
         {
             AddLink("prosjektart", link);
         }
 
-        public void AddRamme(Link link)
+        public void AddObjekt(Link link)
         {
-            AddLink("ramme", link);
+            AddLink("objekt", link);
+        }
+
+        public void AddAnsvar(Link link)
+        {
+            AddLink("ansvar", link);
+        }
+
+        public void AddAktivitet(Link link)
+        {
+            AddLink("aktivitet", link);
+        }
+
+        public void AddFormal(Link link)
+        {
+            AddLink("formal", link);
         }
     }
 }
