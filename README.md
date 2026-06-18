@@ -1,5 +1,5 @@
 # FINT C# Model
 
-Version v4.0.30
+Version v4.1.0-rc-1
 
-Generated 2026-05-12T12:34:04
+Generated 2026-06-18T11:51:44

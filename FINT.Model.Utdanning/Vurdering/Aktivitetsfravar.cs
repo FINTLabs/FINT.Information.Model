@@ -7,21 +7,20 @@ using FINT.Model.Felles.Kompleksedatatyper;
 
 namespace FINT.Model.Utdanning.Vurdering
 {
-	public class Fravarsregistrering {
+	public class Aktivitetsfravar {
 		public enum Relasjonsnavn
         {
 			REGISTRERTAV,
 			FAG,
-			FAGGRUPPE,
 			UNDERVISNINGSGRUPPE,
 			FRAVARSTYPE,
 			ELEVFRAVAR
         }
         
 	
-		public bool ForesPaVitnemal { get; set; }
+		public DateTime Dato { get; set; }
 		public string Kommentar { get; set; }
-		public Periode Periode { get; set; }
+		public int Minutter { get; set; }
 		public Identifikator SystemId { get; set; }
 		
 	}
