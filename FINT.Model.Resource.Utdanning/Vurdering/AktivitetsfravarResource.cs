@@ -5,18 +5,19 @@ using FINT.Model.Resource;
 
 using FINT.Model.Felles.Kompleksedatatyper;
 
-namespace FINT.Model.Ressurs.Datautstyr
+namespace FINT.Model.Utdanning.Vurdering
 {
 
-    public class EnhetsgruppeResource 
+    public class AktivitetsfravarResource 
     {
 
     
-        public Periode Gyldighetsperiode { get; set; }
-        public string Navn { get; set; }
+        public DateTime Dato { get; set; }
+        public string Kommentar { get; set; }
+        public int Minutter { get; set; }
         public Identifikator SystemId { get; set; }
         
-        public EnhetsgruppeResource()
+        public AktivitetsfravarResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }
@@ -35,24 +36,29 @@ namespace FINT.Model.Ressurs.Datautstyr
      
             
 
-        public void AddOrganisasjonsenhet(Link link)
+        public void AddRegistrertAv(Link link)
         {
-            AddLink("organisasjonsenhet", link);
+            AddLink("registrertAv", link);
         }
 
-        public void AddEnhetstype(Link link)
+        public void AddFag(Link link)
         {
-            AddLink("enhetstype", link);
+            AddLink("fag", link);
         }
 
-        public void AddPlattform(Link link)
+        public void AddUndervisningsgruppe(Link link)
         {
-            AddLink("plattform", link);
+            AddLink("undervisningsgruppe", link);
         }
 
-        public void AddEnhetsgruppemedlemskap(Link link)
+        public void AddFravarstype(Link link)
         {
-            AddLink("enhetsgruppemedlemskap", link);
+            AddLink("fravarstype", link);
+        }
+
+        public void AddElevfravar(Link link)
+        {
+            AddLink("elevfravar", link);
         }
     }
 }
