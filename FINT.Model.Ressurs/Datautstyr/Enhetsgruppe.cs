@@ -10,14 +10,13 @@ namespace FINT.Model.Ressurs.Datautstyr
 	public class Enhetsgruppe {
 		public enum Relasjonsnavn
         {
-			ORGANISASJONSENHET,
 			ENHETSTYPE,
 			PLATTFORM,
+			ORGANISASJONSENHET,
 			ENHETSGRUPPEMEDLEMSKAP
         }
         
 	
-		public Periode Gyldighetsperiode { get; set; }
 		public string Navn { get; set; }
 		public Identifikator SystemId { get; set; }
 		

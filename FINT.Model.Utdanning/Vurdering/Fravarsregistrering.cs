@@ -10,11 +10,10 @@ namespace FINT.Model.Utdanning.Vurdering
 	public class Fravarsregistrering {
 		public enum Relasjonsnavn
         {
-			REGISTRERTAV,
-			FAG,
 			FAGGRUPPE,
-			UNDERVISNINGSGRUPPE,
 			FRAVARSTYPE,
+			REGISTRERTAV,
+			UNDERVISNINGSGRUPPE,
 			ELEVFRAVAR
         }
         
