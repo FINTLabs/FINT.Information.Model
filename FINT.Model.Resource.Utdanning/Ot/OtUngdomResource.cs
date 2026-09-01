@@ -5,7 +5,7 @@ using FINT.Model.Resource;
 
 using FINT.Model.Felles.Kompleksedatatyper;
 
-namespace FINT.Model.Utdanning.OT
+namespace FINT.Model.Utdanning.Ot
 {
 
     public class OtUngdomResource 
@@ -33,11 +33,6 @@ namespace FINT.Model.Utdanning.OT
      
             
 
-        public void AddPerson(Link link)
-        {
-            AddLink("person", link);
-        }
-
         public void AddStatus(Link link)
         {
             AddLink("status", link);
@@ -46,6 +41,11 @@ namespace FINT.Model.Utdanning.OT
         public void AddEnhet(Link link)
         {
             AddLink("enhet", link);
+        }
+
+        public void AddPerson(Link link)
+        {
+            AddLink("person", link);
         }
 
         public void AddProgramomrade(Link link)

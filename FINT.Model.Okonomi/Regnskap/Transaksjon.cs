@@ -10,8 +10,8 @@ namespace FINT.Model.Okonomi.Regnskap
 	public class Transaksjon {
 		public enum Relasjonsnavn
         {
-			LEVERANDOR,
 			ANSVARLIG,
+			LEVERANDOR,
 			VALUTA,
 			POSTERING
         }
