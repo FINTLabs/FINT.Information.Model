@@ -24,11 +24,6 @@ namespace FINT.Model.Arkiv.Noark
         
             
 
-        public void AddJournalposttype(Link link)
-        {
-            AddLink("journalposttype", link);
-        }
-
         public void AddJournalstatus(Link link)
         {
             AddLink("journalstatus", link);
@@ -37,6 +32,11 @@ namespace FINT.Model.Arkiv.Noark
         public void AddJournalenhet(Link link)
         {
             AddLink("journalenhet", link);
+        }
+
+        public void AddJournalposttype(Link link)
+        {
+            AddLink("journalposttype", link);
         }
     }
 }

@@ -8,8 +8,8 @@ namespace FINT.Model.Administrasjon.Personal
 	public class Fasttillegg : Lonn {
 		public new enum Relasjonsnavn
         {
-			LONNSART,
-			ARBEIDSFORHOLD
+			ARBEIDSFORHOLD,
+			LONNSART
         }
         
 	

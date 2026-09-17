@@ -40,19 +40,9 @@ namespace FINT.Model.Arkiv.Noark
      
             
 
-        public void AddDokumentstatus(Link link)
-        {
-            AddLink("dokumentstatus", link);
-        }
-
         public void AddDokumentType(Link link)
         {
             AddLink("dokumentType", link);
-        }
-
-        public void AddTilknyttetRegistreringSom(Link link)
-        {
-            AddLink("tilknyttetRegistreringSom", link);
         }
 
         public void AddTilknyttetAv(Link link)
@@ -63,6 +53,16 @@ namespace FINT.Model.Arkiv.Noark
         public void AddOpprettetAv(Link link)
         {
             AddLink("opprettetAv", link);
+        }
+
+        public void AddDokumentstatus(Link link)
+        {
+            AddLink("dokumentstatus", link);
+        }
+
+        public void AddTilknyttetRegistreringSom(Link link)
+        {
+            AddLink("tilknyttetRegistreringSom", link);
         }
     }
 }

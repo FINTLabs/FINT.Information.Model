@@ -31,14 +31,14 @@ namespace FINT.Model.Utdanning.Elev
      
             
 
-        public void AddElevforhold(Link link)
-        {
-            AddLink("elevforhold", link);
-        }
-
         public void AddKlasse(Link link)
         {
             AddLink("klasse", link);
+        }
+
+        public void AddElevforhold(Link link)
+        {
+            AddLink("elevforhold", link);
         }
     }
 }

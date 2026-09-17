@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 
 
-using FINT.Model.Utdanning.Vurdering;
 using FINT.Model.Felles.Kompleksedatatyper;
 using FINT.Model.Utdanning.Basisklasser;
 
@@ -12,26 +11,26 @@ namespace FINT.Model.Utdanning.Elev
 	public class Elevforhold : Utdanningsforhold {
 		public enum Relasjonsnavn
         {
-			ELEV,
+			ANMERKNINGER,
 			KATEGORI,
 			SKOLE,
 			AVBRUDDSARSAK,
 			FRAVARSREGISTRERINGER,
+			ELEV,
 			FAGGRUPPEMEDLEMSKAP,
 			SKOLEAR,
-			UNDERVISNINGSGRUPPEMEDLEMSKAP,
-			PERSONGRUPPEMEDLEMSKAP,
-			EKSAMENSGRUPPEMEDLEMSKAP,
-			KONTAKTLARERGRUPPEMEDLEMSKAP,
-			ELEVFRAVAR,
 			TILRETTELEGGING,
-			ELEVVURDERING,
+			KLASSEMEDLEMSKAP,
+			KONTAKTLARERGRUPPEMEDLEMSKAP,
+			PERSONGRUPPEMEDLEMSKAP,
+			UNDERVISNINGSGRUPPEMEDLEMSKAP,
 			PROGRAMOMRADEMEDLEMSKAP,
-			KLASSEMEDLEMSKAP
+			EKSAMENSGRUPPEMEDLEMSKAP,
+			ELEVVURDERING,
+			ELEVFRAVAR
         }
         
 	
-		public List<Anmerkninger> Anmerkninger { get; set; }
 		public DateTime? Avbruddsdato { get; set; }
 		public Periode Gyldighetsperiode { get; set; }
 		public bool? Hovedskole { get; set; }

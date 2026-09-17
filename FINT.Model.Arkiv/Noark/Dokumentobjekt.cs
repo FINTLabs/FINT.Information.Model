@@ -8,10 +8,10 @@ namespace FINT.Model.Arkiv.Noark
 	public class Dokumentobjekt {
 		public enum Relasjonsnavn
         {
-			FILFORMAT,
+			REFERANSEDOKUMENTFIL,
 			VARIANTFORMAT,
 			OPPRETTETAV,
-			REFERANSEDOKUMENTFIL
+			FILFORMAT
         }
         
 	

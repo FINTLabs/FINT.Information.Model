@@ -35,11 +35,6 @@ namespace FINT.Model.Personvern.Samtykke
      
             
 
-        public void AddBehandling(Link link)
-        {
-            AddLink("behandling", link);
-        }
-
         public void AddPerson(Link link)
         {
             AddLink("person", link);
@@ -48,6 +43,11 @@ namespace FINT.Model.Personvern.Samtykke
         public void AddOrganisasjonselement(Link link)
         {
             AddLink("organisasjonselement", link);
+        }
+
+        public void AddBehandling(Link link)
+        {
+            AddLink("behandling", link);
         }
     }
 }

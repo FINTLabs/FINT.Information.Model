@@ -10,9 +10,9 @@ namespace FINT.Model.Personvern.Samtykke
 	public class Samtykke {
 		public enum Relasjonsnavn
         {
-			BEHANDLING,
 			PERSON,
-			ORGANISASJONSELEMENT
+			ORGANISASJONSELEMENT,
+			BEHANDLING
         }
         
 	

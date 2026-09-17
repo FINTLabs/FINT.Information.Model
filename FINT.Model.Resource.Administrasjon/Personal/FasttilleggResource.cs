@@ -14,14 +14,14 @@ namespace FINT.Model.Administrasjon.Personal
         
             
 
-        public void AddLonnsart(Link link)
-        {
-            AddLink("lonnsart", link);
-        }
-
         public void AddArbeidsforhold(Link link)
         {
             AddLink("arbeidsforhold", link);
+        }
+
+        public void AddLonnsart(Link link)
+        {
+            AddLink("lonnsart", link);
         }
     }
 }

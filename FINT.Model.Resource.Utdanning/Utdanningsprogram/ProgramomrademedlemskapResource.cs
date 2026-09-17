@@ -31,14 +31,14 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
      
             
 
-        public void AddElevforhold(Link link)
-        {
-            AddLink("elevforhold", link);
-        }
-
         public void AddProgramomrade(Link link)
         {
             AddLink("programomrade", link);
+        }
+
+        public void AddElevforhold(Link link)
+        {
+            AddLink("elevforhold", link);
         }
     }
 }

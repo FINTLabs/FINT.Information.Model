@@ -33,11 +33,6 @@ namespace FINT.Model.Utdanning.Vurdering
      
             
 
-        public void AddElevforhold(Link link)
-        {
-            AddLink("elevforhold", link);
-        }
-
         public void AddSluttfagvurdering(Link link)
         {
             AddLink("sluttfagvurdering", link);
@@ -61,6 +56,11 @@ namespace FINT.Model.Utdanning.Vurdering
         public void AddHalvarsordensvurdering(Link link)
         {
             AddLink("halvarsordensvurdering", link);
+        }
+
+        public void AddElevforhold(Link link)
+        {
+            AddLink("elevforhold", link);
         }
 
         public void AddHalvarsfagvurdering(Link link)

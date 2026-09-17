@@ -15,7 +15,6 @@ namespace FINT.Model.Ressurs.Datautstyr
         }
         
 	
-		public Periode Gyldighetsperiode { get; set; }
 		public Identifikator SystemId { get; set; }
 		
 	}

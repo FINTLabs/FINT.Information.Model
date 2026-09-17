@@ -5,14 +5,14 @@ using FINT.Model.Resource;
 
 using FINT.Model.Felles.Basisklasser;
 
-namespace FINT.Model.Felles.Kodeverk.ISO
+namespace FINT.Model.Felles.Kodeverk.Iso
 {
 
-    public class KjonnResource : Begrep 
+    public class SprakResource : Begrep 
     {
 
     
-        public KjonnResource()
+        public SprakResource()
         {
             Links = new Dictionary<string, List<Link>>();
         }

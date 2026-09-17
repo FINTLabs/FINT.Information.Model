@@ -10,9 +10,9 @@ namespace FINT.Model.Utdanning.Larling
 	public class Larling {
 		public enum Relasjonsnavn
         {
-			PERSON,
-			BEDRIFT,
 			PROGRAMOMRADE,
+			BEDRIFT,
+			PERSON,
 			AVLAGTPROVE
         }
         

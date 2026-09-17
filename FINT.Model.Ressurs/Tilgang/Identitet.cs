@@ -10,8 +10,8 @@ namespace FINT.Model.Ressurs.Tilgang
 	public class Identitet {
 		public enum Relasjonsnavn
         {
-			PERSONALRESSURS,
-			RETTIGHET
+			RETTIGHET,
+			PERSONALRESSURS
         }
         
 	

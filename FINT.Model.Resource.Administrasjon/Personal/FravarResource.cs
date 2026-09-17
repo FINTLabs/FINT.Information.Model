@@ -37,14 +37,14 @@ namespace FINT.Model.Administrasjon.Personal
      
             
 
-        public void AddFravarsgrunn(Link link)
-        {
-            AddLink("fravarsgrunn", link);
-        }
-
         public void AddFravarstype(Link link)
         {
             AddLink("fravarstype", link);
+        }
+
+        public void AddFravarsgrunn(Link link)
+        {
+            AddLink("fravarsgrunn", link);
         }
 
         public void AddArbeidsforhold(Link link)

@@ -21,11 +21,6 @@ namespace FINT.Model.Administrasjon.Organisasjon
         
             
 
-        public void AddAnsvar(Link link)
-        {
-            AddLink("ansvar", link);
-        }
-
         public void AddOrganisasjonstype(Link link)
         {
             AddLink("organisasjonstype", link);
@@ -34,6 +29,11 @@ namespace FINT.Model.Administrasjon.Organisasjon
         public void AddLeder(Link link)
         {
             AddLink("leder", link);
+        }
+
+        public void AddAnsvar(Link link)
+        {
+            AddLink("ansvar", link);
         }
 
         public void AddOverordnet(Link link)
@@ -46,14 +46,14 @@ namespace FINT.Model.Administrasjon.Organisasjon
             AddLink("underordnet", link);
         }
 
-        public void AddSkole(Link link)
-        {
-            AddLink("skole", link);
-        }
-
         public void AddArbeidsforhold(Link link)
         {
             AddLink("arbeidsforhold", link);
+        }
+
+        public void AddSkole(Link link)
+        {
+            AddLink("skole", link);
         }
     }
 }

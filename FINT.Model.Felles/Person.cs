@@ -20,8 +20,8 @@ namespace FINT.Model.Felles
 			MORSMAL,
 			PARORENDE,
 			FORELDRE,
-			LARLING,
 			ELEV,
+			LARLING,
 			OTUNGDOM
         }
         
