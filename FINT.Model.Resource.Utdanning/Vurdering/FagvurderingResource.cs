@@ -35,11 +35,6 @@ namespace FINT.Model.Utdanning.Vurdering
      
             
 
-        public void AddFag(Link link)
-        {
-            AddLink("fag", link);
-        }
-
         public void AddSkolear(Link link)
         {
             AddLink("skolear", link);
@@ -48,6 +43,11 @@ namespace FINT.Model.Utdanning.Vurdering
         public void AddKarakter(Link link)
         {
             AddLink("karakter", link);
+        }
+
+        public void AddFag(Link link)
+        {
+            AddLink("fag", link);
         }
     }
 }

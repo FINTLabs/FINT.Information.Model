@@ -11,9 +11,9 @@ namespace FINT.Model.Arkiv.Noark
 		public enum Relasjonsnavn
         {
 			ROLLE,
+			ARKIVRESSURS,
 			ADMINISTRATIVENHET,
-			ARKIVDEL,
-			ARKIVRESSURS
+			ARKIVDEL
         }
         
 	

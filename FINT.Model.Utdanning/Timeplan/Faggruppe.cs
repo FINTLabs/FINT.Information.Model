@@ -10,9 +10,9 @@ namespace FINT.Model.Utdanning.Timeplan
 	public class Faggruppe : Gruppe {
 		public enum Relasjonsnavn
         {
-			FAG,
 			SKOLE,
 			SKOLEAR,
+			FAG,
 			FAGGRUPPEMEDLEMSKAP
         }
         

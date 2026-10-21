@@ -11,8 +11,8 @@ namespace FINT.Model.Utdanning.Vurdering
 		public enum Relasjonsnavn
         {
 			ATFERD,
-			ORDEN,
-			SKOLEAR
+			SKOLEAR,
+			ORDEN
         }
         
 	

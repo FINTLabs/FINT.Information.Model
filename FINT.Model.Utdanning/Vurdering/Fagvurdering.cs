@@ -10,9 +10,9 @@ namespace FINT.Model.Utdanning.Vurdering
 	public abstract class Fagvurdering {
 		public enum Relasjonsnavn
         {
-			FAG,
 			SKOLEAR,
-			KARAKTER
+			KARAKTER,
+			FAG
         }
         
 	

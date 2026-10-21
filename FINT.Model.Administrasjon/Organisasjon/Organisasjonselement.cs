@@ -11,13 +11,13 @@ namespace FINT.Model.Administrasjon.Organisasjon
 	public class Organisasjonselement : Enhet {
 		public enum Relasjonsnavn
         {
-			ANSVAR,
 			ORGANISASJONSTYPE,
 			LEDER,
+			ANSVAR,
 			OVERORDNET,
 			UNDERORDNET,
-			SKOLE,
-			ARBEIDSFORHOLD
+			ARBEIDSFORHOLD,
+			SKOLE
         }
         
 	

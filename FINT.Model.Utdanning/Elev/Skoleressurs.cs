@@ -10,10 +10,10 @@ namespace FINT.Model.Utdanning.Elev
 	public class Skoleressurs {
 		public enum Relasjonsnavn
         {
-			PERSON,
-			PERSONALRESSURS,
 			UNDERVISNINGSFORHOLD,
+			PERSONALRESSURS,
 			SKOLE,
+			PERSON,
 			SENSOR
         }
         

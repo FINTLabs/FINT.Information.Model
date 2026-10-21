@@ -16,7 +16,7 @@ namespace FINT.Model.Utdanning.Vurdering
         
 	
 		public bool Aktiv { get; set; }
-		public int? Sensornummer { get; set; }
+		public long? Sensornummer { get; set; }
 		public Identifikator SystemId { get; set; }
 		
 	}
