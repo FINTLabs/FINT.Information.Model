@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using FINT.Model.Resource;
 
-using FINT.Model.Utdanning.Vurdering;
 using FINT.Model.Felles.Kompleksedatatyper;
 using FINT.Model.Utdanning.Basisklasser;
 
@@ -14,7 +13,6 @@ namespace FINT.Model.Utdanning.Elev
     {
 
     
-        public List<AnmerkningerResource> Anmerkninger { get; set; }
         public DateTime? Avbruddsdato { get; set; }
         public Periode Gyldighetsperiode { get; set; }
         public bool? Hovedskole { get; set; }
@@ -39,9 +37,9 @@ namespace FINT.Model.Utdanning.Elev
      
             
 
-        public void AddElev(Link link)
+        public void AddAnmerkninger(Link link)
         {
-            AddLink("elev", link);
+            AddLink("anmerkninger", link);
         }
 
         public void AddKategori(Link link)
@@ -64,6 +62,11 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("fravarsregistreringer", link);
         }
 
+        public void AddElev(Link link)
+        {
+            AddLink("elev", link);
+        }
+
         public void AddFaggruppemedlemskap(Link link)
         {
             AddLink("faggruppemedlemskap", link);
@@ -74,19 +77,14 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("skolear", link);
         }
 
-        public void AddUndervisningsgruppemedlemskap(Link link)
+        public void AddTilrettelegging(Link link)
         {
-            AddLink("undervisningsgruppemedlemskap", link);
+            AddLink("tilrettelegging", link);
         }
 
-        public void AddPersongruppemedlemskap(Link link)
+        public void AddKlassemedlemskap(Link link)
         {
-            AddLink("persongruppemedlemskap", link);
-        }
-
-        public void AddEksamensgruppemedlemskap(Link link)
-        {
-            AddLink("eksamensgruppemedlemskap", link);
+            AddLink("klassemedlemskap", link);
         }
 
         public void AddKontaktlarergruppemedlemskap(Link link)
@@ -94,19 +92,14 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("kontaktlarergruppemedlemskap", link);
         }
 
-        public void AddElevfravar(Link link)
+        public void AddPersongruppemedlemskap(Link link)
         {
-            AddLink("elevfravar", link);
+            AddLink("persongruppemedlemskap", link);
         }
 
-        public void AddTilrettelegging(Link link)
+        public void AddUndervisningsgruppemedlemskap(Link link)
         {
-            AddLink("tilrettelegging", link);
-        }
-
-        public void AddElevvurdering(Link link)
-        {
-            AddLink("elevvurdering", link);
+            AddLink("undervisningsgruppemedlemskap", link);
         }
 
         public void AddProgramomrademedlemskap(Link link)
@@ -114,9 +107,19 @@ namespace FINT.Model.Utdanning.Elev
             AddLink("programomrademedlemskap", link);
         }
 
-        public void AddKlassemedlemskap(Link link)
+        public void AddEksamensgruppemedlemskap(Link link)
         {
-            AddLink("klassemedlemskap", link);
+            AddLink("eksamensgruppemedlemskap", link);
+        }
+
+        public void AddElevvurdering(Link link)
+        {
+            AddLink("elevvurdering", link);
+        }
+
+        public void AddElevfravar(Link link)
+        {
+            AddLink("elevfravar", link);
         }
     }
 }

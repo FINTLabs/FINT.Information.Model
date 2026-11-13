@@ -32,14 +32,14 @@ namespace FINT.Model.Arkiv.Noark
      
             
 
-        public void AddMerknadstype(Link link)
-        {
-            AddLink("merknadstype", link);
-        }
-
         public void AddMerknadRegistrertAv(Link link)
         {
             AddLink("merknadRegistrertAv", link);
+        }
+
+        public void AddMerknadstype(Link link)
+        {
+            AddLink("merknadstype", link);
         }
     }
 }

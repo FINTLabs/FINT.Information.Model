@@ -34,14 +34,9 @@ namespace FINT.Model.Utdanning.Vurdering
      
             
 
-        public void AddDelegertTil(Link link)
+        public void AddEksamensgruppe(Link link)
         {
-            AddLink("delegertTil", link);
-        }
-
-        public void AddElevforhold(Link link)
-        {
-            AddLink("elevforhold", link);
+            AddLink("eksamensgruppe", link);
         }
 
         public void AddForetrukketSkole(Link link)
@@ -49,9 +44,9 @@ namespace FINT.Model.Utdanning.Vurdering
             AddLink("foretrukketSkole", link);
         }
 
-        public void AddEksamensgruppe(Link link)
+        public void AddElevforhold(Link link)
         {
-            AddLink("eksamensgruppe", link);
+            AddLink("elevforhold", link);
         }
 
         public void AddNus(Link link)
@@ -62,6 +57,11 @@ namespace FINT.Model.Utdanning.Vurdering
         public void AddBetalingsstatus(Link link)
         {
             AddLink("betalingsstatus", link);
+        }
+
+        public void AddDelegertTil(Link link)
+        {
+            AddLink("delegertTil", link);
         }
 
         public void AddForetrukketSensor(Link link)

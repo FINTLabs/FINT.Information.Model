@@ -10,9 +10,9 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
 	public class Programomrade : Gruppe {
 		public enum Relasjonsnavn
         {
-			FAG,
 			TRINN,
 			GREPREFERANSE,
+			FAG,
 			UTDANNINGSPROGRAM,
 			VIGOREFERANSE,
 			GRUPPEMEDLEMSKAP

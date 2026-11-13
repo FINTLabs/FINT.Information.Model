@@ -10,9 +10,7 @@ namespace FINT.Model.Okonomi.Regnskap
 	public class Leverandor {
 		public enum Relasjonsnavn
         {
-			PERSON,
-			LEVERANDORGRUPPE,
-			VIRKSOMHET
+			LEVERANDORGRUPPE
         }
         
 	

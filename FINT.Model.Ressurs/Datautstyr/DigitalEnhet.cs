@@ -10,14 +10,14 @@ namespace FINT.Model.Ressurs.Datautstyr
 	public class DigitalEnhet {
 		public enum Relasjonsnavn
         {
-			ADMINISTRATOR,
-			EIER,
-			PERSONALRESSURS,
 			ELEV,
+			ADMINISTRATOR,
 			STATUS,
+			EIER,
 			ENHETSTYPE,
 			PLATTFORM,
 			PRODUSENT,
+			PERSONALRESSURS,
 			ENHETSGRUPPEMEDLEMSKAP
         }
         

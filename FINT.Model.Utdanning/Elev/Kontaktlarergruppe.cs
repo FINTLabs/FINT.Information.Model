@@ -10,10 +10,10 @@ namespace FINT.Model.Utdanning.Elev
 	public class Kontaktlarergruppe : Gruppe {
 		public enum Relasjonsnavn
         {
-			KLASSE,
 			TERMIN,
 			SKOLE,
 			SKOLEAR,
+			KLASSE,
 			UNDERVISNINGSFORHOLD,
 			GRUPPEMEDLEMSKAP
         }

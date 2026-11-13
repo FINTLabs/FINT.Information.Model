@@ -12,7 +12,6 @@ namespace FINT.Model.Ressurs.Datautstyr
     {
 
     
-        public Periode Gyldighetsperiode { get; set; }
         public string Navn { get; set; }
         public Identifikator SystemId { get; set; }
         
@@ -35,11 +34,6 @@ namespace FINT.Model.Ressurs.Datautstyr
      
             
 
-        public void AddOrganisasjonsenhet(Link link)
-        {
-            AddLink("organisasjonsenhet", link);
-        }
-
         public void AddEnhetstype(Link link)
         {
             AddLink("enhetstype", link);
@@ -48,6 +42,11 @@ namespace FINT.Model.Ressurs.Datautstyr
         public void AddPlattform(Link link)
         {
             AddLink("plattform", link);
+        }
+
+        public void AddOrganisasjonsenhet(Link link)
+        {
+            AddLink("organisasjonsenhet", link);
         }
 
         public void AddEnhetsgruppemedlemskap(Link link)

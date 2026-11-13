@@ -8,8 +8,8 @@ namespace FINT.Model.Arkiv.Noark
 	public class Merknad {
 		public enum Relasjonsnavn
         {
-			MERKNADSTYPE,
-			MERKNADREGISTRERTAV
+			MERKNADREGISTRERTAV,
+			MERKNADSTYPE
         }
         
 	

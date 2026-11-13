@@ -35,19 +35,9 @@ namespace FINT.Model.Okonomi.Regnskap
      
             
 
-        public void AddPerson(Link link)
-        {
-            AddLink("person", link);
-        }
-
         public void AddLeverandorgruppe(Link link)
         {
             AddLink("leverandorgruppe", link);
-        }
-
-        public void AddVirksomhet(Link link)
-        {
-            AddLink("virksomhet", link);
         }
     }
 }

@@ -12,8 +12,8 @@ namespace FINT.Model.Utdanning.Vurdering
     {
 
     
-        public int Atferd { get; set; }
-        public int Orden { get; set; }
+        public long Atferd { get; set; }
+        public long Orden { get; set; }
         public Identifikator SystemId { get; set; }
         
         public AnmerkningerResource()
