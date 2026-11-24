@@ -1,11 +1,19 @@
 version: 2
 updates:
   - package-ecosystem: "github-actions"
+    groups:
+      github-actions-dependencies:
+        patterns:
+          - "*"
     directory: "/"
     schedule:
       interval: "weekly"
 
   - package-ecosystem: "nuget"
+    groups:
+      nuget-dependencies:
+        patterns:
+          - "*"
     directory: "/"
     schedule:
       interval: "weekly"
