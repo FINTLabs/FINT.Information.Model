@@ -36,14 +36,14 @@ namespace FINT.Model.Utdanning.Elev
      
             
 
-        public void AddUtsteder(Link link)
-        {
-            AddLink("utsteder", link);
-        }
-
         public void AddKarakteransvarlig(Link link)
         {
             AddLink("karakteransvarlig", link);
+        }
+
+        public void AddUtsteder(Link link)
+        {
+            AddLink("utsteder", link);
         }
 
         public void AddType(Link link)

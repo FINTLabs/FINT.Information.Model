@@ -31,11 +31,6 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
      
             
 
-        public void AddFag(Link link)
-        {
-            AddLink("fag", link);
-        }
-
         public void AddTrinn(Link link)
         {
             AddLink("trinn", link);
@@ -44,6 +39,11 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
         public void AddGrepreferanse(Link link)
         {
             AddLink("grepreferanse", link);
+        }
+
+        public void AddFag(Link link)
+        {
+            AddLink("fag", link);
         }
 
         public void AddUtdanningsprogram(Link link)

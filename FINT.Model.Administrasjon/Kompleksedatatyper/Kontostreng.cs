@@ -8,19 +8,19 @@ namespace FINT.Model.Administrasjon.Kompleksedatatyper
 	public class Kontostreng {
 		public enum Relasjonsnavn
         {
-			AKTIVITET,
-			ANLEGG,
-			ANSVAR,
-			ART,
-			DIVERSE,
-			FORMAL,
 			FUNKSJON,
-			KONTRAKT,
+			RAMME,
 			LOPENUMMER,
-			OBJEKT,
+			KONTRAKT,
 			PROSJEKT,
+			DIVERSE,
+			ANLEGG,
+			ART,
 			PROSJEKTART,
-			RAMME
+			OBJEKT,
+			ANSVAR,
+			AKTIVITET,
+			FORMAL
         }
         
 	

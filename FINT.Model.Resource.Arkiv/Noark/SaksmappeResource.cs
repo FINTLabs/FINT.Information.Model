@@ -18,9 +18,9 @@ namespace FINT.Model.Arkiv.Noark
         
             
 
-        public void AddSaksmappetype(Link link)
+        public void AddJournalenhet(Link link)
         {
-            AddLink("saksmappetype", link);
+            AddLink("journalenhet", link);
         }
 
         public void AddSaksstatus(Link link)
@@ -28,14 +28,14 @@ namespace FINT.Model.Arkiv.Noark
             AddLink("saksstatus", link);
         }
 
-        public void AddTilgangsgruppe(Link link)
+        public void AddSaksansvarlig(Link link)
         {
-            AddLink("tilgangsgruppe", link);
+            AddLink("saksansvarlig", link);
         }
 
-        public void AddJournalenhet(Link link)
+        public void AddSaksmappetype(Link link)
         {
-            AddLink("journalenhet", link);
+            AddLink("saksmappetype", link);
         }
 
         public void AddAdministrativEnhet(Link link)
@@ -43,9 +43,9 @@ namespace FINT.Model.Arkiv.Noark
             AddLink("administrativEnhet", link);
         }
 
-        public void AddSaksansvarlig(Link link)
+        public void AddTilgangsgruppe(Link link)
         {
-            AddLink("saksansvarlig", link);
+            AddLink("tilgangsgruppe", link);
         }
     }
 }

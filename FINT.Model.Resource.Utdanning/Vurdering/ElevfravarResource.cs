@@ -33,11 +33,6 @@ namespace FINT.Model.Utdanning.Vurdering
      
             
 
-        public void AddAktivitetsfravar(Link link)
-        {
-            AddLink("aktivitetsfravar", link);
-        }
-
         public void AddFravarsregistrering(Link link)
         {
             AddLink("fravarsregistrering", link);

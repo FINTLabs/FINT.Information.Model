@@ -10,8 +10,8 @@ namespace FINT.Model.Utdanning.Elev
 	public class Varsel {
 		public enum Relasjonsnavn
         {
-			UTSTEDER,
 			KARAKTERANSVARLIG,
+			UTSTEDER,
 			TYPE,
 			FAGGRUPPEMEDLEMSKAP
         }

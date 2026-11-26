@@ -8,9 +8,9 @@ namespace FINT.Model.Arkiv.Noark
 	public class Journalpost : Registrering {
 		public new enum Relasjonsnavn
         {
-			JOURNALPOSTTYPE,
 			JOURNALSTATUS,
-			JOURNALENHET
+			JOURNALENHET,
+			JOURNALPOSTTYPE
         }
         
 	

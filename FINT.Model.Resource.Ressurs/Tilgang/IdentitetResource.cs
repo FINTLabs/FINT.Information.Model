@@ -33,14 +33,14 @@ namespace FINT.Model.Ressurs.Tilgang
      
             
 
-        public void AddPersonalressurs(Link link)
-        {
-            AddLink("personalressurs", link);
-        }
-
         public void AddRettighet(Link link)
         {
             AddLink("rettighet", link);
+        }
+
+        public void AddPersonalressurs(Link link)
+        {
+            AddLink("personalressurs", link);
         }
     }
 }

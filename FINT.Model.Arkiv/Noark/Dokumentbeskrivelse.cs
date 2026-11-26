@@ -8,11 +8,11 @@ namespace FINT.Model.Arkiv.Noark
 	public class Dokumentbeskrivelse {
 		public enum Relasjonsnavn
         {
-			DOKUMENTSTATUS,
 			DOKUMENTTYPE,
-			TILKNYTTETREGISTRERINGSOM,
 			TILKNYTTETAV,
-			OPPRETTETAV
+			OPPRETTETAV,
+			DOKUMENTSTATUS,
+			TILKNYTTETREGISTRERINGSOM
         }
         
 	

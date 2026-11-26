@@ -21,14 +21,14 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
         
             
 
-        public void AddOrganisasjon(Link link)
-        {
-            AddLink("organisasjon", link);
-        }
-
         public void AddSkoleeierType(Link link)
         {
             AddLink("skoleeierType", link);
+        }
+
+        public void AddOrganisasjon(Link link)
+        {
+            AddLink("organisasjon", link);
         }
 
         public void AddVigoreferanse(Link link)
@@ -76,14 +76,14 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
             AddLink("undervisningsgruppe", link);
         }
 
-        public void AddEksamensgruppe(Link link)
-        {
-            AddLink("eksamensgruppe", link);
-        }
-
         public void AddUtdanningsprogram(Link link)
         {
             AddLink("utdanningsprogram", link);
+        }
+
+        public void AddEksamensgruppe(Link link)
+        {
+            AddLink("eksamensgruppe", link);
         }
     }
 }

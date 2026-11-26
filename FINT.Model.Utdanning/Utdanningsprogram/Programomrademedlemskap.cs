@@ -10,8 +10,8 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
 	public class Programomrademedlemskap : Gruppemedlemskap {
 		public enum Relasjonsnavn
         {
-			ELEVFORHOLD,
-			PROGRAMOMRADE
+			PROGRAMOMRADE,
+			ELEVFORHOLD
         }
         
 	

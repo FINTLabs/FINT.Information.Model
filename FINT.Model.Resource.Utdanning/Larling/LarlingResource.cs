@@ -35,9 +35,9 @@ namespace FINT.Model.Utdanning.Larling
      
             
 
-        public void AddPerson(Link link)
+        public void AddProgramomrade(Link link)
         {
-            AddLink("person", link);
+            AddLink("programomrade", link);
         }
 
         public void AddBedrift(Link link)
@@ -45,9 +45,9 @@ namespace FINT.Model.Utdanning.Larling
             AddLink("bedrift", link);
         }
 
-        public void AddProgramomrade(Link link)
+        public void AddPerson(Link link)
         {
-            AddLink("programomrade", link);
+            AddLink("person", link);
         }
 
         public void AddAvlagtprove(Link link)

@@ -10,7 +10,6 @@ namespace FINT.Model.Utdanning.Vurdering
 	public class Elevfravar {
 		public enum Relasjonsnavn
         {
-			AKTIVITETSFRAVAR,
 			FRAVARSREGISTRERING,
 			ELEVFORHOLD
         }

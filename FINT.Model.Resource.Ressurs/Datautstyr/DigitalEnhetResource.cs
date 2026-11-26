@@ -38,29 +38,24 @@ namespace FINT.Model.Ressurs.Datautstyr
      
             
 
-        public void AddAdministrator(Link link)
-        {
-            AddLink("administrator", link);
-        }
-
-        public void AddEier(Link link)
-        {
-            AddLink("eier", link);
-        }
-
-        public void AddPersonalressurs(Link link)
-        {
-            AddLink("personalressurs", link);
-        }
-
         public void AddElev(Link link)
         {
             AddLink("elev", link);
         }
 
+        public void AddAdministrator(Link link)
+        {
+            AddLink("administrator", link);
+        }
+
         public void AddStatus(Link link)
         {
             AddLink("status", link);
+        }
+
+        public void AddEier(Link link)
+        {
+            AddLink("eier", link);
         }
 
         public void AddEnhetstype(Link link)
@@ -76,6 +71,11 @@ namespace FINT.Model.Ressurs.Datautstyr
         public void AddProdusent(Link link)
         {
             AddLink("produsent", link);
+        }
+
+        public void AddPersonalressurs(Link link)
+        {
+            AddLink("personalressurs", link);
         }
 
         public void AddEnhetsgruppemedlemskap(Link link)

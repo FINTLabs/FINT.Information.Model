@@ -39,14 +39,14 @@ namespace FINT.Model.Okonomi.Regnskap
      
             
 
-        public void AddLeverandor(Link link)
-        {
-            AddLink("leverandor", link);
-        }
-
         public void AddAnsvarlig(Link link)
         {
             AddLink("ansvarlig", link);
+        }
+
+        public void AddLeverandor(Link link)
+        {
+            AddLink("leverandor", link);
         }
 
         public void AddValuta(Link link)

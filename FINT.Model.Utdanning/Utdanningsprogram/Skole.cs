@@ -11,8 +11,8 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
 	public class Skole : Enhet {
 		public enum Relasjonsnavn
         {
-			ORGANISASJON,
 			SKOLEEIERTYPE,
+			ORGANISASJON,
 			VIGOREFERANSE,
 			ELEVFORHOLD,
 			KLASSE,
@@ -22,8 +22,8 @@ namespace FINT.Model.Utdanning.Utdanningsprogram
 			FAG,
 			FAGGRUPPE,
 			UNDERVISNINGSGRUPPE,
-			EKSAMENSGRUPPE,
-			UTDANNINGSPROGRAM
+			UTDANNINGSPROGRAM,
+			EKSAMENSGRUPPE
         }
         
 	

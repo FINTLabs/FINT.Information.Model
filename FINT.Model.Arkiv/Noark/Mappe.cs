@@ -10,9 +10,9 @@ namespace FINT.Model.Arkiv.Noark
 	public abstract class Mappe {
 		public enum Relasjonsnavn
         {
-			ARKIVDEL,
 			AVSLUTTETAV,
-			OPPRETTETAV
+			OPPRETTETAV,
+			ARKIVDEL
         }
         
 	
